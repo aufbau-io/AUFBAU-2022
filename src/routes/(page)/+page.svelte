@@ -22,7 +22,6 @@
 			<Silicon />
 			<div class="divider" />
 			<Replika />
-			<div class="divider" />
 		</div>
 	</body>
 </main>
@@ -62,6 +61,4 @@
 		width: 100%;
 		background: var(--white-50);
 	}
-	
 </style>
-
