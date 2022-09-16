@@ -132,13 +132,9 @@
 	.ticker-wrap {
 		display: flex;
 		overflow: hidden;
-		height: 4rem;
-		margin: 0 0.5rem;
 	}
 
 	.ticker {
-		height: 4rem;
-		line-height: 4rem;
 		white-space: nowrap;
 		box-sizing: content-box;
 	}
@@ -161,7 +157,7 @@
 
 		font-style: normal;
 		font-weight: 300;
-		font-size: 15px;
+		font-size: 14px;
 		line-height: 110%;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
