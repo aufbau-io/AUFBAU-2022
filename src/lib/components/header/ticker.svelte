@@ -25,7 +25,7 @@
 				will not be able to avoid using this penetrating and efficient method for the clarification
 				of concepts and the purification of problems. This book is to go a step along this road and
 				to encourage further steps in the same direction. We are here concerned, in the main, with
-				questions of epistemology, that is with questions of the reduction of cognitions1 to one
+				questions of epistemology, that is with questions of the reduction of cognitions to one
 				another. The fruitfulness of the new method is shown by the fact that the answer to the
 				question of reduction can be provided through a uniform reductional system of the concepts
 				which occur in science. This system is much like a genealogy; it requires only a few root
@@ -74,7 +74,7 @@
 				intuitive methods. The justification, however, has to take place before the forum of the
 				understanding; here we must not refer to our intuition or emotional needs. We too, have
 				"emotional needs" in philosophy, but they are filled by clarity of concepts, precision of
-				methods, responsible theses, achievement through coöperation in which each individual plays
+				methods, responsible theses, achievement through cooperation in which each individual plays
 				his part. We do not deceive ourselves about the fact that movements in metaphysical
 				philosophy and religion which are critical of such an orientation have again become very
 				influential of late. Whence then our confidence that our call for clarity, for a science
