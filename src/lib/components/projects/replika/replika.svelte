@@ -52,7 +52,7 @@
 	}
 
 	.arrows h1:hover {
-		font-family: nb-television-3d, sans-serif;
+		font-family: nb-television-3d, nb-television-2d, sans-serif;
 	}
 
 	.arrows h2 {
