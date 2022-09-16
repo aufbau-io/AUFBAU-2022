@@ -1,0 +1,280 @@
+@tailwind base;
+/* putting custom CSS before `@tailwind utilities;` so utilities can override it */
+
+/* APP */
+:root {
+	--ticker-duration: 3000s;
+	--black: #141414;
+	--white: #f0f0f0;
+	--white-10: #f0f0f00f;
+	--white-30: #f0f0f04d;
+	--white-50: #f0f0f080;
+	--accent: #ffb81c;
+	--error: #be4040;
+}
+
+@font-face {
+	font-family: dahlia;
+	src: url(fonts/dahlia-regular.woff) format('woff');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: dahlia;
+	src: url(fonts/dahlia-medium.woff) format('woff');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: dahlia;
+	src: url(fonts/dahlia-bold.woff) format('woff');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: kobe;
+	src: url(fonts/Kobe1.1-Regular.woff) format('woff');
+}
+
+@font-face {
+	font-family: abc-camera;
+	src: url(/fonts/ABCCamera-Regular.woff) format('woff');
+}
+
+@font-face {
+	font-family: soehne-breit;
+	src: url(/fonts/soehne-breit-buch.woff2) format('woff');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: soehne-breit;
+	src: url(/fonts/soehne-breit-kraftig.woff2) format('woff');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: nb-architekt;
+	src: url(/fonts/NB-Architekt-Pro-Regular.woff) format('woff');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: nb-architekt;
+	src: url(/fonts/NB-Architekt-Pro-Bold.woff) format('woff');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: nb-architekt;
+	src: url(/fonts/NB-Architekt-Pro-Light.woff) format('woff');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: nb-television;
+	src: url(/fonts/NB-Television-Pro-Mono.woff) format('woff');
+}
+
+@font-face {
+	font-family: nb-television-2d;
+	src: url(/fonts/NB-Television-Pro-Mono-2D.woff) format('woff');
+}
+
+@font-face {
+	font-family: nb-television-3d;
+	src: url(/fonts/NB-Television-Pro-Mono-3D.woff) format('woff');
+}
+
+/* CUSTOM SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: var(--black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--black);
+	border-radius: 0;
+}
+
+/* END CUSTOM SCROLLBAR */
+
+body {
+	font-family: nb-architekt, sans-serif;
+	background: var(--black);
+	color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: dahlia, sans-serif;
+}
+
+/* HEADING */
+h1 {
+	font-size: 120px;
+	line-height: 100%;
+}
+
+h2 {
+	font-size: 64px;
+	line-height: 110%;
+}
+
+h2 {
+	font-size: 64px;
+	line-height: 110%;
+}
+
+h3 {
+	font-size: 48px;
+	line-height: 110%;
+}
+
+h4 {
+	font-size: 36px;
+	line-height: 120%;
+}
+
+h5 {
+	font-size: 28px;
+	line-height: 130%;
+}
+
+h6 {
+	font-size: 24px;
+	line-height: 130%;
+	font-weight: 300;
+}
+
+/* BODY */
+span,
+p {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+span.lrg,
+p.lrg {
+	font-size: 18px;
+}
+
+span.sml,
+p.sml {
+	font-size: 14px;
+}
+
+span.xs,
+p.xs {
+	font-size: 12px;
+}
+
+/* MONO */
+span.mono,
+p.mono {
+	font-family: 'Roboto Mono', monospace;
+}
+
+span.lrg.mono,
+p.lrg.mono {
+	letter-spacing: 0.03em;
+}
+
+span.sml.mono,
+p.sml.mono {
+	line-height: 120%;
+	letter-spacing: 0.03em;
+}
+
+/* BUTTON */
+p.btn,
+a {
+	letter-spacing: 0.05em;
+}
+
+p.btn.lrg,
+a.lrg {
+	font-size: 18px;
+}
+
+p.btn.sml,
+a.sml {
+	font-size: 14px;
+}
+
+/* MOBILE SCREENS */
+@media only screen and (max-width: 768px) {
+	/* HEADING */
+	h1 {
+		font-size: 56px;
+	}
+
+	h2 {
+		font-size: 38px;
+	}
+
+	h3 {
+		font-size: 32px;
+	}
+
+	h4 {
+		font-size: 28px;
+	}
+
+	h5 {
+		font-size: 18px;
+		font-weight: 300;
+	}
+
+	h6 {
+		font-size: 16px;
+		font-weight: 300;
+	}
+
+	/* BODY */
+	p {
+		font-size: 14px;
+		line-height: 150%;
+	}
+
+	p.lrg {
+		font-size: 15px;
+	}
+
+	p.sml {
+		font-size: 12px;
+	}
+
+	/* MONO */
+	p.lrg.mono {
+		font-size: 14px;
+		line-height: 140%;
+	}
+
+	p.sml.mono {
+		font-size: 14px;
+		line-height: 140%;
+	}
+
+	/* BUTTON */
+	a.lrg {
+		font-size: 16px;
+	}
+
+	a.sml {
+		font-size: 14px;
+	}
+}
