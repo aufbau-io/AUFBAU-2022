@@ -206,7 +206,6 @@
 
 <style>
 	.geometry {
-		width: calc(100% - 490px);
 		overflow: hidden;
 		z-index: -10;
 		opacity: 0.8;
