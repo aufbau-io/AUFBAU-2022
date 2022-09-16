@@ -185,7 +185,7 @@
 
 	function lookAtIndex(index) {
 		console.log(index);
-		group.rotation.y = ((Math.PI * 2) / 3) * -3;
+		group.rotation.y = ((Math.PI * 2) / 3) * -index - ((Math.PI * 2) / 3) * 2;
 	}
 
 	function animate() {
