@@ -24,7 +24,7 @@
 
 	function init() {
 		camera = new THREE.PerspectiveCamera(20, width / window.innerHeight, 1, 10000);
-		camera.position.z = 2000;
+		camera.position.z = 2100;
 
 		scene = new THREE.Scene();
 		scene.background = new THREE.Color(0x121212);
