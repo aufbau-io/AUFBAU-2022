@@ -92,7 +92,7 @@
 
 	.sub p {
 		font-size: 12px;
-		letter-spacing: 1.1px;
+		letter-spacing: 1.15px;
 	}
 
 	.color {
