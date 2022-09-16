@@ -54,7 +54,7 @@
 				multiplicity of incompatible philosophical systems is erected. If we allot to the individual
 				in philosophical work as in the special sciences only a partial task, then we can look with
 				more confidence into the future: in slow careful construction insight after insight will be
-				won. Each collaborator contributes only what he can endorse and justify before the whole
+				won. Each collaborator contributes only what she can endorse and justify before the whole
 				body of his co-workers. Thus stone will be carefully added to stone and a safe building will
 				be erected at which each following generation can continue to work. This requirement for
 				justification and conclusive foundation of each thesis will eliminate all speculative and
