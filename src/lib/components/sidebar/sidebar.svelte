@@ -4,7 +4,7 @@
 <main>
 	<div class="head">
 		<h4 class="left">aufbau</h4>
-		<h4 class="right">a London Based<br />Multi-Discipline<br />Web Studio</h4>
+		<h4 class="right">a London Based<br />Future Focussed<br />Web Studio</h4>
 	</div>
 
 	<div class="sub">
