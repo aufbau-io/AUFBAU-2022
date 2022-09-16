@@ -9,7 +9,7 @@
 
 	<div class="sub">
 		<p class="left">we trade in →</p>
-		<p class="right">perfomrance. style. freedom.</p>
+		<p class="right">performance. style. freedom.</p>
 	</div>
 
 	<div class="color" />
