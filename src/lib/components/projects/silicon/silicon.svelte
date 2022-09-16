@@ -7,70 +7,9 @@
 
 	<div class="container">
 		<div class="item flex">
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
-			<h1>SEARCHING</h1>
+			{#each Array(300) as _, i}
+				<h1>SEARCHING</h1>
+			{/each}
 		</div>
 	</div>
 
@@ -89,6 +28,7 @@
 		position: absolute;
 		left: -20px;
 		top: 20px;
+		z-index: -10;
 	}
 	.item.flex {
 		color: var(--white-20);
@@ -98,8 +38,6 @@
 		flex-flow: row wrap;
 		padding: 0 40px;
 		user-select: none;
-
-		height: calc(100vh - 120px);
 	}
 
 	.title {
@@ -117,6 +55,8 @@
 	h1 {
 		font-family: nb-television-2d, sans-serif;
 		letter-spacing: -4px;
+		font-size: 70px;
+		text-shadow: 4px 4px var(--white-10);
 	}
 
 	.title h1 {
