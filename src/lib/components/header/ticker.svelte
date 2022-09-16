@@ -2,13 +2,13 @@
 	<div class="ticker-wrap">
 		<div class="ticker">
 			<div class="ticker__item">
-				Trans. Rolf A. George, Berkeley 1967 - Rudolf Carnap, Aufbau, Preface to the First Edition (
-				Vienna, May 1928 ) - What is the purpose of a scientific book? It is meant to convince the
-				reader of the validity of the thoughts which it presents. However, this may not completely
-				satisfy the reader; she may want to know, in addition, whence these thoughts came and where
-				they lead, whether there are movements in other areas of inquiry with which they are
-				connected. Only the book as a whole can demonstrate that the thoughts are correct. Here,
-				outside of the framework of the theory, a brief answer to the second question may be
+				LEADING TEXT - Rudolf Carnap, Aufbau, Preface to the First Edition ( Vienna, May 1928 ) -
+				Trans. Rolf A. George, Berkeley 1967 - What is the purpose of a scientific book? It is meant
+				to convince the reader of the validity of the thoughts which it presents. However, this may
+				not completely satisfy the reader; she may want to know, in addition, whence these thoughts
+				came and where they lead, whether there are movements in other areas of inquiry with which
+				they are connected. Only the book as a whole can demonstrate that the thoughts are correct.
+				Here, outside of the framework of the theory, a brief answer to the second question may be
 				attempted: what position in contemporary philosophy and contemporary life in general does
 				this book occupy? In the last few decades mathematicians have developed a new logic. They
 				were forced to do this from necessity, namely by the foundation crisis of mathematics, in
