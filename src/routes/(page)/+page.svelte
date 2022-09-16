@@ -15,6 +15,17 @@
 		<Sidebar />
 	</div>
 	<body>
+		<div class="info">
+			<p class="lrg">SILICON --------------- svelte.js ◯ supabase ◯ python ◯ gcp</p>
+			<p class="xs">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nisi bibendum,
+				scelerisque orci quis, tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus
+				consequat massa lorem, eu ultrices turpis venenatis eget. Phasellus Dip. Lorem ipsum dolor
+				sit amet, consectetur adipiscing elit. Mauris at nisi bibendum, scelerisque orci quis,
+				tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus consequat massa lorem, eu
+				ultrices turpis venenatis eget. Phasellus Dip.
+			</p>
+		</div>
 		<div class="header">
 			<Header />
 		</div>
@@ -31,13 +42,28 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
-		max-height: calc(100vh);
-		max-width: calc(100vw);
 		background: #121212aa;
+		overflow: hidden;
 	}
 
 	body {
 		height: auto;
+	}
+
+	.info {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: calc(100vw - 490px);
+		height: 100px;
+		background: var(--black);
+		border-top: solid 1px var(--white-50);
+		padding: 8px 16px;
+		z-index: 10;
+	}
+
+	.info h6 {
+		padding-bottom: 8px;
 	}
 
 	.header {

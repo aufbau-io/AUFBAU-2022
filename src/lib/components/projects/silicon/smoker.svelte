@@ -71,6 +71,7 @@
 		color: var(--white);
 		display: inline-block;
 		white-space: pre;
+		user-select: none;
 		letter-spacing: 0;
 		line-height: 1.4;
 		font-family: 'nb-television-2d';
