@@ -22,6 +22,7 @@
 			<Silicon />
 			<div class="divider" />
 			<Replika />
+			<div class="divider" />
 		</div>
 	</body>
 </main>

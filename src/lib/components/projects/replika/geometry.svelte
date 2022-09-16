@@ -14,7 +14,7 @@
 	let mouseX = 0,
 		mouseY = 0;
 
-	let width = 1000
+	let width = window.innerWidth - 490;
 
 	let windowHalfX = width / 2;
 	let windowHalfY = window.innerHeight / 2;
@@ -24,7 +24,7 @@
 
 	function init() {
 		camera = new THREE.PerspectiveCamera(20, width / window.innerHeight, 1, 10000);
-		camera.position.z = 1800;
+		camera.position.z = 2000;
 
 		scene = new THREE.Scene();
 		scene.background = new THREE.Color(0x121212);
@@ -184,6 +184,7 @@
 	}
 
 	function lookAtIndex(index) {
+		console.log(index);
 		group.rotation.y = ((Math.PI * 2) / 3) * -index;
 	}
 
