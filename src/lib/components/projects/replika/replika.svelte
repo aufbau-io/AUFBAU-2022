@@ -59,7 +59,7 @@
 		font-size: 150px;
 		line-height: 150px;
 		height: 200px;
-		cursor: pointer;
+		user-select: none;
 		font-family: nb-television-2d, sans-serif;
 		padding: 2rem;
 	}
