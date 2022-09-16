@@ -16,25 +16,25 @@
 
 @font-face {
 	font-family: dahlia;
-	src: url(fonts/dahlia-regular.woff) format('woff');
+	src: url(/fonts/dahlia-regular.woff) format('woff');
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: dahlia;
-	src: url(fonts/dahlia-medium.woff) format('woff');
+	src: url(/fonts/dahlia-medium.woff) format('woff');
 	font-weight: 500;
 }
 
 @font-face {
 	font-family: dahlia;
-	src: url(fonts/dahlia-bold.woff) format('woff');
+	src: url(/fonts/dahlia-bold.woff) format('woff');
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: kobe;
-	src: url(fonts/Kobe1.1-Regular.woff) format('woff');
+	src: url(/fonts/Kobe1.1-Regular.woff) format('woff');
 }
 
 @font-face {
