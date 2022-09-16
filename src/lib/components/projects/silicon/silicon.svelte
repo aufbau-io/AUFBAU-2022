@@ -2,13 +2,12 @@
 	import Smoker from './smoker.svelte';
 </script>
 
-
 <main>
-  <Smoker />
+	<Smoker />
 
 	<div class="container">
 		<div class="item flex">
-			<h1>SILICON FM:</h1>
+			<h1>SEARCHING</h1>
 			<h1>SEARCHING</h1>
 			<h1>SEARCHING</h1>
 			<h1>SEARCHING</h1>
@@ -75,11 +74,7 @@
 		</div>
 	</div>
 
-  	<div class="title">
-		<h1>SILICON FM</h1>
-    <h1>SILICON FM</h1>
-	
-	</div>
+	<div class="title" />
 </main>
 
 <style>
@@ -92,8 +87,8 @@
 
 	.container {
 		position: absolute;
-    left: -20px;
-    top: 20px;
+		left: -20px;
+		top: 20px;
 	}
 	.item.flex {
 		color: var(--white-20);
@@ -108,8 +103,8 @@
 	}
 
 	.title {
-    display: flex;
-    flex-flow: column nowrap;
+		display: flex;
+		flex-flow: column nowrap;
 		position: absolute;
 		padding: 20px;
 		display: flex;
@@ -120,11 +115,12 @@
 	}
 
 	h1 {
-    font-family: nb-television-2d, sans-serif;
-    letter-spacing: -4px;
+		font-family: nb-television-2d, sans-serif;
+		letter-spacing: -4px;
 	}
 
-  .title h1 {
-		color: var(--accent);
+	.title h1 {
+		font-family: nb-television, sans-serif;
+		color: var(--white-30);
 	}
 </style>
