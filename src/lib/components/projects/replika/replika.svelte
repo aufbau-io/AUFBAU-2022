@@ -3,7 +3,7 @@
 	let Geometry;
 
 	onMount(async () => {
-		const module = await import('./Geometry.svelte');
+		const module = await import('./geometry.svelte');
 		Geometry = module.default;
 	});
 </script>
