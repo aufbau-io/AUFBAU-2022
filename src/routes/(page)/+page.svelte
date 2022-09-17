@@ -16,7 +16,10 @@
 	</div>
 	<body>
 		<div class="info">
-			<p class="lrg">SILICON --------------- svelte.js ◯ supabase ◯ python ◯ gcp</p>
+			<p class="lrg">
+				<a href="https://silicon.fm">SILICON</a> ---------------- svelte.js ◯ supabase ◯ python ◯ gcp
+			</p>
+
 			<p class="xs">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nisi bibendum,
 				scelerisque orci quis, tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus
@@ -65,6 +68,10 @@
 
 	.info h6 {
 		padding-bottom: 8px;
+	}
+
+	a {
+		color: var(--error);
 	}
 
 	.header {
