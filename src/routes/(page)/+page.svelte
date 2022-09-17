@@ -60,6 +60,7 @@
 		border-top: solid 1px var(--white-50);
 		padding: 8px 16px;
 		z-index: 10;
+		letter-spacing: 0.6px;
 	}
 
 	.info h6 {
