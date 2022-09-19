@@ -17,7 +17,8 @@
 	<body>
 		<div class="info">
 			<p class="lrg">
-				<a href="https://silicon.fm">SILICON</a> ---------------- svelte.js ◯ supabase ◯ python ◯ gcp
+				<a href="https://silicon.fm">(visit) SILICON</a> ---------------- svelte.js ◯ supabase ◯ python
+				◯ gcp
 			</p>
 			<p class="xs">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nisi bibendum,
