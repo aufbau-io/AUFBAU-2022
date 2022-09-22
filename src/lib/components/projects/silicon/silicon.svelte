@@ -19,22 +19,22 @@
 <style>
 	main {
 		position: relative;
-		height: 100%;
-		max-width: calc(100vw - 490px);
+		height: 100vh;
+		width: 100vw;
 		overflow: hidden;
 	}
 
 	.container {
 		position: absolute;
-		left: -20px;
-		top: 20px;
+		left: -32px;
+		top: -90px;
 		z-index: -10;
 	}
 	.item.flex {
-		color: var(--white-20);
+		color: var(--white-50);
 		display: flex;
 		width: 140vw;
-		gap: 0 20px;
+		gap: 0 8px;
 		flex-flow: row wrap;
 		padding: 0 40px;
 		user-select: none;
@@ -55,8 +55,8 @@
 	h1 {
 		font-family: nb-television-2d, sans-serif;
 		letter-spacing: -4px;
-		font-size: 70px;
-		text-shadow: 4px 4px var(--white-10);
+		font-size: 60px;
+		text-shadow: 4px 4px var(--white-30);
 	}
 
 	.title h1 {
