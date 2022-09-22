@@ -15,7 +15,7 @@
 		<Sidebar />
 	</div>
 	<body>
-		<div class="info">
+		<!--div class="info">
 			<p class="lrg">
 				<a href="https://silicon.fm">(visit) SILICON</a> ---------------- svelte.js ◯ supabase ◯ python
 				◯ gcp
@@ -28,14 +28,14 @@
 				tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus consequat massa lorem, eu
 				ultrices turpis venenatis eget. Phasellus Dip.
 			</p>
-		</div>
+		</div-->
 		<div class="header">
 			<Header />
 		</div>
 		<div class="projects">
-			<Silicon />
-			<div class="divider" />
 			<Replika />
+			<div class="divider" />
+			<Silicon />
 		</div>
 	</body>
 </main>

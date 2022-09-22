@@ -19,7 +19,8 @@
 <style>
 	main {
 		position: relative;
-		height: 100vh;
+		min-height: calc(100vh - 50px);
+		max-height: calc(100vh - 50px);
 		width: 100vw;
 		overflow: hidden;
 	}
@@ -48,8 +49,7 @@
 		display: flex;
 		align-items: baseline;
 		justify-content: left;
-		height: 110px;
-		width: calc(100vw);
+		height: 40px;
 	}
 
 	h1 {
