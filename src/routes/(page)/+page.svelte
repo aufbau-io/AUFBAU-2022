@@ -33,9 +33,9 @@
 			<Header />
 		</div>
 		<div class="projects">
-			<Replika />
-			<div class="divider" />
 			<Silicon />
+			<div class="divider" />
+			<Replika />
 		</div>
 	</body>
 </main>
