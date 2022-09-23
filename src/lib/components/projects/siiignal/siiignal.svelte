@@ -31,7 +31,7 @@
 		display: flex;
 		justify-content: space-between;
 		user-select: none;
-		color: #e4e4e4;
+		color: var(--white);
 	}
 
 	.text h2 {
