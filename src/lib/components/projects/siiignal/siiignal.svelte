@@ -12,7 +12,7 @@
 <main>
 	<svelte:component this={Geometry} />
 	<div class="text">
-		<h2>SiiiGNAL</h2>
+		<h2>scroll ↓</h2>
 	</div>
 </main>
 
@@ -27,11 +27,11 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%);
-		padding: 0 4rem;
+		transform: translate(0, calc(-50% + 50px));
 		display: flex;
 		justify-content: space-between;
 		user-select: none;
+		color: #e4e4e4;
 	}
 
 	.text h2 {
@@ -40,6 +40,5 @@
 		height: 200px;
 		user-select: none;
 		font-family: nb-television-2d, sans-serif;
-		padding: 2rem;
 	}
 </style>

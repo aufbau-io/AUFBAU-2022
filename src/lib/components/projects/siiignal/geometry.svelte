@@ -35,12 +35,12 @@
 		// -------------------------------------------------------------------------
 
 		sphere = new THREE.Mesh(
-			new THREE.SphereGeometry(170, 124, 62),
+			new THREE.SphereGeometry(170, 240, 120),
 			new THREE.MeshBasicMaterial({ color: 0xf4f4f4, wireframe: false })
 		);
 
 		sphere_2 = new THREE.Mesh(
-			new THREE.SphereGeometry(171, 124, 62),
+			new THREE.SphereGeometry(171, 480, 240),
 			new THREE.MeshBasicMaterial({ color: 0x2b2b2b, wireframe: true })
 		);
 
@@ -79,8 +79,8 @@
 	}
 
 	function onDocumentMouseMove(event) {
-		mouseX = event.clientX - windowHalfX;
-		mouseY = event.clientY - windowHalfY;
+		mouseX = event.clientX;
+		mouseY = event.clientY;
 	}
 
 	function animate() {
@@ -89,7 +89,8 @@
 	}
 
 	function render() {
-		camera.position.z = mouseX * -mouseY * 0.01;
+		camera.position.z = (mouseY + mouseX) * 0.1;
+		scene.rotation.y = mouseX / 100000 + scene.rotation.y;
 
 		camera.lookAt(scene.position);
 
