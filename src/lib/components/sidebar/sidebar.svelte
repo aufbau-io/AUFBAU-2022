@@ -98,6 +98,7 @@
 	.color {
 		width: calc(50% - 20px);
 		height: calc(100% - 260px);
+		overflow: hidden;
 		margin-right: 20px;
 		background: var(--black);
 

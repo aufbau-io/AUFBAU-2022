@@ -11,3 +11,10 @@
 	<h2>Error {status}</h2>
 	<h6>{error.message}</h6>
 </div>
+
+<style>
+	h1,
+	h2 {
+		font-family: nb-television-2d, sans-serif;
+	}
+</style>

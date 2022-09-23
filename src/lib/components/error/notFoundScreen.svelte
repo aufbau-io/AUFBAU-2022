@@ -12,30 +12,22 @@
 </svelte:head>
 <section>
 	<div class="message">
-		<h2>404 error.&nbsp;<br />Bummer.</h2>
-		<p class="mono">Take one of these exits to find your&nbsp;way&nbsp;back.</p>
+		<h2>404 error</h2>
+		<p class="mono">Country roads, take me...</p>
 	</div>
 
 	<div class="nav">
 		<a href="/" class="top-border">
-			<h2>00</h2>
-			<h1>MAIN ROOM</h1>
-			<Arrow direction="up" />
+			<h2>A</h2>
+			<h1>HOME</h1>
 		</a>
-		<a href="/" class="top-border">
-			<h2>01</h2>
-			<h1>SMOKING AREA</h1>
-			<Arrow direction="left" />
+		<a href="https://www.wv.gov/">
+			<h2>B</h2>
+			<h1>WEST VIRGINIA</h1>
 		</a>
-		<a href="/" class="top-border">
-			<h2>02</h2>
-			<h1>BACKSTAGE</h1>
-			<Arrow direction="down" />
-		</a>
-		<a on:click={fuckOff} href="https://www.nycyellowcabtaxi.com/">
-			<h2>03</h2>
-			<h1>TAXI</h1>
-			<Arrow direction="right" />
+		<a href="/be-long">
+			<h2>C</h2>
+			<h1>THE PLACE I BELONG</h1>
 		</a>
 	</div>
 </section>
@@ -84,6 +76,11 @@
 
 		align-items: center;
 		stroke: var(--white);
+	}
+
+	h1,
+	h2 {
+		font-family: nb-television-2d, sans-serif;
 	}
 
 	.nav h2 {
