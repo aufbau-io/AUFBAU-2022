@@ -1,13 +1,11 @@
 <script>
 	import { onMount } from 'svelte';
 	import * as THREE from 'three';
-	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 	let group;
 
 	let container;
 
 	let camera, scene, renderer;
-	let controls;
 
 	let mouseX = 0,
 		mouseY = 0;
@@ -60,8 +58,6 @@
 			container.appendChild(renderer.domElement);
 		});
 
-		controls = new OrbitControls(camera, renderer.domElement);
-
 		document.addEventListener('mousemove', onDocumentMouseMove);
 
 		//
@@ -89,11 +85,14 @@
 
 	function animate() {
 		requestAnimationFrame(animate);
-		controls.update();
 		render();
 	}
 
 	function render() {
+		camera.position.z = mouseX * -mouseY * 0.01;
+
+		camera.lookAt(scene.position);
+
 		renderer.render(scene, camera);
 	}
 </script>

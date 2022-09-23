@@ -15,6 +15,12 @@
 }
 
 @font-face {
+	font-family: untitled-sans;
+	src: url(/fonts/untitles/test-untitled-sans-light.woff2) format('woff2');
+	font-weight: 400;
+}
+
+@font-face {
 	font-family: dahlia;
 	src: url(/fonts/dahlia-regular.woff) format('woff');
 	font-weight: 400;
