@@ -4,6 +4,7 @@
 
 	import Silicon from '$lib/components/projects/silicon/silicon.svelte';
 	import Replika from '$lib/components/projects/replika/replika.svelte';
+	import Siiignal from '$lib/components/projects/siiignal/siiignal.svelte';
 </script>
 
 <svelte:head>
@@ -33,6 +34,8 @@
 			<Header />
 		</div>
 		<div class="projects">
+			<Siiignal />
+			<div class="divider" />
 			<Silicon />
 			<div class="divider" />
 			<Replika />
