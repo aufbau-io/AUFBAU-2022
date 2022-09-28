@@ -41,7 +41,7 @@
 		opacity: 0;
 		user-select: none;
 		font-family: nb-television-2d, sans-serif;
-		animation: fadeIn ease-out 1s 3s;
+		animation: fadeIn ease-out 1s 1s;
 		animation-fill-mode: forwards;
 	}
 

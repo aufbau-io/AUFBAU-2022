@@ -14,7 +14,7 @@
 	camera.position.z = 30;
 
 	// Setting up the renderer. This will be called later to render scene with the camera setup above
-	let renderer = new THREE.WebGLRenderer({ antialias: false });
+	let renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(width, height);
 	renderer.setClearColor(0x141414, 1);
