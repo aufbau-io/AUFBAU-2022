@@ -3,7 +3,7 @@
 
 <main>
 	<div class="text">
-		<h2>Holla,</h2>
+		<h2>Holla.</h2>
 	</div>
 </main>
 
