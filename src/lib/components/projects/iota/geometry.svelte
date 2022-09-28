@@ -37,7 +37,7 @@
 	let pcMat = new THREE.PointsMaterial();
 	pcMat.color = new THREE.Color(0x5ca755);
 	pcMat.transparent = true;
-	pcMat.size = 0.1;
+	pcMat.size = 0;
 	pcMat.blending = THREE.AdditiveBlending;
 	pc = new THREE.Points(geometry, pcMat);
 	pc.sizeAttenuation = true;
@@ -61,11 +61,11 @@
 		step += 0.00001;
 		let count = 0;
 		let geometry = pc.geometry;
-		let a = 0.9 + Math.random() * 6;
-		let b = 3.4 + Math.random() * 7;
-		let f = 9.9 + Math.random() * 8;
+		let a = 0.9 + Math.random() * 2;
+		let b = 3.4 + Math.random() * 3;
+		let f = 9.9 + Math.random() * 4;
 		let g = 1 + Math.random();
-		let t = 0.0008;
+		let t = 0.0001;
 
 		// geometry.vertices.forEach(function (v) {
 		// 	v.x = v.x - t * a * v.x + t * v.y * v.y - t * v.z * v.z + t * a * f;
@@ -109,11 +109,11 @@
 		let x = 0.01,
 			y = 0.01,
 			z = 0.01;
-		let a = 0.9;
-		let b = 3.4;
-		let f = 9.9;
+		let a = 4.9;
+		let b = 5.4;
+		let f = 7.9;
 		let g = 1;
-		let t = 0.0001;
+		let t = 0.006;
 		for (let i = 0; i < 100000; i++) {
 			let x1 = x;
 			let y1 = y;
@@ -121,7 +121,7 @@
 			x = x - t * a * x + t * y * y - t * z * z + t * a * f;
 			y = y - t * y + t * x * y - t * b * x * z + t * g;
 			z = z - t * z + t * b * x * y + t * x * z;
-			arrayCurve.push(new THREE.Vector3(x, y, z).multiplyScalar(1));
+			arrayCurve.push(new THREE.Vector3(x, y, z).multiplyScalar(2));
 		}
 		return arrayCurve;
 	}
