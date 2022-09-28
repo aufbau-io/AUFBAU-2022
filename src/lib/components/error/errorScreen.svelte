@@ -14,7 +14,11 @@
 
 <style>
 	h1,
-	h2 {
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
 		font-family: nb-television-2d, sans-serif;
 	}
 </style>

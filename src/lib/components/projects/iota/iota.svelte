@@ -1,8 +1,8 @@
 <script>
+	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
 
 	let Geometry;
-
 	onMount(async () => {
 		const module = await import('./geometry.svelte');
 		Geometry = module.default;
@@ -24,8 +24,11 @@
 	}
 
 	.text {
-		position: absolute;
-		bottom: 3%;
+		position: sticky;
+		bottom: 10%;
+		transform: translateY(-50%);
+		height: 0;
+		float: right;
 		right: 3%;
 		display: flex;
 		justify-content: space-between;
@@ -35,8 +38,19 @@
 
 	.text h2 {
 		font-size: 70px;
-		line-height: 150px;
+		opacity: 0;
 		user-select: none;
 		font-family: nb-television-2d, sans-serif;
+		animation: fadeIn ease-out 1s 3s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
 	}
 </style>
