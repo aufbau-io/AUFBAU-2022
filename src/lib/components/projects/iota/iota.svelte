@@ -25,7 +25,7 @@
 
 	.text {
 		position: sticky;
-		bottom: 10%;
+		bottom: 9%;
 		transform: translateY(-50%);
 		height: 0;
 		float: right;
@@ -37,7 +37,7 @@
 	}
 
 	.text h2 {
-		font-size: 70px;
+		font-size: 60px;
 		opacity: 0;
 		user-select: none;
 		font-family: nb-television-2d, sans-serif;
