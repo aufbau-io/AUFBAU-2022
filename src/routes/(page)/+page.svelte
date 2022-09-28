@@ -5,8 +5,12 @@
 	import Silicon from '$lib/components/projects/silicon/silicon.svelte';
 	import Replika from '$lib/components/projects/replika/replika.svelte';
 	import Siiignal from '$lib/components/projects/siiignal/siiignal.svelte';
+	import Iota from '$lib/components/projects/iota/iota.svelte';
+
+	import Contact from '$lib/components/contact/contact.svelte';
 </script>
 
+<div class="divider" />
 <svelte:head>
 	<title>AUFBAU WEB STUDIO</title>
 </svelte:head>
@@ -34,11 +38,15 @@
 			<Header />
 		</div>
 		<div class="projects">
-			<Siiignal />
+			<Iota />
 			<div class="divider" />
 			<Silicon />
 			<div class="divider" />
 			<Replika />
+			<div class="divider" />
+			<Siiignal />
+			<div class="divider" />
+			<Contact />
 		</div>
 	</body>
 </main>

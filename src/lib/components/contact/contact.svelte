@@ -1,16 +1,10 @@
 <script>
-	import { onMount } from 'svelte';
-
-	let Geometry;
-
-	onMount(async () => {
-		const module = await import('./geometry.svelte');
-		Geometry = module.default;
-	});
 </script>
 
 <main>
-	<svelte:component this={Geometry} />
+	<div class="text">
+		<h2>Holla,</h2>
+	</div>
 </main>
 
 <style>
@@ -22,12 +16,12 @@
 
 	.text {
 		position: absolute;
-		bottom: 0%;
-		right: 5%;
+		top: 100px;
+		left: 5%;
 		display: flex;
 		justify-content: space-between;
 		user-select: none;
-		color: var(--black);
+		color: var(--white);
 	}
 
 	.text h2 {

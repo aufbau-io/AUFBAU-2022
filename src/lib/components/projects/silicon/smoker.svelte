@@ -75,7 +75,7 @@
 		letter-spacing: 0;
 		line-height: 1.4;
 		font-family: 'nb-television-2d';
-		font-size: 12px;
+		font-size: 12.05px;
 		background: var(--black);
 	}
 </style>

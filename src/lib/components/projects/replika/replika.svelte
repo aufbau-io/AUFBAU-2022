@@ -32,8 +32,8 @@
 <style>
 	main {
 		position: relative;
-		min-height: calc(100vh - 50px);
-		max-height: calc(100vh - 50px);
+		min-height: 100vh;
+		max-height: 100vh;
 	}
 
 	.arrows {

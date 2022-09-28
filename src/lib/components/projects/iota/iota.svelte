@@ -25,8 +25,8 @@
 
 	.text {
 		position: absolute;
-		bottom: 0%;
-		right: 5%;
+		bottom: 3%;
+		right: 3%;
 		display: flex;
 		justify-content: space-between;
 		user-select: none;

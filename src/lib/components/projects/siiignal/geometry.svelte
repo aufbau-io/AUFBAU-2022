@@ -10,7 +10,7 @@
 	let mouseX = 0,
 		mouseY = 0;
 
-	let width = (window.innerWidth / 4) * 3;
+	let width = window.innerWidth - 490;
 	let height = window.innerHeight;
 
 	let sphere, sphere_2;
@@ -26,22 +26,18 @@
 		camera.position.z = 450;
 
 		scene = new THREE.Scene();
-		scene.background = new THREE.Color(0xf4f4f4);
-
-		const light = new THREE.DirectionalLight(0xf4f4f4);
-		light.position.set(0, 1, 1);
-		scene.add(light);
+		scene.background = new THREE.Color(0xe4e4e4);
 
 		// -------------------------------------------------------------------------
 
 		sphere = new THREE.Mesh(
-			new THREE.SphereGeometry(170, 240, 120),
-			new THREE.MeshBasicMaterial({ color: 0xf4f4f4, wireframe: false })
+			new THREE.SphereGeometry(170, 480, 240),
+			new THREE.MeshBasicMaterial({ color: 0xefefef, wireframe: false })
 		);
 
 		sphere_2 = new THREE.Mesh(
 			new THREE.SphereGeometry(171, 480, 240),
-			new THREE.MeshBasicMaterial({ color: 0x2b2b2b, wireframe: true })
+			new THREE.MeshBasicMaterial({ color: 0x141414, wireframe: true })
 		);
 
 		scene.add(sphere, sphere_2);
@@ -66,7 +62,7 @@
 	}
 
 	function onWindowResize() {
-		let width = (window.innerWidth / 4) * 3;
+		let width = window.innerWidth - 490;
 		let height = window.innerHeight;
 
 		windowHalfX = width / 2;
@@ -89,10 +85,7 @@
 	}
 
 	function render() {
-		camera.position.z = (mouseY + mouseX) * 0.1;
-		scene.rotation.y = mouseX / 100000 + scene.rotation.y;
-
-		camera.lookAt(scene.position);
+		camera.position.z = mouseX * 2;
 
 		renderer.render(scene, camera);
 	}
