@@ -14,7 +14,7 @@
 	camera.position.z = 30;
 
 	// Setting up the renderer. This will be called later to render scene with the camera setup above
-	let renderer = new THREE.WebGLRenderer({ antialias: true });
+	let renderer = new THREE.WebGLRenderer({ antialias: false });
 	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(width, height);
 	renderer.setClearColor(0x141414, 1);
@@ -65,7 +65,7 @@
 		let b = 3.4 + Math.random() * 7;
 		let f = 9.9 + Math.random() * 8;
 		let g = 1 + Math.random();
-		let t = 0.0005;
+		let t = 0.0008;
 
 		// geometry.vertices.forEach(function (v) {
 		// 	v.x = v.x - t * a * v.x + t * v.y * v.y - t * v.z * v.z + t * a * f;
@@ -113,7 +113,7 @@
 		let b = 3.4;
 		let f = 9.9;
 		let g = 1;
-		let t = 0.001;
+		let t = 0.00008;
 		for (let i = 0; i < 100000; i++) {
 			let x1 = x;
 			let y1 = y;

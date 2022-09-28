@@ -15,13 +15,9 @@
 	<div class="color" />
 	<div class="text">
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nisi bibendum, scelerisque
-			orci quis, tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus consequat massa
-			lorem, eu ultrices turpis venenatis eget. Phasellus Dip.
-			<br /><br />
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nisi bibendum, scelerisque orci
-			quis, tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus consequat massa lorem,
-			eu ultrices turpis venenatis eget. Phasellus Dip.
+			<b>aufbau</b> - Lorem sit amet, consectetur adipiscing elit. Mauris at nisi bibendum,
+			scelerisque orci quis, tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus
+			consequat massa lorem, eu ultrices turpis venenatis eget. Phasellus Dip.
 			<br /><br />
 			<b>performance</b> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nisi
 			bibendum, scelerisque orci quis, tincidunt urna. Vestibulum pretium porttitor tristique.
@@ -31,16 +27,8 @@
 			scelerisque orci quis, tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus
 			consequat massa lorem, eu ultrices turpis venenatis eget. Pha.
 			<br /><br />
-			<b>freedom</b> - dolor sit amet, consectetur adipiscing elit. Mauris at nisi bibendum,
-			scelerisque orci quis, tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus
-			consequat massa lorem, eu ultrices turpis venenatis eget. Phasellus Dip.
-			<br /><br />
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nisi bibendum, scelerisque orci
-			quis, tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus consequat massa lorem,
-			eu ultrices turpis venenatis eget. Phasellus Dip.
-			<br /><br />
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nisi bibendum, scelerisque orci
-			quis, tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus consequat massa lorem,
+			<b>freedom</b> - dolor sit amet, consectetur adipiscing elit. Mauris at nisi bibendum, scelerisque
+			orci quis, tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus consequat massa lorem,
 			eu ultrices turpis venenatis eget. Phasellus Dip.
 		</p>
 	</div>
