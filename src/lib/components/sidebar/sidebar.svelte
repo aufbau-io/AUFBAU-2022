@@ -90,7 +90,7 @@
 		margin-right: 20px;
 		background: var(--black);
 
-		border: solid 1px var(--white-50);
+		border: solid 1px var(--error-30);
 	}
 
 	.text {
