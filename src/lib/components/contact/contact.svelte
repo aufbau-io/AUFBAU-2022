@@ -14,7 +14,7 @@
 		min-height: 100vh;
 		max-height: 100vh;
 		inline-size: calc(100%);
-		background: #d0d0d0;
+		background: var(--black);
 	}
 
 	.text {
@@ -35,9 +35,12 @@
 		inline-size: calc(100% - 20px);
 		line-height: 105%;
 		opacity: 0.9;
+		color: var(--black);
+		text-shadow: 4px 2px var(--white);
+		text-align: left;
 	}
 
 	a {
-		color: var(--black);
+		text-shadow: 4px 2px var(--error);
 	}
 </style>
