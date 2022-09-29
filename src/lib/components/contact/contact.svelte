@@ -4,9 +4,7 @@
 
 <main>
 	<div class="text">
-		<a href="mailto: hi@aufbau.io">
-			<h2>NO MORE DULL WEB / EMAIL:<br />HI[at]<br />AUFBAU.IO<br /></h2>
-		</a>
+		<h2>NO MORE DULL WEB / EMAIL:<br /><a href="mailto: hi@aufbau.io">HI[at]<br />AUFBAU.IO</a></h2>
 	</div>
 	<Footer />
 </main>
@@ -14,7 +12,7 @@
 <style>
 	main {
 		position: relative;
-		min-height: calc(100vh);
+		min-height: calc(100vh - 50px);
 	}
 
 	.text {
