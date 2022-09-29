@@ -3,8 +3,9 @@
 
 <main>
 	<div class="text">
-		<h2>Contact us by Email at: <a href="mailto: hi@aufbau.io">hi@aufbau.io</a></h2>
-		<h2>Drop us a line, don't be shy xx</h2>
+		<a href="mailto: hi@aufbau.io">
+			<h2>NO MORE DULL CONTACT:<br />HI[at]<br />AUFBAU.IO<br /></h2>
+		</a>
 	</div>
 </main>
 
@@ -12,9 +13,6 @@
 	main {
 		position: relative;
 		min-height: 100vh;
-		max-height: 100vh;
-		inline-size: calc(100%);
-		background: var(--black);
 	}
 
 	.text {
@@ -24,23 +22,24 @@
 		user-select: none;
 		color: var(--white);
 		inline-size: calc(100% - 20px);
+		padding: 80px;
 	}
 
 	.text h2 {
+		padding: 20px;
+		background: #d0d0d0;
 		font-size: 150px;
 		line-height: 150px;
 		user-select: none;
-		font-family: nb-architekt, sans-serif;
+		font-family: nb-television, sans-serif;
 		overflow-wrap: break-word;
-		inline-size: calc(100% - 20px);
 		line-height: 105%;
 		opacity: 0.9;
 		color: var(--black);
 		text-shadow: 4px 2px var(--white);
-		text-align: left;
+		text-align: right;
 	}
 
 	a {
-		text-shadow: 4px 2px var(--error);
 	}
 </style>
