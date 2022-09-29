@@ -1,27 +1,27 @@
 <script>
+	import Footer from '$lib/components/footer/footer.svelte';
 </script>
 
 <main>
 	<div class="text">
 		<a href="mailto: hi@aufbau.io">
-			<h2>NO MORE DULL CONTACT:<br />HI[at]<br />AUFBAU.IO<br /></h2>
+			<h2>NO MORE DULL WEB / EMAIL:<br />HI[at]<br />AUFBAU.IO<br /></h2>
 		</a>
 	</div>
+	<Footer />
 </main>
 
 <style>
 	main {
 		position: relative;
-		min-height: 100vh;
+		min-height: calc(100vh - 50px);
 	}
 
 	.text {
-		position: absolute;
 		top: 100px;
 		left: 5%;
 		user-select: none;
 		color: var(--white);
-		inline-size: calc(100% - 20px);
 		padding: 80px;
 	}
 
@@ -38,8 +38,5 @@
 		color: var(--black);
 		text-shadow: 4px 2px var(--white);
 		text-align: right;
-	}
-
-	a {
 	}
 </style>

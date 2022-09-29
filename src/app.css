@@ -185,7 +185,8 @@ p.sml {
 }
 
 span.xs,
-p.xs {
+p.xs,
+a.xs {
 	font-size: 12px;
 }
 

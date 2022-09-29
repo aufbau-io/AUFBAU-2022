@@ -7,8 +7,6 @@
 
 		<div class="base">
 			<p class="xs">Copyright 2022</p>
-			<p class="sml">silicon fm</p>
-			<a class="sml" href="https://aufbau.io">ein aufbau ding</a>
 			<p class="xs">86-90 Paul Street London</p>
 		</div>
 	</section>
@@ -16,12 +14,11 @@
 
 <style>
 	footer {
-		margin: 0 40px;
+		margin: 0 80px;
 	}
 
 	main {
 		display: flex;
-		margin: 0px 98px 0px 98px;
 	}
 
 	.base {
