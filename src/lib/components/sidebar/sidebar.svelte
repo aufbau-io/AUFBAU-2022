@@ -41,11 +41,10 @@
 		justify-content: space-between;
 		border-right: solid 1px var(--white-50);
 		user-select: none;
-		gap: 0;
-
 		width: 490px;
-		height: 100vh;
+		height: 100%;
 		padding: 8px 20px 8px 16px;
+		overflow: hidden;
 	}
 
 	.right {

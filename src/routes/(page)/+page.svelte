@@ -85,6 +85,11 @@
 		color: var(--error);
 	}
 
+	.sidebar {
+		height: 100vh;
+		overflow: hidden;
+	}
+
 	.header {
 		position: fixed;
 		top: 0;
