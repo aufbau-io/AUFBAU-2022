@@ -3,7 +3,7 @@
 
 /* APP */
 :root {
-	--ticker-duration: 3000s;
+	--ticker-duration: 5000s;
 	--black: #141414;
 	--white: #e4e4e4;
 	--white-10: #f0f0f01a;

@@ -2,7 +2,7 @@
 	<div class="ticker-wrap">
 		<div class="ticker">
 			<div class="ticker__item">
-				LEADING TEXT - Rudolf Carnap, Aufbau, Preface to the First Edition ( Vienna, May 1928 ) -
+				- LEADING TEXT - Rudolf Carnap, Aufbau, Preface to the First Edition ( Vienna, May 1928 ) -
 				Trans. Rolf A. George, Berkeley 1967 - What is the purpose of a scientific book? It is meant
 				to convince the reader of the validity of the thoughts which it presents. However, this may
 				not completely satisfy the reader; she may want to know, in addition, whence these thoughts
