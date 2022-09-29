@@ -4,7 +4,7 @@
 
 <main>
 	<div class="text">
-		<h2>NO MORE DULL WEB / EMAIL:<br /><a href="mailto: hi@aufbau.io">HI[at]<br />AUFBAU.IO</a></h2>
+		<h2>NO MORE DEAD WEB / EMAIL:<br /><a href="mailto: hi@aufbau.io">HI[at]<br />AUFBAU.IO</a></h2>
 	</div>
 	<Footer />
 </main>

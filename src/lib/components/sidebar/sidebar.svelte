@@ -13,7 +13,7 @@
 	</div>
 
 	<div class="color" />
-	<div class="text">
+	<!--div class="text">
 		<p>
 			<b>aufbau</b> - Lorem sit amet, consectetur adipiscing elit. Mauris at nisi bibendum,
 			scelerisque orci quis, tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus
@@ -31,7 +31,7 @@
 			orci quis, tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus consequat massa lorem,
 			eu ultrices turpis venenatis eget. Phasellus Dip.
 		</p>
-	</div>
+	</div-->
 </main>
 
 <style>
@@ -88,8 +88,6 @@
 		height: calc(100% - 260px);
 		overflow: hidden;
 		margin-right: 20px;
-		background: var(--black);
-
 		border: solid 1px var(--error-30);
 	}
 
