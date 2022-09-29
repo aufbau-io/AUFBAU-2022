@@ -54,11 +54,11 @@
 			container.appendChild(renderer.domElement);
 		});
 
-		document.addEventListener('mousemove', onDocumentMouseMove);
+		// document.addEventListener('mousemove', onDocumentMouseMove);
 
 		//
 
-		window.addEventListener('resize', onWindowResize);
+		// window.addEventListener('resize', onWindowResize);
 	}
 
 	function onWindowResize() {
@@ -81,6 +81,7 @@
 
 	function animate() {
 		requestAnimationFrame(animate);
+		// scene.rotation.y += 0.001;
 		render();
 	}
 
