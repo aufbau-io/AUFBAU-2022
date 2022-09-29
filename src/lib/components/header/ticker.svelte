@@ -92,6 +92,9 @@
 				bonds that tie men together, but at the same time strives for free development of the
 				individual. Our work is carried by the faith that this attitude will win the future.
 			</div>
+			<!--div class="ticker__item--full">
+				IOTA - MENTAL STATE TRACKING TOOL - SVELTE.JS, SUPABASE, THREE.JS
+			</div-->
 		</div>
 	</div>
 </div>
@@ -161,5 +164,10 @@
 		line-height: 110%;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
+	}
+
+	.ticker__item--full {
+		padding-left: 20px;
+		width: 100%;
 	}
 </style>

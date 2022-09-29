@@ -14,7 +14,7 @@
 <style>
 	main {
 		position: relative;
-		min-height: calc(100vh - 50px);
+		min-height: calc(100vh);
 	}
 
 	.text {

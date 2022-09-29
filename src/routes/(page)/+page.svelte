@@ -93,9 +93,15 @@
 
 	.projects {
 		position: fixed;
-		top: 50px;
 		right: 0;
+
 		height: calc(100vh - 50px);
+		top: 50px;
+
+		/*
+		top: 0;
+		height: calc(100vh);
+		*/
 		width: calc(100vw - 490px);
 		overflow-x: hidden;
 		overflow-y: auto;

@@ -47,8 +47,6 @@
 
 	scene.add(group);
 
-	let prevFog = true;
-
 	group.rotation.y += Math.PI / 2;
 
 	let step = 0;
@@ -59,7 +57,6 @@
 
 		//Varying the points on each frame
 		step += 0.00001;
-		let count = 0;
 		let geometry = pc.geometry;
 		let a = 0.9 + Math.random() * 2;
 		let b = 3.4 + Math.random() * 3;
@@ -84,9 +81,9 @@
 
 		geometry.attributes.position.needsUpdate = true;
 
-		// group.rotation.x += 0.001;
-		// group.rotation.y += 0.001;
-		// group.rotation.z += 0.001;
+		// group.rotation.x += 0.01;
+		// group.rotation.y += 0.01;
+		// group.rotation.z += 0.01;
 	};
 
 	window.addEventListener(
@@ -115,9 +112,6 @@
 		let g = 1;
 		let t = 0.0006;
 		for (let i = 0; i < 100000; i++) {
-			let x1 = x;
-			let y1 = y;
-			let z1 = z;
 			x = x - t * a * x + t * y * y - t * z * z + t * a * f;
 			y = y - t * y + t * x * y - t * b * x * z + t * g;
 			z = z - t * z + t * b * x * y + t * x * z;

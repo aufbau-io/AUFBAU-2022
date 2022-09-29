@@ -14,7 +14,7 @@
 		border-bottom: solid 1px var(--white-50);
 		user-select: none;
 
-		max-width: calc(100vw - 490px);
+		width: calc(100vw - 490px);
 		overflow: hidden;
 	}
 </style>
