@@ -12,8 +12,8 @@
 </svelte:head>
 <section>
 	<div class="message">
-		<h2>404 error</h2>
-		<p class="mono">Country roads, take me...</p>
+		<h2>404 ERROR</h2>
+		<h6>Country roads, take me...</h6>
 	</div>
 
 	<div class="nav">
@@ -35,6 +35,7 @@
 <style>
 	section {
 		display: flex;
+		background: var(--error);
 	}
 
 	section div {
@@ -52,10 +53,8 @@
 		font-weight: 300;
 	}
 
-	section .message p {
-		font-weight: 300;
-		line-height: 150%;
-		padding-top: 1em;
+	section .message h6 {
+		padding-top: 20px;
 	}
 
 	.nav {
@@ -80,7 +79,7 @@
 
 	h1,
 	h2 {
-		font-family: nb-television-2d, sans-serif;
+		font-family: nb-television, sans-serif;
 	}
 
 	.nav h2 {
@@ -95,8 +94,8 @@
 
 	.nav a:hover {
 		background: var(--white);
-		color: var(--black);
-		stroke: var(--black);
+		color: var(--error);
+		stroke: var(--error);
 	}
 
 	.nav a.top-border {

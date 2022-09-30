@@ -13,6 +13,10 @@
 </div>
 
 <style>
+	div {
+		background: var(--error);
+	}
+
 	h1,
 	h2,
 	h3,
