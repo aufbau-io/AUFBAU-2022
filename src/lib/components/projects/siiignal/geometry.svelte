@@ -37,7 +37,7 @@
 
 		sphere_2 = new THREE.Mesh(
 			new THREE.SphereGeometry(171, 480, 240),
-			new THREE.MeshBasicMaterial({ color: 0x171717, wireframe: true })
+			new THREE.MeshBasicMaterial({ color: 0x141414, wireframe: true })
 		);
 
 		scene.add(sphere, sphere_2);

@@ -19,7 +19,7 @@
 	let renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(width, height);
-	renderer.setClearColor(0x171717, 1);
+	renderer.setClearColor(0x141414, 1);
 	onMount(() => {
 		container.appendChild(renderer.domElement);
 	});
