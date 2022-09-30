@@ -21,15 +21,21 @@
 	let windowHalfX = width / 2;
 	let windowHalfY = window.innerHeight / 2;
 
+	let color3d = {
+		1: new THREE.Color(0xffc0cb),
+		2: new THREE.Color(0x0ea550),
+		3: new THREE.Color(0xe03a00)
+	};
+
 	init();
 	animate();
 
 	function init() {
-		camera = new THREE.PerspectiveCamera(15, width / window.innerHeight, 1, 10000);
+		camera = new THREE.PerspectiveCamera(14, width / window.innerHeight, 1, 10000);
 		camera.position.z = 2400;
 
 		scene = new THREE.Scene();
-		scene.background = new THREE.Color(0x141414);
+		scene.background = new THREE.Color(color3d[$index]);
 
 		const light = new THREE.DirectionalLight(0xf0f0f0);
 		light.position.set(0, 1, 1);
@@ -50,8 +56,8 @@
 			canvas.height / 2,
 			canvas.width / 2
 		);
-		gradient.addColorStop(0.1, '#020202');
-		gradient.addColorStop(1, '#141414');
+		gradient.addColorStop(0.1, '#0b0b0b');
+		gradient.addColorStop(1, '#0b0b0b');
 
 		context.fillStyle = gradient;
 		context.fillRect(0, 0, canvas.width, canvas.height);
@@ -154,7 +160,7 @@
 			shadowMesh.position.y = -240;
 			shadowMesh.position.z = z;
 			shadowMesh.rotation.x = -Math.PI / 2;
-			scene.add(shadowMesh);
+			// scene.add(shadowMesh);
 		}
 
 		renderer = new THREE.WebGLRenderer({ antialias: false });
@@ -199,6 +205,7 @@
 	}
 
 	function render() {
+		scene.background = new THREE.Color(color3d[$index]);
 		camera.position.x += (mouseX - camera.position.x * 4) * 0.01;
 		camera.position.y += (-mouseY - camera.position.y * 10) * 0.01;
 
