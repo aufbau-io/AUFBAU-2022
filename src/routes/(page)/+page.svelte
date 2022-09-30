@@ -80,11 +80,11 @@
 	}
 
 	button {
-		opacity: 0.2;
+		opacity: 0.3;
 	}
 
 	button:hover {
-		opacity: 0.4;
+		opacity: 0.6;
 	}
 
 	button.active,

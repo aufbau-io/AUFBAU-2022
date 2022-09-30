@@ -11,6 +11,7 @@
 	main {
 		position: relative;
 		overflow: hidden;
+		background: var(--error);
 	}
 
 	.text {
