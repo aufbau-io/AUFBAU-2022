@@ -25,11 +25,11 @@
 	animate();
 
 	function init() {
-		camera = new THREE.PerspectiveCamera(20, width / window.innerHeight, 1, 10000);
-		camera.position.z = 2100;
+		camera = new THREE.PerspectiveCamera(15, width / window.innerHeight, 1, 10000);
+		camera.position.z = 2400;
 
 		scene = new THREE.Scene();
-		scene.background = new THREE.Color(0x141414);
+		scene.background = new THREE.Color(0x171717);
 
 		const light = new THREE.DirectionalLight(0xf0f0f0);
 		light.position.set(0, 1, 1);
@@ -51,7 +51,7 @@
 			canvas.width / 2
 		);
 		gradient.addColorStop(0.1, '#020202');
-		gradient.addColorStop(1, '#141414');
+		gradient.addColorStop(1, '#171717');
 
 		context.fillStyle = gradient;
 		context.fillRect(0, 0, canvas.width, canvas.height);
@@ -127,6 +127,8 @@
 
 		let meshes = [mesh1, mesh2, mesh3];
 
+		group.position.y += 10;
+
 		let totalObjects = meshes.length;
 		let r = 450;
 
@@ -149,7 +151,7 @@
 
 			shadowMesh = new THREE.Mesh(shadowGeo, shadowMaterial);
 			shadowMesh.position.x = x;
-			shadowMesh.position.y = -250;
+			shadowMesh.position.y = -240;
 			shadowMesh.position.z = z;
 			shadowMesh.rotation.x = -Math.PI / 2;
 			scene.add(shadowMesh);
