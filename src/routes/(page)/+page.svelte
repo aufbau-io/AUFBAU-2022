@@ -7,58 +7,68 @@
 	import Siiignal from '$lib/components/projects/siiignal/siiignal.svelte';
 	import Iota from '$lib/components/projects/iota/iota.svelte';
 
-	import Contact from '$lib/components/contact/contact.svelte';
+	import Contact from '$lib/components/pages/contact.svelte';
+	import About from '$lib/components/pages/about.svelte';
 
-	let loading = true;
-	const start = async () => {
+	let loading = false;
+	let project = 'IOTA';
+
+	let start = async () => {
 		loading = false;
+	};
+	let setProject = async (item) => {
+		project = item;
+		console.log(project);
 	};
 </script>
 
-<div>
-	<button on:click={start}> NO MORE DEAD WEB</button>
-</div>
-
-<div class="divider" />
 <svelte:head>
 	<title>AUFBAU WEB STUDIO</title>
 </svelte:head>
 
 <main>
+	<div class="sidebar">
+		<button class="active" on:click={() => setProject(null)}>AUFBAU</button>
+		.//<br /><br />
+		<button class:active={project === 'IOTA'} on:click={() => setProject('IOTA')}>IOTA</button>
+		<button class:active={project === 'SILICON'} on:click={() => setProject('SILICON')}
+			>SILICON</button
+		>
+		<!--button class:active={project === 'SIIIGNAL'} on:click={() => setProject('SIIIGNAL')}
+			>SIIIGNAL</button
+		-->
+		<button class:active={project === 'REPLIKA'} on:click={() => setProject('REPLIKA')}
+			>REPLIKA</button
+		>
+		<br /><br />
+		<button class:active={project === 'ABOUT'} on:click={() => setProject('ABOUT')}>ABOUT</button>
+		<button class:active={project === 'CONTACT'} on:click={() => setProject('CONTACT')}
+			>CONTACT</button
+		>
+	</div>
 	<body>
-		<!--div class="info">
-			<p class="lrg">
-				<a href="https://silicon.fm">(visit) SILICON</a> ---------------- svelte.js ◯ supabase ◯ python
-				◯ gcp
-			</p>
-			<p class="xs">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nisi bibendum,
-				scelerisque orci quis, tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus
-				consequat massa lorem, eu ultrices turpis venenatis eget. Phasellus Dip. Lorem ipsum dolor
-				sit amet, consectetur adipiscing elit. Mauris at nisi bibendum, scelerisque orci quis,
-				tincidunt urna. Vestibulum pretium porttitor tristique. Phasellus consequat massa lorem, eu
-				ultrices turpis venenatis eget. Phasellus Dip.
-			</p>
-		</div-->
-		<div class="header">
-			<Header />
-		</div>
 		<div class="projects">
-			<Iota />
-			<div class="divider" />
-			<Silicon />
-			<div class="divider" />
-			<Replika />
-			<div class="divider" />
-			<Siiignal />
-			<div class="divider" />
-			<Contact />
+			{#key project}
+				{#if project == 'IOTA'}
+					<Iota />
+				{:else if project == 'SILICON'}
+					<Silicon />
+				{:else if project == 'REPLIKA'}
+					<Replika />
+				{:else if project == 'SIIIGNAL'}
+					<Siiignal />
+				{:else if project == 'CONTACT'}
+					<Contact />
+				{:else if project == 'ABOUT'}
+					<About />
+				{/if}
+			{/key}
 		</div>
 	</body>
 </main>
 
 <style>
-	button {
+	button.start {
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -67,6 +77,19 @@
 	}
 	button h1 {
 		font-family: nb-television-2d, sans-serif;
+	}
+
+	button {
+		opacity: 0.2;
+	}
+
+	button:hover {
+		opacity: 0.4;
+	}
+
+	button.active,
+	button.active:hover {
+		opacity: 1;
 	}
 
 	main {
@@ -79,6 +102,23 @@
 
 	body {
 		height: auto;
+	}
+
+	.sidebar {
+		position: absolute;
+		height: 100vh;
+		width: 100px;
+		border-right: solid 1px var(--white-50);
+		padding: 10px;
+		overflow: hidden;
+		z-index: 20;
+	}
+
+	.header {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 10;
 	}
 
 	.info {
@@ -100,18 +140,6 @@
 
 	a {
 		color: var(--error);
-	}
-
-	.sidebar {
-		height: 100vh;
-		overflow: hidden;
-	}
-
-	.header {
-		position: absolute;
-		top: 0;
-		right: 0;
-		z-index: 20;
 	}
 
 	.projects {

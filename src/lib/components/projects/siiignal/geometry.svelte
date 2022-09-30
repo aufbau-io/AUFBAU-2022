@@ -37,7 +37,7 @@
 
 		sphere_2 = new THREE.Mesh(
 			new THREE.SphereGeometry(171, 480, 240),
-			new THREE.MeshBasicMaterial({ color: 0x141414, wireframe: true })
+			new THREE.MeshBasicMaterial({ color: 0x171717, wireframe: true })
 		);
 
 		scene.add(sphere, sphere_2);
@@ -54,7 +54,7 @@
 			container.appendChild(renderer.domElement);
 		});
 
-		// document.addEventListener('mousemove', onDocumentMouseMove);
+		document.addEventListener('mousemove', onDocumentMouseMove);
 
 		//
 
@@ -86,8 +86,6 @@
 	}
 
 	function render() {
-		camera.position.z = mouseX * 2;
-
 		renderer.render(scene, camera);
 	}
 </script>

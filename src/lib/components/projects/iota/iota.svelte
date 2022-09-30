@@ -11,9 +11,6 @@
 
 <main>
 	<svelte:component this={Geometry} />
-	<div class="text">
-		<h2>[↓]</h2>
-	</div>
 </main>
 
 <style>

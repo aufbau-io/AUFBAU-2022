@@ -21,7 +21,7 @@
 		position: relative;
 		min-height: 100vh;
 		max-height: 100vh;
-		width: 100vw;
+		width: calc(100vw - 100px);
 		overflow: hidden;
 	}
 

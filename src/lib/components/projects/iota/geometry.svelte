@@ -1,8 +1,10 @@
 <script>
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import * as THREE from 'three';
 
-	let container, pc;
+	let container, pc, id;
+	onDestroy(() => cancelAnimationFrame(id));
+
 	// Setting up the scene
 	let scene = new THREE.Scene();
 
@@ -53,10 +55,11 @@
 
 	let render = function () {
 		renderer.render(scene, camera);
-		requestAnimationFrame(render);
+		id = requestAnimationFrame(render);
 
 		//Varying the points on each frame
 		step += 0.00001;
+		console.log(step);
 		let geometry = pc.geometry;
 		let a = 0.9 + Math.random() * 7;
 		let b = 3.4 + Math.random() * 8;

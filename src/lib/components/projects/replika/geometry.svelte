@@ -1,12 +1,14 @@
 <script>
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import * as THREE from 'three';
 	import { index } from '$lib/store/store.js';
 
 	$: $index, lookAtIndex($index);
 
-	let group;
+	let id;
+	onDestroy(() => cancelAnimationFrame(id));
 
+	let group;
 	let container;
 
 	let camera, scene, renderer;
@@ -14,7 +16,7 @@
 	let mouseX = 0,
 		mouseY = 0;
 
-	let width = window.innerWidth;
+	let width = window.innerWidth - 100;
 
 	let windowHalfX = width / 2;
 	let windowHalfY = window.innerHeight / 2;
@@ -27,7 +29,7 @@
 		camera.position.z = 2100;
 
 		scene = new THREE.Scene();
-		scene.background = new THREE.Color(0x121212);
+		scene.background = new THREE.Color(0x141414);
 
 		const light = new THREE.DirectionalLight(0xf0f0f0);
 		light.position.set(0, 1, 1);
@@ -49,7 +51,7 @@
 			canvas.width / 2
 		);
 		gradient.addColorStop(0.1, '#020202');
-		gradient.addColorStop(1, '#121212');
+		gradient.addColorStop(1, '#141414');
 
 		context.fillStyle = gradient;
 		context.fillRect(0, 0, canvas.width, canvas.height);
@@ -169,6 +171,7 @@
 	}
 
 	function onWindowResize() {
+		let width = window.innerWidth - 100;
 		windowHalfX = width / 2;
 		windowHalfY = window.innerHeight / 2;
 
@@ -189,7 +192,7 @@
 	}
 
 	function animate() {
-		requestAnimationFrame(animate);
+		id = requestAnimationFrame(animate);
 		render();
 	}
 
