@@ -24,7 +24,7 @@
 	let color3d = {
 		1: new THREE.Color(0xc29595),
 		2: new THREE.Color(0x60854d),
-		3: new THREE.Color(0x9a350b)
+		3: new THREE.Color(0xb6420e)
 	};
 
 	init();
@@ -39,7 +39,7 @@
 
 		const size = 10000;
 		const divisions = 100;
-		const gridColor = 0xe0e0e0;
+		const gridColor = 0x0b0b0b;
 
 		const gridHelper = new THREE.GridHelper(size, divisions, gridColor, gridColor);
 		gridHelper.position.y -= 200;
