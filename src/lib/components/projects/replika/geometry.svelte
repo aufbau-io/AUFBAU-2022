@@ -14,7 +14,7 @@
 	let mouseX = 0,
 		mouseY = 0;
 
-	let width = window.innerWidth - 490;
+	let width = window.innerWidth;
 
 	let windowHalfX = width / 2;
 	let windowHalfY = window.innerHeight / 2;

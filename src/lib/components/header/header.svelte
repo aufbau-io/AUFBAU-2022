@@ -1,9 +1,10 @@
 <script>
-	import Ticker from './ticker.svelte';
+	// import Ticker from './ticker.svelte';
 </script>
 
 <header>
-	<Ticker />
+	<!--Ticker /-->
+	<h6>AUFBAU</h6>
 </header>
 
 <style>
@@ -11,10 +12,11 @@
 		display: flex;
 		align-items: center;
 		height: 50px;
-		border-bottom: solid 1px var(--white-50);
-		user-select: none;
 
-		width: calc(100vw - 490px);
+		user-select: none;
+		padding: 32px 20px;
+
+		width: 100vw;
 		overflow: hidden;
 	}
 </style>

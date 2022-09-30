@@ -8,7 +8,16 @@
 	import Iota from '$lib/components/projects/iota/iota.svelte';
 
 	import Contact from '$lib/components/contact/contact.svelte';
+
+	let loading = true;
+	const start = async () => {
+		loading = false;
+	};
 </script>
+
+<div>
+	<button on:click={start}> NO MORE DEAD WEB</button>
+</div>
 
 <div class="divider" />
 <svelte:head>
@@ -16,9 +25,6 @@
 </svelte:head>
 
 <main>
-	<div class="sidebar">
-		<Sidebar />
-	</div>
 	<body>
 		<!--div class="info">
 			<p class="lrg">
@@ -52,6 +58,17 @@
 </main>
 
 <style>
+	button {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+	}
+	button h1 {
+		font-family: nb-television-2d, sans-serif;
+	}
+
 	main {
 		display: flex;
 		flex-flow: row wrap;
@@ -68,7 +85,7 @@
 		position: absolute;
 		bottom: 0;
 		right: 0;
-		width: calc(100vw - 490px);
+		width: 100vw;
 		height: 100px;
 		background: var(--black);
 		border-top: solid 1px var(--white-50);
@@ -91,23 +108,24 @@
 	}
 
 	.header {
-		position: fixed;
+		position: absolute;
 		top: 0;
 		right: 0;
+		z-index: 20;
 	}
 
 	.projects {
 		position: fixed;
 		right: 0;
 
-		height: calc(100vh - 50px);
-		top: 50px;
+		height: 100vh;
+		top: 0;
 
 		/*
 		top: 0;
 		height: calc(100vh);
 		*/
-		width: calc(100vw - 490px);
+		width: calc(100vw px);
 		overflow-x: hidden;
 		overflow-y: auto;
 	}

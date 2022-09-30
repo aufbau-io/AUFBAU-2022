@@ -7,17 +7,17 @@
 	let scene = new THREE.Scene();
 
 	let height = window.innerHeight;
-	let width = window.innerWidth - 490;
+	let width = window.innerWidth;
 
 	// Setting up a camera
 	let camera = new THREE.PerspectiveCamera(100, width / height, 0.1, 50);
-	camera.position.z = 30;
+	camera.position.z = 20;
 
 	// Setting up the renderer. This will be called later to render scene with the camera setup above
 	let renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(width, height);
-	renderer.setClearColor(0x141414, 1);
+	renderer.setClearColor(0x171717, 1);
 	onMount(() => {
 		container.appendChild(renderer.domElement);
 	});
@@ -58,9 +58,9 @@
 		//Varying the points on each frame
 		step += 0.00001;
 		let geometry = pc.geometry;
-		let a = 0.9 + Math.random() * 2;
-		let b = 3.4 + Math.random() * 3;
-		let f = 9.9 + Math.random() * 4;
+		let a = 0.9 + Math.random() * 7;
+		let b = 3.4 + Math.random() * 8;
+		let f = 9.9 + Math.random() * 9;
 		let g = 1 + Math.random();
 		let t = 0.0001;
 
@@ -90,7 +90,7 @@
 		'resize',
 		function () {
 			let height = window.innerHeight;
-			let width = window.innerWidth - 490;
+			let width = window.innerWidth;
 			camera.aspect = width / height;
 			camera.updateProjectionMatrix();
 			renderer.setSize(width, height);

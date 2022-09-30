@@ -40,7 +40,7 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-30%);
-		width: calc(100vw - 490px);
+		width: 100vw;
 		padding: 0 4rem;
 		display: flex;
 		justify-content: space-between;

@@ -12,7 +12,7 @@
 <style>
 	main {
 		position: relative;
-		min-height: calc(100vh - 50px);
+		min-height: 100vh;
 	}
 
 	.text {
@@ -20,21 +20,19 @@
 		left: 5%;
 		user-select: none;
 		color: var(--white);
-		padding: 80px;
+		padding: 80px 20px;
 	}
 
 	.text h2 {
 		padding: 20px;
-		background: #d0d0d0;
+		color: var(--white);
+		height: calc(100vh - 140px);
 		font-size: 150px;
-		line-height: 150px;
+		line-height: calc((100vh - 140px) / 4);
 		user-select: none;
 		font-family: nb-television, sans-serif;
 		overflow-wrap: break-word;
-		line-height: 105%;
 		opacity: 0.9;
-		color: var(--black);
-		text-shadow: 4px 2px var(--white);
 		text-align: right;
 	}
 </style>

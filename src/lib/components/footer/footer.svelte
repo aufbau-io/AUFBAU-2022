@@ -16,8 +16,8 @@
 	footer {
 		position: absolute;
 		bottom: 0;
-		width: calc(100% - 160px);
-		margin: 0 80px;
+		width: calc(100% - 40px);
+		margin: 0 20px;
 	}
 
 	main {

@@ -25,11 +25,11 @@
 
 	.text {
 		position: sticky;
-		bottom: 9%;
+		bottom: 8%;
 		transform: translateY(-50%);
 		height: 0;
 		float: right;
-		right: 2%;
+		right: 1%;
 		display: flex;
 		justify-content: space-between;
 		user-select: none;
@@ -41,7 +41,7 @@
 		opacity: 0;
 		user-select: none;
 		font-family: nb-television-2d, sans-serif;
-		animation: fadeIn ease-out 1s 3s;
+		animation: fadeIn ease-out 0s 1s;
 		animation-fill-mode: forwards;
 	}
 
