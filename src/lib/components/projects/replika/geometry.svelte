@@ -39,7 +39,7 @@
 
 		const size = 10000;
 		const divisions = 100;
-		const gridColor = 0xf0f0f0;
+		const gridColor = 0xe0e0e0;
 
 		const gridHelper = new THREE.GridHelper(size, divisions, gridColor, gridColor);
 		gridHelper.position.y -= 200;
@@ -65,7 +65,7 @@
 			canvas.width / 2
 		);
 		gradient.addColorStop(0.1, '#000000');
-		gradient.addColorStop(1, '#141414');
+		gradient.addColorStop(1, '#121212');
 
 		context.fillStyle = gradient;
 		context.fillRect(0, 0, canvas.width, canvas.height);
@@ -110,7 +110,7 @@
 		// let material = new THREE.MeshBasicMaterial({ map: texture });
 
 		const wireframeMaterial = new THREE.MeshBasicMaterial({
-			color: 0x141414,
+			color: 0x121212,
 			wireframe: true,
 			transparent: true
 		});

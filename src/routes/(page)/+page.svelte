@@ -147,7 +147,6 @@
 		position: fixed;
 		right: 0;
 
-		height: 100vh;
 		top: 0;
 
 		/*
