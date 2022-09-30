@@ -16,15 +16,15 @@
 	let mouseX = 0,
 		mouseY = 0;
 
-	let width = window.innerWidth - 100;
+	let width = window.innerWidth;
 
 	let windowHalfX = width / 2;
 	let windowHalfY = window.innerHeight / 2;
 
 	let color3d = {
-		1: new THREE.Color(0x141414),
-		2: new THREE.Color(0x141414),
-		3: new THREE.Color(0x141414)
+		1: new THREE.Color(0xc29595),
+		2: new THREE.Color(0x60854d),
+		3: new THREE.Color(0x9a350b)
 	};
 
 	init();
@@ -64,8 +64,8 @@
 			canvas.height / 2,
 			canvas.width / 2
 		);
-		gradient.addColorStop(0.1, '#000000');
-		gradient.addColorStop(1, '#121212');
+		gradient.addColorStop(0.1, '#e0e0e0');
+		gradient.addColorStop(1, '#e0e0e0');
 
 		context.fillStyle = gradient;
 		context.fillRect(0, 0, canvas.width, canvas.height);
@@ -168,7 +168,7 @@
 			shadowMesh.position.y = -210;
 			shadowMesh.position.z = z;
 			shadowMesh.rotation.x = -Math.PI / 2;
-			scene.add(shadowMesh);
+			// scene.add(shadowMesh);
 		}
 
 		renderer = new THREE.WebGLRenderer({ antialias: false });
@@ -187,7 +187,7 @@
 	}
 
 	function onWindowResize() {
-		let width = window.innerWidth - 100;
+		let width = window.innerWidth;
 		windowHalfX = width / 2;
 		windowHalfY = window.innerHeight / 2;
 
