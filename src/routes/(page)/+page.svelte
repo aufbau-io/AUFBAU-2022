@@ -28,7 +28,7 @@
 
 <main>
 	<div class="sidebar">
-		<button class="active" on:click={() => setProject(null)}>AUFBAU</button>
+		AUFBAU<br />
 		.//<br /><br />
 		<button class:active={project === 'IOTA'} on:click={() => setProject('IOTA')}>IOTA</button>
 		<button class:active={project === 'SILICON'} on:click={() => setProject('SILICON')}
@@ -105,6 +105,7 @@
 	}
 
 	.sidebar {
+		user-select: none;
 		position: absolute;
 		height: 100vh;
 		width: 100px;

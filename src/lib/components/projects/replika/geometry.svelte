@@ -22,16 +22,16 @@
 	let windowHalfY = window.innerHeight / 2;
 
 	let color3d = {
-		1: new THREE.Color(0xffc0cb),
-		2: new THREE.Color(0x0ea550),
-		3: new THREE.Color(0xe03a00)
+		1: new THREE.Color(0xf1abb9),
+		2: new THREE.Color(0x009a44),
+		3: new THREE.Color(0xdd3224)
 	};
 
 	init();
 	animate();
 
 	function init() {
-		camera = new THREE.PerspectiveCamera(14, width / window.innerHeight, 1, 10000);
+		camera = new THREE.PerspectiveCamera(15, width / window.innerHeight, 1, 10000);
 		camera.position.z = 2400;
 
 		scene = new THREE.Scene();

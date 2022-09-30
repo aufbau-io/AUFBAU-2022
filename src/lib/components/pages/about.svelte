@@ -9,6 +9,8 @@
 	main {
 		position: relative;
 		overflow: hidden;
+		width: calc(100vw - 100px);
+		height: 100vh;
 	}
 
 	.text {
