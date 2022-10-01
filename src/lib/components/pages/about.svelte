@@ -11,11 +11,11 @@
 	<h6 class="text">
 		A Future-Focussed Web Studio Based in London. Aufbau is the outlet of Dan Humphries <a
 			href="https://dan.aufbau.io">[&nbsp;dan.aufbau.io&nbsp;]</a
-		> + a network of creative freelancers from around the world. Dan has 5+ years experience working
-		across a range of tech stacks, from data and machine learning engineering, to graphic design and
-		3d development. He has a preference for lightwight and performant code, and uses a combination of
-		svelte.js, three.js, and supabase in most projects. A child of the early internet, dan believes websites
-		should be playful and fun. if you're down to make magic, get in touch.
+		> and a network of trusted creative freelancers. Dan has 5+ years experience working across a range
+		of tech stacks, from data and machine learning engineering, to graphic design and 3d development.
+		He has a preference for lightwight and performant code, and uses a combination of svelte.js, three.js,
+		and supabase in most projects. A child of the early internet, dan believes websites should be playful
+		and fun. if you're down to make magic, get in touch.
 	</h6>
 	<!--span class="muted">
 		<h2>THAT AUFBAU</h2>
@@ -68,8 +68,7 @@
 		overflow: hidden;
 		height: 100vh;
 		width: calc(100vw - 100px);
-		margin-left: 100px;
-		padding: 20px 20px 40px 20px;
+		padding: 20px 20px 20px 20px;
 		overflow: auto;
 		background: var(--accent);
 		color: var(--black);

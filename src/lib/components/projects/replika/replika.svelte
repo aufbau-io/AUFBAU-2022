@@ -27,9 +27,32 @@
 		<h2>OBJ_0{$index}</h2>
 		<h1 on:click={turnRight}>→</h1>
 	</div>
+	<div class="arrows--mobile">
+		<h1 on:click={turnLeft}>←</h1>
+		<h1 on:click={turnRight}>→</h1>
+	</div>
 </main>
 
+<div id=""><p class="sml" /></div>
+
 <style>
+	@media only screen and (max-width: 768px) {
+		.arrows {
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		.arrows--mobile {
+			position: absolute;
+			top: 25px;
+			right: 10%;
+			height: calc(100vh - 40px);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+
 	main {
 		position: relative;
 		min-height: 100vh;
@@ -45,6 +68,11 @@
 		display: flex;
 		justify-content: space-between;
 		user-select: none;
+	}
+
+	.arrows--mobile {
+		opacity: 0;
+		pointer-events: none;
 	}
 
 	.arrows h1 {

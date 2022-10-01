@@ -78,4 +78,13 @@
 		font-size: 12.05px;
 		background: var(--black);
 	}
+
+	@media only screen and (max-width: 768px) {
+		section {
+			left: -50%;
+			top: 0;
+			transform: scaleY(1);
+			color: var(--white-50);
+		}
+	}
 </style>
