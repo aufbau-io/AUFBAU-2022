@@ -177,16 +177,6 @@
 	}
 
 	.projects {
-		position: fixed;
-		right: 0;
-
-		top: 0;
-
-		/*
-		top: 0;
-		height: calc(100vh);
-		*/
-		width: calc(100vw -100px);
 		overflow: hidden;
 	}
 

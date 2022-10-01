@@ -70,6 +70,7 @@
 		position: relative;
 		overflow: hidden;
 		width: calc(100vw - 100px);
+		margin-left: 100px;
 		padding: 20px 20px 20px 20px;
 		overflow: auto;
 		background: var(--accent);
