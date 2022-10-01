@@ -5,19 +5,23 @@
 :root {
 	--ticker-duration: 5000s;
 	--black: #141414;
-	--white: #f4f4f4;
+	--white: #e0e0e0;
 	--white-10: #f0f0f01a;
 	--white-20: #f0f0f033;
 	--white-30: #f0f0f04d;
 	--white-50: #f0f0f080;
-	--accent: #ffb81c;
+	--accent: #08f560;
 	--error: #0827f5;
 }
 
 @font-face {
 	font-family: untitled-sans;
-	src: url(/fonts/untitles/test-untitled-sans-light.woff2) format('woff2');
-	font-weight: 400;
+	src: url(/fonts/untitled/test-untitled-sans-light.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: untitled-serif;
+	src: url(/fonts/untitled/test-untitled-serif-regular.woff2) format('woff2');
 }
 
 @font-face {
@@ -162,7 +166,7 @@ h5 {
 
 h6 {
 	font-size: 24px;
-	line-height: 10%;
+	line-height: 130%;
 	font-weight: 300;
 }
 
