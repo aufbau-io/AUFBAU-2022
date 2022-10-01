@@ -21,17 +21,17 @@
 	let windowHalfX = width / 2;
 	let windowHalfY = window.innerHeight / 2;
 
-	// let color3d = {
-	// 	1: new THREE.Color(0xc29595),
-	// 	2: new THREE.Color(0x60854d),
-	// 	3: new THREE.Color(0xb6420e)
-	// };
-
 	let color3d = {
-		1: new THREE.Color(0x141414),
-		2: new THREE.Color(0x141414),
-		3: new THREE.Color(0x141414)
+		1: new THREE.Color(0xc29595),
+		2: new THREE.Color(0x60854d),
+		3: new THREE.Color(0xb63b0d)
 	};
+
+	// let color3d = {
+	// 	1: new THREE.Color(0x141414),
+	// 	2: new THREE.Color(0x141414),
+	// 	3: new THREE.Color(0x141414)
+	// };
 
 	init();
 	animate();
@@ -174,7 +174,7 @@
 			shadowMesh.position.y = -210;
 			shadowMesh.position.z = z;
 			shadowMesh.rotation.x = -Math.PI / 2;
-			scene.add(shadowMesh);
+			// scene.add(shadowMesh);
 		}
 
 		renderer = new THREE.WebGLRenderer({ antialias: false });

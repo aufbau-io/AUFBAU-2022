@@ -90,6 +90,13 @@
 		z-index: 100;
 		opacity: 1;
 		background: var(--black);
+		color: var(--accent);
+	}
+
+	button.start:hover {
+		background: var(--accent);
+		color: var(--black);
+		opacity: 1;
 	}
 
 	button.start.black,
@@ -166,10 +173,6 @@
 
 	.info h6 {
 		padding-bottom: 8px;
-	}
-
-	a {
-		color: var(--accent);
 	}
 
 	.projects {
