@@ -54,7 +54,7 @@
 
 		// grid
 
-		const gridHelper = new THREE.GridHelper(2000, 40, 0x404040, 0x404040);
+		const gridHelper = new THREE.GridHelper(2000, 40, 0x2b2b2b, 0x2b2b2b);
 		scene.add(gridHelper);
 
 		//
