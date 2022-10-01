@@ -63,7 +63,7 @@
 
 	.arrows {
 		position: absolute;
-		top: 67%;
+		top: 48.5%;
 		transform: translateY(-30%);
 		width: 100%;
 		padding: 0 4rem;

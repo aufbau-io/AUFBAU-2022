@@ -7,11 +7,11 @@
 	import Siiignal from '$lib/components/projects/siiignal/siiignal.svelte';
 	import Iota from '$lib/components/projects/iota/iota.svelte';
 
-	import Contact from '$lib/components/pages/contact.svelte';
+	import Home from '$lib/components/projects/blocks/blocks.svelte';
 	import About from '$lib/components/pages/about.svelte';
 
 	let loading = false;
-	let project = 'IOTA';
+	let project = 'HOME';
 
 	let start = async () => {
 		loading = false;
@@ -29,11 +29,14 @@
 <main>
 	<div class="sidebar">
 		AUFBAU<br />
-		.//<br /><br />
+		<button class:active={project === 'HOME'} on:click={() => setProject('HOME')}>.//</button>
+		<br /><br />
 		<button class:active={project === 'IOTA'} on:click={() => setProject('IOTA')}>IOTA</button>
-		<button class:active={project === 'SILICON'} on:click={() => setProject('SILICON')}
-			>SILICON</button
+		<button class:active={project === 'HEDRON'} on:click={() => setProject('HEDRON')}>HEDRON</button
 		>
+		<!--button class:active={project === 'SILICON'} on:click={() => setProject('SILICON')}
+			>SILICON</button
+		-->
 		<!--button class:active={project === 'SIIIGNAL'} on:click={() => setProject('SIIIGNAL')}
 			>SIIIGNAL</button
 		-->
@@ -49,7 +52,9 @@
 	<body>
 		<div class="projects">
 			{#key project}
-				{#if project == 'IOTA'}
+				{#if project == 'HOME'}
+					<Home />
+				{:else if project == 'IOTA'}
 					<Iota />
 				{:else if project == 'SILICON'}
 					<Silicon />
@@ -57,8 +62,6 @@
 					<Replika />
 				{:else if project == 'SIIIGNAL'}
 					<Siiignal />
-				{:else if project == 'CONTACT'}
-					<Contact />
 				{:else if project == 'ABOUT'}
 					<About />
 				{/if}
@@ -66,10 +69,14 @@
 		</div>
 	</body>
 </main>
-{#if project == 'IOTA'}
+{#if project == 'HOME'}
+	<button class="start black">MAKE WEB FUN AGAIN</button>
+{:else if project == 'IOTA'}
 	<button class="start"><a href="https://iota.health">visit IOTA</a></button>
+{:else if project == 'HEDRON'}
+	<button class="start"><a href="https://silicon.fm">visit HEDRON</a></button>
 {:else if project == 'SILICON'}
-	<button class="start"><a href="https://silicon.fm">visit SILICON</a></button>
+	<button class="start">WIP</button>
 {:else if project == 'REPLIKA'}
 	<button class="start"><a href="https://replika.netlify.app">visit REPLIKA</a></button>
 {/if}
@@ -82,6 +89,16 @@
 		transform: translate(-50%, -50%);
 		z-index: 100;
 		opacity: 1;
+		background: var(--black);
+	}
+
+	button.start.black,
+	button.start.black:hover {
+		color: var(--black);
+		user-select: none;
+		opacity: 1;
+		cursor: default;
+		background: var(--accent);
 	}
 
 	button h1 {
@@ -90,6 +107,8 @@
 
 	button {
 		opacity: 0.3;
+		padding: 0 6px;
+		border-radius: 4px;
 	}
 
 	button:hover {
@@ -122,6 +141,7 @@
 		padding: 10px;
 		overflow: hidden;
 		z-index: 20;
+		color: var(--accent);
 	}
 
 	.header {
@@ -149,7 +169,7 @@
 	}
 
 	a {
-		color: var(--white);
+		color: var(--accent);
 	}
 
 	.projects {
