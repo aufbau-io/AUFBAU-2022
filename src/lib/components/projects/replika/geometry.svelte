@@ -21,10 +21,16 @@
 	let windowHalfX = width / 2;
 	let windowHalfY = window.innerHeight / 2;
 
+	// let color3d = {
+	// 	1: new THREE.Color(0xc29595),
+	// 	2: new THREE.Color(0x60854d),
+	// 	3: new THREE.Color(0xb6420e)
+	// };
+
 	let color3d = {
-		1: new THREE.Color(0xc29595),
-		2: new THREE.Color(0x60854d),
-		3: new THREE.Color(0xb6420e)
+		1: new THREE.Color(0x141414),
+		2: new THREE.Color(0x141414),
+		3: new THREE.Color(0x141414)
 	};
 
 	init();
@@ -39,7 +45,7 @@
 
 		const size = 10000;
 		const divisions = 100;
-		const gridColor = 0x0b0b0b;
+		const gridColor = 0xe4e4e4;
 
 		const gridHelper = new THREE.GridHelper(size, divisions, gridColor, gridColor);
 		gridHelper.position.y -= 200;
@@ -64,8 +70,8 @@
 			canvas.height / 2,
 			canvas.width / 2
 		);
-		gradient.addColorStop(0.1, '#e0e0e0');
-		gradient.addColorStop(1, '#e0e0e0');
+		gradient.addColorStop(0.1, '#000000');
+		gradient.addColorStop(1, '#141414');
 
 		context.fillStyle = gradient;
 		context.fillRect(0, 0, canvas.width, canvas.height);
@@ -168,7 +174,7 @@
 			shadowMesh.position.y = -210;
 			shadowMesh.position.z = z;
 			shadowMesh.rotation.x = -Math.PI / 2;
-			// scene.add(shadowMesh);
+			scene.add(shadowMesh);
 		}
 
 		renderer = new THREE.WebGLRenderer({ antialias: false });
