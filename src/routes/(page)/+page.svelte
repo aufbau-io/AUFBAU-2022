@@ -92,6 +92,7 @@
 		opacity: 1;
 		background: var(--black);
 		color: var(--accent);
+		max-width: 50vw;
 	}
 
 	button.start:hover {
