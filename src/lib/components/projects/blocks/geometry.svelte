@@ -15,7 +15,7 @@
 	let rollOverMesh, rollOverMaterial;
 	let cubeGeo, cubeMaterial;
 
-	let width = window.innerWidth - 100;
+	let width = window.innerWidth;
 	let height = window.innerHeight;
 
 	let aspect = width / height;
@@ -33,13 +33,13 @@
 		camera.zoom = 5;
 
 		scene = new THREE.Scene();
-		scene.background = new THREE.Color(0xfeb74c);
+		scene.background = new THREE.Color(0x171717);
 
 		// roll-over helpers
 
 		const rollOverGeo = new THREE.BoxGeometry(50, 50, 50);
 		rollOverMaterial = new THREE.MeshBasicMaterial({
-			color: 0xfea319,
+			color: 0xfeb74c,
 			opacity: 0.5,
 			transparent: true
 		});
@@ -50,11 +50,11 @@
 		// cubes
 
 		cubeGeo = new THREE.BoxGeometry(50, 50, 50);
-		cubeMaterial = new THREE.MeshLambertMaterial({ color: 0xfea319 });
+		cubeMaterial = new THREE.MeshLambertMaterial({ color: 0xfeb74c });
 
 		// grid
 
-		const gridHelper = new THREE.GridHelper(2000, 40, 0x2b2b2b, 0x2b2b2b);
+		const gridHelper = new THREE.GridHelper(2000, 40, 0x404040, 0x404040);
 		scene.add(gridHelper);
 
 		//
@@ -126,7 +126,7 @@
 		// 	render();
 		// }
 
-		let width = window.innerWidth - 100;
+		let width = window.innerWidth;
 		let height = window.innerHeight;
 		renderer.setPixelRatio(window.devicePixelRatio);
 		renderer.setSize(width, height);
@@ -143,7 +143,7 @@
 	}
 
 	function onPointerMove(event) {
-		pointer.set(((event.clientX - 100) / width) * 2 - 1, -(event.clientY / height) * 2 + 1);
+		pointer.set(((event.clientX - 0) / width) * 2 - 1, -(event.clientY / height) * 2 + 1);
 
 		raycaster.setFromCamera(pointer, camera);
 
@@ -160,7 +160,7 @@
 	}
 
 	function onPointerDown(event) {
-		pointer.set(((event.clientX - 100) / width) * 2 - 1, -(event.clientY / height) * 2 + 1);
+		pointer.set(((event.clientX - 0) / width) * 2 - 1, -(event.clientY / height) * 2 + 1);
 
 		raycaster.setFromCamera(pointer, camera);
 

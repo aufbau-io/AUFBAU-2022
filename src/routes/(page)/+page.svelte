@@ -101,11 +101,11 @@
 
 	button.start.black,
 	button.start.black:hover {
-		color: var(--black);
+		color: var(--accent);
 		user-select: none;
 		opacity: 1;
 		cursor: default;
-		background: none;
+		background: #171717;
 	}
 
 	button h1 {
@@ -144,7 +144,7 @@
 		position: absolute;
 		height: 100vh;
 		width: 100px;
-		border-right: solid 1px var(--white-50);
+		border-right: solid 1px var(--accent);
 		padding: 10px;
 		overflow: hidden;
 		z-index: 20;

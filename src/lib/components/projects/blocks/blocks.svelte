@@ -17,7 +17,7 @@
 	main {
 		position: relative;
 		height: 100vh;
-		width: calc(100vw - 100px);
+		width: calc(100vw);
 		background: var(--accent);
 	}
 </style>

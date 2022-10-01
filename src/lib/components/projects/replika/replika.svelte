@@ -2,6 +2,8 @@
 	import { onMount } from 'svelte';
 	import { index, absoluteIndex } from '$lib/store/store.js';
 
+	absoluteIndex.update((val) => 1);
+
 	function turnLeft() {
 		console.log('left');
 		absoluteIndex.update((val) => val - 1);

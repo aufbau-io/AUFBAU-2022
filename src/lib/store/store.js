@@ -1,7 +1,7 @@
 import { writable, derived } from 'svelte/store';
 
 export const animations = writable(true);
-export const absoluteIndex = writable(0);
+export const absoluteIndex = writable(1);
 
 // javascript modulo doesn't work on negative numbers
 function mod(n, m) {
