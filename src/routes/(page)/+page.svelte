@@ -26,6 +26,18 @@
 	<title>AUFBAU WEB STUDIO</title>
 </svelte:head>
 
+{#if project == 'HOME'}
+	<button class="start black">MAKE WEB FUN AGAIN</button>
+{:else if project == 'IOTA'}
+	<button class="start"><a href="https://iota.health">visit IOTA</a></button>
+{:else if project == 'HEDRON'}
+	<button class="start"><a href="https://silicon.fm">visit HEDRON</a></button>
+{:else if project == 'SILICON'}
+	<button class="start">WIP</button>
+{:else if project == 'REPLIKA'}
+	<button class="start"><a href="https://replika.netlify.app">visit REPLIKA</a></button>
+{/if}
+
 <main>
 	<div class="sidebar">
 		AUFBAU<br />
@@ -69,17 +81,6 @@
 		</div>
 	</body>
 </main>
-{#if project == 'HOME'}
-	<button class="start black">MAKE WEB FUN AGAIN</button>
-{:else if project == 'IOTA'}
-	<button class="start"><a href="https://iota.health">visit IOTA</a></button>
-{:else if project == 'HEDRON'}
-	<button class="start"><a href="https://silicon.fm">visit HEDRON</a></button>
-{:else if project == 'SILICON'}
-	<button class="start">WIP</button>
-{:else if project == 'REPLIKA'}
-	<button class="start"><a href="https://replika.netlify.app">visit REPLIKA</a></button>
-{/if}
 
 <style>
 	button.start {
@@ -87,7 +88,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		z-index: 100;
+		z-index: 20;
 		opacity: 1;
 		background: var(--black);
 		color: var(--accent);
@@ -147,7 +148,7 @@
 		border-right: solid 1px var(--accent);
 		padding: 10px;
 		overflow: hidden;
-		z-index: 20;
+		z-index: 100;
 		color: var(--accent);
 		background: none;
 	}
