@@ -185,9 +185,8 @@
 		top: 0;
 		height: calc(100vh);
 		*/
-		width: calc(100vw px);
-		overflow-x: hidden;
-		overflow-y: auto;
+		width: calc(100vw -100px);
+		overflow: hidden;
 	}
 
 	.divider {

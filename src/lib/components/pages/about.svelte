@@ -2,21 +2,24 @@
 </script>
 
 <main>
-	<h2>CONTACT</h2>
-	<h6 class="text">
-		<a href="mailto: dan@aufbau.io">DAN@AUFBAU.IO</a>
-	</h6>
-	<br /><br />
-	<h2>AUFBAU</h2>
-	<h6 class="text">
-		A Future-Focussed Web Studio Based in London. Aufbau is the outlet of Dan Humphries <a
-			href="https://dan.aufbau.io">[&nbsp;dan.aufbau.io&nbsp;]</a
-		> and a network of trusted creative freelancers. Dan has 5+ years experience working across a range
-		of tech stacks, from data and machine learning engineering, to graphic design and 3d development.
-		He has a preference for lightwight and performant code, and uses a combination of svelte.js, three.js,
-		and supabase in most projects. A child of the early internet, dan believes websites should be playful
-		and fun. if you're down to make magic, get in touch.
-	</h6>
+	<div class="top">
+		<h2>CONTACT</h2>
+		<h6 class="text">
+			<a href="mailto: dan@aufbau.io">DAN@AUFBAU.IO</a>
+		</h6>
+	</div>
+	<div class="bottom">
+		<h2>AUFBAU</h2>
+		<h6 class="text">
+			Aufbau is the outlet of Dan Humphries <a href="https://dan.aufbau.io"
+				>[&nbsp;dan.aufbau.io&nbsp;]</a
+			>. Dan has 5+ years experience working across a range of tech stacks, from data and machine
+			learning engineering, to graphic design and 3d development. He has a preference for lightwight
+			and performant code, and uses a combination of svelte.js, three.js, and supabase in most
+			projects. A child of the early internet, dan believes websites should be playful and fun. if
+			you're down to make magic, get in touch.
+		</h6>
+	</div>
 	<!--span class="muted">
 		<h2>THAT AUFBAU</h2>
 		<h6 class="text">
@@ -66,7 +69,6 @@
 	main {
 		position: relative;
 		overflow: hidden;
-		height: 100vh;
 		width: calc(100vw - 100px);
 		padding: 20px 20px 20px 20px;
 		overflow: auto;
@@ -74,9 +76,20 @@
 		color: var(--black);
 	}
 
+	.top {
+		height: 160px;
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+		border-bottom: solid 2px var(--black);
+	}
+
+	.bottom {
+		height: auto;
+		overflow: auto;
+		height: calc(100vh - 220px);
+	}
+
 	.text {
-		top: 100px;
-		left: 5%;
 		user-select: none;
 		text-align: justify;
 		font-family: untitled-sans, sans-serif;
