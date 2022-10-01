@@ -27,10 +27,10 @@
 		<h2>OBJ_0{$index}</h2>
 		<h1 on:click={turnRight}>→</h1>
 	</div>
-	<div class="arrows--mobile">
+	<!--div class="arrows--mobile">
 		<h1 on:click={turnLeft}>←</h1>
 		<h1 on:click={turnRight}>→</h1>
-	</div>
+	</div-->
 </main>
 
 <div id=""><p class="sml" /></div>
