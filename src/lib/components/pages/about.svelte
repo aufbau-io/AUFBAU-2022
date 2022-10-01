@@ -71,7 +71,7 @@
 		overflow: hidden;
 		width: calc(100vw - 100px);
 		margin-left: 100px;
-		padding: 20px 20px 20px 20px;
+		padding: 20px 20px 0px 20px;
 		overflow: auto;
 		background: var(--accent);
 		color: var(--black);
@@ -87,7 +87,8 @@
 	.bottom {
 		height: auto;
 		overflow: auto;
-		height: calc(100vh - 220px);
+		height: calc(100vh - 200px);
+		padding-bottom: 10px;
 	}
 
 	.text {
