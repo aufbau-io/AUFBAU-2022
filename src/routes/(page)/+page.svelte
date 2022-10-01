@@ -149,6 +149,7 @@
 		overflow: hidden;
 		z-index: 20;
 		color: var(--accent);
+		background: none;
 	}
 
 	.header {
