@@ -107,7 +107,6 @@
 		justify-content: space-between;
 		background: #121212aa;
 		overflow: hidden;
-		max-height: 100vh;
 	}
 
 	body {

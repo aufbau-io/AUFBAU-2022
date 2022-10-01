@@ -236,6 +236,5 @@
 		overflow: hidden;
 		z-index: -10;
 		opacity: 0.8;
-		transform: rotate(180deg);
 	}
 </style>
