@@ -98,7 +98,7 @@
 		user-select: none;
 		opacity: 1;
 		cursor: default;
-		background: var(--accent);
+		background: none;
 	}
 
 	button h1 {
