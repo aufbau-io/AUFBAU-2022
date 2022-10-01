@@ -50,6 +50,8 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			opacity: 1;
+			pointer-events: all;
 		}
 	}
 
