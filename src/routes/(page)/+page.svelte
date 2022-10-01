@@ -41,10 +41,10 @@
 			>REPLIKA</button
 		>
 		<br /><br />
-		<button class:active={project === 'ABOUT'} on:click={() => setProject('ABOUT')}>ABOUT</button>
-		<button class:active={project === 'CONTACT'} on:click={() => setProject('CONTACT')}
+		<button class:active={project === 'ABOUT'} on:click={() => setProject('ABOUT')}>SAY HI</button>
+		<!--button class:active={project === 'CONTACT'} on:click={() => setProject('CONTACT')}
 			>CONTACT</button
-		>
+		-->
 	</div>
 	<body>
 		<div class="projects">

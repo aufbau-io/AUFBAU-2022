@@ -2,17 +2,20 @@
 </script>
 
 <main>
+	<h2>CONTACT</h2>
+	<h6 class="text">
+		<a href="mailto: dan@aufbau.io">DAN@AUFBAU.IO</a>
+	</h6>
+	<br /><br />
 	<h2>AUFBAU</h2>
 	<h6 class="text">
 		Future-Focussed Web Studio Based in London. Aufbau is the creative outlet of Dan Humphries <a
 			href="https://dan.aufbau.io">[&nbsp;dan.aufbau.io&nbsp;]</a
-		>. Dan has 5+ years experience working across a range of tech and creative stacks, from data and
-		machine learning engineering, to graphic design and 3d development. He has a preference for
-		lightwight and performant code, and uses a combination of svelte.js, three.js, and supabase in
-		most projects. A child of the early internet, dan believes websites should be creative and fun,
-		not bland cut and paste jobs. He maintains independent research interests in neuroscience and
-		philosophy, in particular the notion of abstract and conceptual spaces, from which the name
-		aufbau is inhereted.
+		> and a network of creative freelancers from around the world. Dan has 5+ years experience working
+		across a range of tech stacks, from data and machine learning engineering, to graphic design and
+		3d development. He has a preference for lightwight and performant code, and uses a combination of
+		svelte.js, three.js, and supabase in most projects. A child of the early internet, dan believes websites
+		should be playful and fun. Don't be shy, Get in touch, let's make web fun again. x
 	</h6>
 	<!--span class="muted">
 		<h2>THAT AUFBAU</h2>
@@ -63,10 +66,10 @@
 	main {
 		position: relative;
 		overflow: hidden;
-		height: 100vmin;
+		height: 100vmax;
 		width: calc(100vw - 100px);
 		margin-left: 100px;
-		padding: 20px 20px 20px 20px;
+		padding: 20px 20px 40px 20px;
 		overflow: auto;
 		background: var(--black);
 		color: var(--error);
@@ -92,6 +95,12 @@
 	@media only screen and (max-width: 1000px) {
 		h6 {
 			font-size: 40px;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		h6 {
+			font-size: 24px;
 		}
 	}
 </style>
