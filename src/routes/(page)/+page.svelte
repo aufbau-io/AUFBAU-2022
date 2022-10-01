@@ -66,6 +66,11 @@
 		</div>
 	</body>
 </main>
+{#if project == 'ABOUT'}
+	<!--button class="start black"><a href="mailto: dan@aufbau.io">email dan@aufbau.io</a></button-->
+{:else}
+	<button class="start">visit {project}</button>
+{/if}
 
 <style>
 	button.start {
@@ -73,8 +78,10 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		z-index: 10;
+		z-index: 100;
+		opacity: 1;
 	}
+
 	button h1 {
 		font-family: nb-television-2d, sans-serif;
 	}
@@ -140,7 +147,7 @@
 	}
 
 	a {
-		color: var(--error);
+		color: var(--white);
 	}
 
 	.projects {

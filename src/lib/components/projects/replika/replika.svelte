@@ -38,7 +38,7 @@
 
 	.arrows {
 		position: absolute;
-		top: 50%;
+		top: 70%;
 		transform: translateY(-30%);
 		width: 100%;
 		padding: 0 4rem;
@@ -64,5 +64,14 @@
 		user-select: none;
 		font-family: nb-television-2d, sans-serif;
 		padding: 2rem;
+	}
+
+	@media only screen and (max-width: 1000px) {
+		.arrows h1 {
+			font-size: 200px;
+		}
+		.arrows h2 {
+			font-size: 150px;
+		}
 	}
 </style>
