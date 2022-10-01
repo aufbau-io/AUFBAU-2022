@@ -45,7 +45,7 @@
 
 		const size = 10000;
 		const divisions = 100;
-		const gridColor = 0xe4e4e4;
+		const gridColor = 0xf0f0f0;
 
 		const gridHelper = new THREE.GridHelper(size, divisions, gridColor, gridColor);
 		gridHelper.position.y -= 200;

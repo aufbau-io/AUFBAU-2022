@@ -59,19 +59,20 @@
 
 	main {
 		position: relative;
-		min-height: 100vh;
-		max-height: 100vh;
+		height: 100vh;
 	}
 
 	.arrows {
 		position: absolute;
 		top: 48.5%;
+		left: 100px;
 		transform: translateY(-30%);
-		width: 100%;
+		width: calc(100vw - 100px);
 		padding: 0 4rem;
 		display: flex;
 		justify-content: space-between;
 		user-select: none;
+		color: var(--white);
 	}
 
 	.arrows--mobile {
