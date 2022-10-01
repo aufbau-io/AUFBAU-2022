@@ -66,10 +66,12 @@
 		</div>
 	</body>
 </main>
-{#if project == 'ABOUT'}
-	<!--button class="start black"><a href="mailto: dan@aufbau.io">email dan@aufbau.io</a></button-->
-{:else}
-	<button class="start">visit {project}</button>
+{#if project == 'IOTA'}
+	<button class="start"><a href="https://iota.health">visit IOTA</a></button>
+{:else if project == 'SILICON'}
+	<button class="start"><a href="https://silicon.fm">visit SILICON</a></button>
+{:else if project == 'REPLIKA'}
+	<button class="start"><a href="https://replika.netlify.app">visit REPLIKA</a></button>
 {/if}
 
 <style>
