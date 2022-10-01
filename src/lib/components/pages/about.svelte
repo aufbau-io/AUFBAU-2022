@@ -17,7 +17,7 @@
 			learning engineering, to graphic design and 3d development. He has a preference for lightwight
 			and performant code, and uses a combination of svelte.js, three.js, and supabase in most
 			projects. A child of the early internet, dan believes websites should be playful and fun. if
-			you're down to make magic, get in touch.
+			you're down to make web fun again, get in touch.
 		</h6>
 	</div>
 	<!--span class="muted">
