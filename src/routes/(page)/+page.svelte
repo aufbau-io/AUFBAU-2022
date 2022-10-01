@@ -186,4 +186,10 @@
 		width: 100%;
 		background: var(--white-50);
 	}
+
+	@media only screen and (max-width: 768px) {
+		.sidebar {
+			border-color: var(--accent-30);
+		}
+	}
 </style>
