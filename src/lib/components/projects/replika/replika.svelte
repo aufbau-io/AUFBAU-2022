@@ -100,11 +100,17 @@
 	}
 
 	@media only screen and (max-width: 1000px) {
+		.arrows {
+			top: 50%;
+		}
+
 		.arrows h1 {
-			font-size: 200px;
+			font-size: 150px;
+			line-height: 150px;
 		}
 		.arrows h2 {
-			font-size: 150px;
+			font-size: 120px;
+			line-height: 80px;
 		}
 	}
 </style>
