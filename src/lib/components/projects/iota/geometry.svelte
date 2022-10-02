@@ -1,5 +1,6 @@
 <script>
 	import { onMount, onDestroy } from 'svelte';
+	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 	import * as THREE from 'three';
 
 	let container, pc, id;
@@ -12,8 +13,8 @@
 	let width = window.innerWidth;
 
 	// Setting up a camera
-	let camera = new THREE.PerspectiveCamera(100, width / height, 0.1, 50);
-	camera.position.z = 20;
+	let camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 200);
+	camera.position.z = 60;
 
 	// Setting up the renderer. This will be called later to render scene with the camera setup above
 	let renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -23,6 +24,10 @@
 	onMount(() => {
 		container.appendChild(renderer.domElement);
 	});
+
+	let controls = new OrbitControls(camera, renderer.domElement);
+	controls.maxDistance = 100;
+	controls.minDistance = 20;
 
 	// Setting up a group to hold the items we will be creating together
 	let group = new THREE.Group();
@@ -39,7 +44,7 @@
 	let pcMat = new THREE.PointsMaterial();
 	pcMat.color = new THREE.Color(0x5ca755);
 	pcMat.transparent = true;
-	pcMat.size = 0.05;
+	pcMat.size = 0.2;
 	pcMat.blending = THREE.AdditiveBlending;
 	pc = new THREE.Points(geometry, pcMat);
 	pc.sizeAttenuation = true;
