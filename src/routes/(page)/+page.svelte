@@ -2,9 +2,8 @@
 	import Sidebar from '$lib/components/sidebar/sidebar.svelte';
 	import Header from '$lib/components/header/header.svelte';
 
-	import Silicon from '$lib/components/projects/silicon/silicon.svelte';
+	import Hedron from '$lib/components/projects/hedron/hedron.svelte';
 	import Replika from '$lib/components/projects/replika/replika.svelte';
-	import Siiignal from '$lib/components/projects/siiignal/siiignal.svelte';
 	import Iota from '$lib/components/projects/iota/iota.svelte';
 
 	import Home from '$lib/components/projects/blocks/blocks.svelte';
@@ -31,7 +30,7 @@
 {:else if project == 'IOTA'}
 	<button class="start"><a href="https://iota.health">visit IOTA</a></button>
 {:else if project == 'HEDRON'}
-	<button class="start"><a href="https://silicon.fm">visit HEDRON</a></button>
+	<button class="start"><a href="https://hhacker.space">visit HEDRON</a></button>
 {:else if project == 'SILICON'}
 	<button class="start">WIP</button>
 {:else if project == 'REPLIKA'}
@@ -46,20 +45,11 @@
 		<button class:active={project === 'IOTA'} on:click={() => setProject('IOTA')}>IOTA</button>
 		<button class:active={project === 'HEDRON'} on:click={() => setProject('HEDRON')}>HEDRON</button
 		>
-		<!--button class:active={project === 'SILICON'} on:click={() => setProject('SILICON')}
-			>SILICON</button
-		-->
-		<!--button class:active={project === 'SIIIGNAL'} on:click={() => setProject('SIIIGNAL')}
-			>SIIIGNAL</button
-		-->
 		<button class:active={project === 'REPLIKA'} on:click={() => setProject('REPLIKA')}
 			>REPLIKA</button
 		>
 		<br /><br />
 		<button class:active={project === 'ABOUT'} on:click={() => setProject('ABOUT')}>SAY HI</button>
-		<!--button class:active={project === 'CONTACT'} on:click={() => setProject('CONTACT')}
-			>CONTACT</button
-		-->
 	</div>
 	<body>
 		<div class="projects">
@@ -68,12 +58,10 @@
 					<Home />
 				{:else if project == 'IOTA'}
 					<Iota />
-				{:else if project == 'SILICON'}
-					<Silicon />
+				{:else if project == 'HEDRON'}
+					<Hedron />
 				{:else if project == 'REPLIKA'}
 					<Replika />
-				{:else if project == 'SIIIGNAL'}
-					<Siiignal />
 				{:else if project == 'ABOUT'}
 					<About />
 				{/if}
