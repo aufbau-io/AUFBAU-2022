@@ -40,7 +40,7 @@
 		const rollOverGeo = new THREE.BoxGeometry(50, 50, 50);
 		rollOverMaterial = new THREE.MeshBasicMaterial({
 			color: 0xfeb74c,
-			opacity: 0.5,
+			opacity: 0.2,
 			transparent: true
 		});
 		rollOverMesh = new THREE.Mesh(rollOverGeo, rollOverMaterial);
