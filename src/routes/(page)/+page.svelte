@@ -30,7 +30,8 @@
 {:else if project == 'IOTA'}
 	<button class="start"><a href="https://iota.health">visit IOTA</a></button>
 {:else if project == 'HEDRON'}
-	<button class="start"><a href="https://hhacker.space">visit HEDRON</a></button>
+	<!--button class="start"><a href="https://hhacker.space">visit HEDRON</a></button-->
+	<button class="start prevent"><s>visit</s> HEDRON (wip)</button>
 {:else if project == 'SILICON'}
 	<button class="start">WIP</button>
 {:else if project == 'REPLIKA'}
@@ -71,7 +72,8 @@
 </main>
 
 <style>
-	button.start {
+	button.start,
+	button.start.prevent:hover {
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -81,6 +83,7 @@
 		background: var(--black);
 		color: var(--accent);
 		max-width: 40vw;
+		cursor: default;
 	}
 
 	button.start:hover {
