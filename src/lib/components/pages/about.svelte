@@ -14,10 +14,10 @@
 			Aufbau is the outlet of Dan Humphries <a href="https://dan.aufbau.io"
 				>[&nbsp;dan.aufbau.io&nbsp;]</a
 			>. Dan has 5+ years experience working across a range of tech stacks, from data and machine
-			learning engineering, to graphic design and 3d development. He has a preference for lightwight
-			and performant code, and uses a combination of svelte.js, three.js, and supabase in most
-			projects. A child of the early internet, dan believes websites should be playful and fun. if
-			you're down to make magic, get in touch.
+			learning engineering, to graphic design and 3d development. He has a preference for
+			lightweight and performant code, and uses a combination of svelte.js, three.js, and supabase
+			in most projects. A child of the early internet, dan believes websites should be playful and
+			fun. if you're down to make magic, get in touch.
 		</h6>
 	</div>
 </main>
