@@ -70,8 +70,8 @@
 
 	.text {
 		border-left: solid 1px var(--black);
-		margin: 20px;
-		padding-left: 20px;
+		margin: 20px 40px 20px 20px;
+		padding-left: 40px;
 		color: var(--black);
 		display: flex;
 		flex-direction: column;
