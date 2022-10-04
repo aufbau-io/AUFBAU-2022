@@ -2,6 +2,8 @@
 	import Sidebar from '$lib/components/sidebar/sidebar.svelte';
 	import Header from '$lib/components/header/header.svelte';
 
+	import System from '$lib/components/projects/system/system.svelte';
+
 	import Hedron from '$lib/components/projects/hedron/hedron.svelte';
 	import Replika from '$lib/components/projects/replika/replika.svelte';
 	import Iota from '$lib/components/projects/iota/iota.svelte';
@@ -41,16 +43,27 @@
 <main>
 	<div class="sidebar">
 		AUFBAU<br />
-		<button class:active={project === 'HOME'} on:click={() => setProject('HOME')}>.//</button>
-		<br /><br />
-		<button class:active={project === 'IOTA'} on:click={() => setProject('IOTA')}>IOTA</button>
-		<button class:active={project === 'HEDRON'} on:click={() => setProject('HEDRON')}>HEDRON</button
+		<button class="menu" class:active={project === 'HOME'} on:click={() => setProject('HOME')}
+			>.//</button
 		>
-		<button class:active={project === 'REPLIKA'} on:click={() => setProject('REPLIKA')}
+		<br /><br />
+		<button class="menu" class:active={project === 'IOTA'} on:click={() => setProject('IOTA')}
+			>IOTA</button
+		>
+		<button class="menu" class:active={project === 'HEDRON'} on:click={() => setProject('HEDRON')}
+			>HEDRON</button
+		>
+		<button class="menu" class:active={project === 'REPLIKA'} on:click={() => setProject('REPLIKA')}
 			>REPLIKA</button
 		>
+
 		<br /><br />
-		<button class:active={project === 'ABOUT'} on:click={() => setProject('ABOUT')}>SAY HI</button>
+		<button class="menu" class:active={project === 'SYSTEMS'} on:click={() => setProject('SYSTEMS')}
+			>JOBS</button
+		>
+		<button class="menu" class:active={project === 'ABOUT'} on:click={() => setProject('ABOUT')}
+			>SAY HI</button
+		>
 	</div>
 	<body>
 		<div class="projects">
@@ -65,6 +78,8 @@
 					<Replika />
 				{:else if project == 'ABOUT'}
 					<About />
+				{:else if project == 'SYSTEMS'}
+					<System />
 				{/if}
 			{/key}
 		</div>
@@ -109,6 +124,11 @@
 		opacity: 0.3;
 		padding: 0 6px;
 		border-radius: 4px;
+	}
+
+	button.menu {
+		width: 100%;
+		text-align: left;
 	}
 
 	button:hover {
