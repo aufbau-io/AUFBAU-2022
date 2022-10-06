@@ -30,14 +30,18 @@
 {#if project == 'HOME'}
 	<button class="start black">MAKE WEB FUN AGAIN</button>
 {:else if project == 'IOTA'}
-	<button class="start"><a href="https://iota.health">visit IOTA</a></button>
+	<button class="start"><a href="https://iota.health" target="_blank">visit IOTA</a></button>
 {:else if project == 'HEDRON'}
-	<!--button class="start"><a href="https://hhacker.space">visit HEDRON</a></button-->
-	<button class="start prevent"><s>visit</s> HEDRON (wip)</button>
+	<button class="start"
+		><a href="https://site.hhacker.space" target="_blank">visit HEDRON</a></button
+	>
 {:else if project == 'SILICON'}
 	<button class="start">WIP</button>
 {:else if project == 'REPLIKA'}
-	<button class="start"><a href="https://replika.netlify.app">visit REPLIKA</a></button>
+	<!--button class="start"
+		><a href="https://replika.netlify.app" target="_blank">visit REPLIKA</a></button
+	-->
+	<button class="start prevent">REPLIKA [wip]</button>
 {/if}
 
 <main>
