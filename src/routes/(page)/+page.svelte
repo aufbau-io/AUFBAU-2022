@@ -62,9 +62,9 @@
 		>
 
 		<br /><br />
-		<button class="menu" class:active={project === 'SYSTEMS'} on:click={() => setProject('SYSTEMS')}
+		<!--button class="menu" class:active={project === 'SYSTEMS'} on:click={() => setProject('SYSTEMS')}
 			>JOBS</button
-		>
+		-->
 		<button class="menu" class:active={project === 'ABOUT'} on:click={() => setProject('ABOUT')}
 			>SAY HI</button
 		>
