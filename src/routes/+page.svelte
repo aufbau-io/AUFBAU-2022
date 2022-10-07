@@ -18,8 +18,8 @@
 		<div class="grey body__left">
 			<h3>web</h3>
 			<br />
-			<a href="https://site.hhacker.space" target="_blank">hedron hackerspace • aufbau • 2022</a>
-			<a href="https://iota.health" target="_blank">iota • aufbau • 2022</a>
+			<a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a>
+			<a href="https://iota.health" target="_blank">iota • research app • 2022</a>
 		</div>
 		<div class="grey body__right">
 			<h3>systems</h3>
