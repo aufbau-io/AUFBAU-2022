@@ -16,7 +16,7 @@
 			<p>ldn • ykt • pdx</p>
 		</div>
 		<div class="grey body__left">
-			<h3>web</h3>
+			<h3>work</h3>
 			<br />
 			<a href="https://site.hhacker.space" target="_blank">hedron hackerspace • site • 2022</a>
 			<a href="https://iota.health" target="_blank">iota • research app • 2022</a>
