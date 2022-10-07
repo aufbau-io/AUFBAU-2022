@@ -5,7 +5,7 @@
 	<title>AUFBAU WEB STUDIO</title>
 </svelte:head>
 
-<main>
+<section>
 	<div class="body">
 		<!--img class="niels" alt="niels" src="/niels_bw.jpg" /-->
 
@@ -36,11 +36,11 @@
 		<br />
 		<br />
 	</div>
-</main>
+</section>
 
 <style>
-	main {
-		height: 100vh;
+	section {
+		height: 100%;
 		display: flex;
 		overflow: hidden;
 	}
