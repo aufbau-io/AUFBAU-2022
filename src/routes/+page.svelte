@@ -27,7 +27,7 @@
 		</div>
 		<div class="grey hidden body__left">
 			<p>bespoke websites, systems, apps</p>
-			<p>ethos: make web fun again</p>
+			<p>lightweight and 3d specialist</p>
 		</div>
 		<div class="body__right">
 			<h3>say hi</h3>
