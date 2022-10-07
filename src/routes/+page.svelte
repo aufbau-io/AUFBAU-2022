@@ -46,7 +46,7 @@
 	}
 	h1 {
 		font-family: 'dahlia', sans-serif;
-		color: var(--blue);
+		color: var(--black);
 		margin-top: 16px;
 		font-size: 48px;
 		line-height: 62px;
@@ -56,7 +56,7 @@
 
 	h3 {
 		margin-top: 10px;
-		color: var(--blue);
+		color: var(--black);
 	}
 
 	p {
@@ -64,7 +64,7 @@
 	}
 
 	h3.hidden {
-		color: var(--accent);
+		color: var(--white);
 	}
 
 	.niels {
@@ -84,11 +84,11 @@
 
 	.grey {
 		margin: 16px 0 16px 0;
-		color: var(--blue);
+		color: var(--black);
 	}
 
 	.grey.top {
-		color: var(--blue);
+		color: var(--black);
 	}
 
 	.body__left {

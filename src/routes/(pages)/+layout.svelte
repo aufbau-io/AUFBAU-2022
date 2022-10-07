@@ -12,14 +12,14 @@
 		z-index: 20;
 		opacity: 1;
 		background: var(--black);
-		color: var(--accent);
+		color: var(--white);
 		max-width: 40vw;
 		cursor: pointer;
 		user-select: none;
 	}
 
 	a.start:hover {
-		background: var(--accent);
+		background: var(--white);
 		color: var(--black);
 		opacity: 1;
 	}

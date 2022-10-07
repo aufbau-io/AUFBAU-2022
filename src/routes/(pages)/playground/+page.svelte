@@ -18,6 +18,6 @@
 		position: relative;
 		height: 100vh;
 		width: 100vw;
-		background: var(--accent);
+		background: var(--white);
 	}
 </style>
