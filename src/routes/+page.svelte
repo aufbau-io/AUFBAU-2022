@@ -26,7 +26,7 @@
 			<a href="/systems">modular architecture • example</a>
 		</div>
 		<div class="grey hidden body__left">
-			<p>bespoke websites, apps, and systems</p>
+			<p>bespoke websites, apps, systems</p>
 			<p>ethos: make web fun again</p>
 		</div>
 		<div class="body__right">
