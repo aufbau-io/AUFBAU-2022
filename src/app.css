@@ -4,13 +4,13 @@
 /* APP */
 :root {
 	--ticker-duration: 5000s;
-	--black: #141414;
+	--black: #171717;
 	--white: #e0e0e0;
 	--white-10: #f0f0f01a;
 	--white-20: #f0f0f033;
 	--white-30: #f0f0f04d;
 	--white-50: #f0f0f080;
-	--accent: #feb74c;
+	--accent: #e0e0e0;
 	--accent-30: #feb74c4d;
 	--error: #0827f5;
 }

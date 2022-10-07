@@ -30,7 +30,7 @@
 		margin-left: 100px;
 		padding: 20px 20px 0px 20px;
 		overflow: auto;
-		background: var(--accent);
+		background: var(--white);
 		color: var(--black);
 	}
 
@@ -38,7 +38,7 @@
 		height: 160px;
 		padding-bottom: 10px;
 		margin-bottom: 20px;
-		border-bottom: solid 2px var(--black);
+		border-bottom: solid 1px var(--black);
 	}
 
 	.bottom {

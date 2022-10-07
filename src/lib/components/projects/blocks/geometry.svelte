@@ -39,7 +39,7 @@
 
 		const rollOverGeo = new THREE.BoxGeometry(50, 50, 50);
 		rollOverMaterial = new THREE.MeshBasicMaterial({
-			color: 0xfeb74c,
+			color: 0xe0e0e0,
 			opacity: 0.2,
 			transparent: true
 		});
@@ -50,7 +50,7 @@
 		// cubes
 
 		cubeGeo = new THREE.BoxGeometry(50, 50, 50);
-		cubeMaterial = new THREE.MeshLambertMaterial({ color: 0xfeb74c });
+		cubeMaterial = new THREE.MeshLambertMaterial({ color: 0xe0e0e0 });
 
 		// grid
 
