@@ -12,6 +12,7 @@
 		z-index: 20;
 		opacity: 1;
 		background: var(--black);
+		border: solid 1px var(--white);
 		color: var(--white);
 		max-width: 40vw;
 		cursor: pointer;
@@ -21,6 +22,7 @@
 	a.start:hover {
 		background: var(--white);
 		color: var(--black);
+		border-color: var(--black);
 		opacity: 1;
 	}
 </style>
