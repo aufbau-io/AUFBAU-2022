@@ -1,0 +1,23 @@
+<script>
+	import Diagram from './diagram.svg';
+</script>
+
+<main>
+	<img src={Diagram} class="img" alt="modular system diagram" />
+</main>
+
+<style>
+	main {
+		position: relative;
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.img {
+		max-height: 100vh;
+		max-width: 100vw;
+	}
+</style>

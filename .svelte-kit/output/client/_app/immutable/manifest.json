@@ -1,0 +1,86 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-4bc9656f.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-817d695a.js",
+      "_preload-helper-60cab3ee.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      "src/routes/__error.svelte",
+      "src/routes/__layout-page.svelte",
+      "src/routes/index.svelte",
+      "src/routes/room/[slug].svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-d0f66783.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-817d695a.js",
+      "_app-32605a3f.js"
+    ]
+  },
+  "src/routes/__error.svelte": {
+    "file": "pages/__error.svelte-796f4b96.js",
+    "src": "src/routes/__error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-817d695a.js"
+    ]
+  },
+  "src/routes/__layout-page.svelte": {
+    "file": "pages/__layout-page.svelte-0856ff56.js",
+    "src": "src/routes/__layout-page.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-60cab3ee.js",
+      "_index-817d695a.js",
+      "_app-32605a3f.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-711c6a36.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-817d695a.js",
+      "_index-85b3d03b.js"
+    ]
+  },
+  "src/routes/room/[slug].svelte": {
+    "file": "pages/room/_slug_.svelte-a7082262.js",
+    "src": "src/routes/room/[slug].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-817d695a.js",
+      "_index-85b3d03b.js"
+    ]
+  },
+  "_index-817d695a.js": {
+    "file": "chunks/index-817d695a.js"
+  },
+  "_preload-helper-60cab3ee.js": {
+    "file": "chunks/preload-helper-60cab3ee.js"
+  },
+  "_app-32605a3f.js": {
+    "file": "chunks/app-32605a3f.js",
+    "imports": [
+      "_index-817d695a.js"
+    ],
+    "css": [
+      "assets/app-6b50ab21.css"
+    ]
+  },
+  "_index-85b3d03b.js": {
+    "file": "chunks/index-85b3d03b.js"
+  }
+}

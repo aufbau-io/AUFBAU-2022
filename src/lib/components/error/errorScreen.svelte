@@ -13,23 +13,4 @@
 </div>
 
 <style>
-	div {
-		background: var(--error);
-		height: 100vh;
-		width: 100vw;
-
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		font-family: nb-television-2d, sans-serif;
-	}
 </style>
