@@ -18,7 +18,7 @@
 		<div class="grey body__left">
 			<h3>web</h3>
 			<br />
-			<a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a>
+			<a href="https://site.hhacker.space" target="_blank">hedron hackerspace • site • 2022</a>
 			<a href="https://iota.health" target="_blank">iota • research app • 2022</a>
 		</div>
 		<div class="grey body__right">
@@ -26,7 +26,7 @@
 			<a href="/systems">modular architecture • example</a>
 		</div>
 		<div class="grey hidden body__left">
-			<p>bespoke websites and systems</p>
+			<p>bespoke websites, apps, and systems</p>
 			<p>ethos: make web fun again</p>
 		</div>
 		<div class="body__right">
