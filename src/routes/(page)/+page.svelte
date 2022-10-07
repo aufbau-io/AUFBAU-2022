@@ -205,7 +205,7 @@
 
 	@media only screen and (max-width: 768px) {
 		.sidebar {
-			border-color: var(--accent-30);
+			border-color: var(--white-30);
 		}
 	}
 </style>
