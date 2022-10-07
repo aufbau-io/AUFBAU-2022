@@ -23,7 +23,7 @@
 		</div>
 		<div class="grey body__right">
 			<h3>systems</h3>
-			<a href="/systems">modular architecture • example</a>
+			<a href="/systems">modular system architecture • example</a>
 		</div>
 		<div class="grey hidden body__left">
 			<p>bespoke websites, systems, apps</p>
