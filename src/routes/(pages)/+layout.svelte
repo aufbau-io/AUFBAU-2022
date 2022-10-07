@@ -1,6 +1,6 @@
 <slot />
 
-<a href="/" class="start">home</a>
+<a href="/" class="start">return</a>
 
 <style>
 	a.start,
