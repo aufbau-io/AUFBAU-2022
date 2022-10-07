@@ -11,7 +11,7 @@
 	<div class="bottom">
 		<h2>AUFBAU</h2>
 		<h6 class="text">
-			Aufbau is the outlet of Dan Humphries <a href="https://dan.aufbau.io"
+			Aufbau is the outlet of Dan Niels <a href="https://dan.aufbau.io" target="_blank"
 				>[&nbsp;dan.aufbau.io&nbsp;]</a
 			>. Dan has 5+ years experience working across a range of tech stacks, from data and machine
 			learning engineering, to graphic design and 3d development. He has a preference for
