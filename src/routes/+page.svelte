@@ -47,6 +47,7 @@
 	h1 {
 		font-family: 'dahlia', sans-serif;
 		color: var(--blue);
+		margin-top: 16px;
 		font-size: 48px;
 		line-height: 62px;
 		font-weight: 700;
