@@ -32,6 +32,7 @@
 		<div class="body__right">
 			<h3>say hi</h3>
 			<a href="mailto: dan@aufbau.io">email</a>
+			<a href="/dan_humphries_cv.pdf" download>cv</a>
 		</div>
 		<br />
 		<br />
