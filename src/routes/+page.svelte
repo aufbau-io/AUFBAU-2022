@@ -13,7 +13,7 @@
 			<h1>aufbau.</h1>
 			<p>CREATIVE WEB STUDIO</p>
 			<a href="/playground">make web fun again</a>
-			<p>ldn • ykt • pdx</p>
+			<p>ldn • ykt • nyc</p>
 		</div>
 		<div class="grey body__left">
 			<h3>work</h3>
