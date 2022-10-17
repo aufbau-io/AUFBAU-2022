@@ -6,7 +6,7 @@
 </svelte:head>
 <section>
 	<div class="message">
-		<h2>404 ERROR</h2>
+		<a href="/"><h2>404 ERROR</h2></a>
 	</div>
 </section>
 
@@ -18,5 +18,9 @@
 		transform: translate(-50%, -50%);
 		z-index: 100;
 		color: var(--black);
+	}
+
+	a {
+		cursor: pointer;
 	}
 </style>
