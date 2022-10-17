@@ -17,9 +17,9 @@
 		</div>
 		<div class="grey body__left">
 			<h3>work</h3>
-			<br />
 			<a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a>
 			<a href="https://iota.health" target="_blank">iota • research app • 2022</a>
+			<a href="https://replika.netlify.app/" target="_blank">replika • web • 2022 [wip] </a>
 		</div>
 		<div class="grey body__right">
 			<h3>systems</h3>
@@ -43,7 +43,8 @@
 	section {
 		height: 100%;
 		display: flex;
-		overflow: hidden;
+		overflow: auto;
+		max-width: 800px;
 	}
 	h1 {
 		font-family: 'dahlia', sans-serif;
