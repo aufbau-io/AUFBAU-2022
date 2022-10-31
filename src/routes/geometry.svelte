@@ -28,6 +28,7 @@
 	let controls = new OrbitControls(camera, renderer.domElement);
 	controls.maxDistance = 250;
 	controls.minDistance = 25;
+	controls.enablePan = false;
 
 	// Setting up a group to hold the items we will be creating together
 	let group = new THREE.Group();
