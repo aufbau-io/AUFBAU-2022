@@ -98,11 +98,6 @@
 		margin: 16px 0 16px 0;
 		color: var(--black);
 	}
-
-	.grey.bottom {
-		margin-bottom: 0;
-	}
-
 	.grey.top {
 		color: var(--black);
 		margin-top: 0;
