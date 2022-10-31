@@ -1,8 +1,8 @@
 <script>
-	import { active } from '$app/stores';
+	import { active } from '$lib/store/store';
 
-	let activate = () => {
-		active.update((val) => true);
+	let toggle = () => {
+		active.update((val) => !val);
 	};
 </script>
 
@@ -11,14 +11,14 @@
 </svelte:head>
 
 <section>
-	{#if active}
-		<a href="/" class="centreButton alt" on:click={() => activate()}>enter</a>
+	{#if !$active}
+		<a href="/" class="centreButton alt" on:click={() => toggle()}>enter</a>
 	{:else}
 		<div class="body">
 			<!--img class="niels" alt="niels" src="/niels_bw.jpg" /-->
 
 			<div class="grey top">
-				<h1>aufbau.</h1>
+				<h1 on:click={() => toggle()}>aufbau.</h1>
 				<p>CREATIVE WEB STUDIO</p>
 				<a href="/playground">make web fun again</a>
 				<p>ldn • ykt • nyc</p>
@@ -64,6 +64,7 @@
 		line-height: 62px;
 		font-weight: 700;
 		text-transform: lowercase;
+		cursor: pointer;
 	}
 
 	h3 {

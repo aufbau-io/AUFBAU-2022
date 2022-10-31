@@ -13,7 +13,7 @@
 	let width = window.innerWidth;
 
 	// Setting up a camera
-	let camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 200);
+	let camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 400);
 	camera.position.z = 100;
 
 	// Setting up the renderer. This will be called later to render scene with the camera setup above
@@ -26,8 +26,8 @@
 	});
 
 	let controls = new OrbitControls(camera, renderer.domElement);
-	controls.maxDistance = 100;
-	controls.minDistance = 100;
+	controls.maxDistance = 250;
+	controls.minDistance = 25;
 
 	// Setting up a group to hold the items we will be creating together
 	let group = new THREE.Group();
