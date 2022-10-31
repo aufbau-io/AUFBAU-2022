@@ -1,9 +1,8 @@
 <script>
-	import Diagram from './diagram.svg';
 </script>
 
 <main>
-	<img src={Diagram} class="img" alt="modular system diagram" />
+	<img src={'/system_diagram.svg'} class="img" alt="modular system diagram" />
 </main>
 
 <style>
