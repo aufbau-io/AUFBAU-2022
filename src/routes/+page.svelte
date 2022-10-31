@@ -1,4 +1,9 @@
 <script>
+	import { active } from '$app/stores';
+
+	let activate = () => {
+		active.update((val) => true);
+	};
 </script>
 
 <svelte:head>
@@ -6,38 +11,42 @@
 </svelte:head>
 
 <section>
-	<div class="body">
-		<!--img class="niels" alt="niels" src="/niels_bw.jpg" /-->
+	{#if active}
+		<a href="/" class="centreButton alt" on:click={() => activate()}>enter</a>
+	{:else}
+		<div class="body">
+			<!--img class="niels" alt="niels" src="/niels_bw.jpg" /-->
 
-		<div class="grey top">
-			<h1>aufbau.</h1>
-			<p>CREATIVE WEB STUDIO</p>
-			<a href="/playground">make web fun again</a>
-			<p>ldn • ykt • nyc</p>
-		</div>
-		<div class="grey body__left">
-			<h3>work</h3>
+			<div class="grey top">
+				<h1>aufbau.</h1>
+				<p>CREATIVE WEB STUDIO</p>
+				<a href="/playground">make web fun again</a>
+				<p>ldn • ykt • nyc</p>
+			</div>
+			<div class="grey body__left">
+				<h3>work</h3>
+				<br />
+				<a href="https://replika.netlify.app/" target="_blank">replika • web • 2022 </a>
+				<a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a>
+				<!--a href="https://iota.health" target="_blank">iota • research app • 2022</a-->
+			</div>
+			<div class="grey body__right">
+				<h3>systems</h3>
+				<a href="/systems">modular system architecture • example</a>
+			</div>
+			<div class="grey hidden body__left">
+				<p>bespoke websites, systems, apps</p>
+				<p>lightweight and 3d specialist</p>
+			</div>
+			<div class="body__right">
+				<h3>say hi</h3>
+				<a href="/dan_humphries_cv.pdf">cv</a>
+				<a href="mailto: dan@aufbau.io">email</a>
+			</div>
 			<br />
-			<a href="https://replika.netlify.app/" target="_blank">replika • web • 2022 </a>
-			<a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a>
-			<!--a href="https://iota.health" target="_blank">iota • research app • 2022</a-->
+			<br />
 		</div>
-		<div class="grey body__right">
-			<h3>systems</h3>
-			<a href="/systems">modular system architecture • example</a>
-		</div>
-		<div class="grey hidden body__left">
-			<p>bespoke websites, systems, apps</p>
-			<p>lightweight and 3d specialist</p>
-		</div>
-		<div class="body__right">
-			<h3>say hi</h3>
-			<a href="/dan_humphries_cv.pdf">cv</a>
-			<a href="mailto: dan@aufbau.io">email</a>
-		</div>
-		<br />
-		<br />
-	</div>
+	{/if}
 </section>
 
 <style>

@@ -64,7 +64,6 @@
 
 		//Varying the points on each frame
 		step += 0.00001;
-		console.log(step);
 		let geometry = pc.geometry;
 		let a = 0.9 + Math.random() * 7;
 		let b = 3.4 + Math.random() * 8;

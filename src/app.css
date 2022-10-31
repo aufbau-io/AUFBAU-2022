@@ -96,6 +96,41 @@ a:hover {
 	border-radius: 0;
 }
 
+a.centreButton,
+a.centreButton.prevent:hover {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+	opacity: 1;
+	background: var(--black);
+	border: solid 1px var(--white);
+	color: var(--white);
+	max-width: 40vw;
+	cursor: pointer;
+	user-select: none;
+}
+
+a.centreButton:hover {
+	background: var(--white);
+	color: var(--black);
+	border-color: var(--black);
+	opacity: 1;
+}
+
+a.centreButton.alt {
+	background: var(--white);
+	border: solid 1px var(--black);
+	color: var(--black);
+}
+
+a.centreButton.alt:hover {
+	background: var(--black);
+	border: solid 1px var(--white);
+	color: var(--white);
+}
+
 @media (max-width: 800px) {
 	body {
 		padding: 0 2rem;
