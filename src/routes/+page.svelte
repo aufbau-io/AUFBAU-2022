@@ -99,8 +99,13 @@
 		color: var(--black);
 	}
 
+	.grey.bottom {
+		margin-bottom: 0;
+	}
+
 	.grey.top {
 		color: var(--black);
+		margin-top: 0;
 	}
 
 	.body__left {
