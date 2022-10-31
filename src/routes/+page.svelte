@@ -40,7 +40,7 @@
 			</div>
 			<div class="body__right">
 				<h3>say hi</h3>
-				<a href="/dan_humphries_cv.pdf">cv</a>
+				<a target="_blank" href="/dan_humphries_cv.pdf">cv</a>
 				<a href="mailto: dan@aufbau.io">email</a>
 			</div>
 			<br />
