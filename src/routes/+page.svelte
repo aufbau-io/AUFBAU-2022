@@ -100,7 +100,6 @@
 	}
 	.grey.top {
 		color: var(--black);
-		margin-top: 0;
 	}
 
 	.body__left {
