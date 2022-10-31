@@ -26,7 +26,7 @@
 	});
 
 	let controls = new OrbitControls(camera, renderer.domElement);
-	controls.maxDistance = 250;
+	controls.maxDistance = 100;
 	controls.minDistance = 25;
 	controls.enablePan = false;
 
