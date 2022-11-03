@@ -26,7 +26,7 @@
 			<div class="grey body__left">
 				<h3>work</h3>
 				<br />
-				<a href="https://replikamasterworks.com" target="_blank">replika • web • 2022 </a>
+				<a href="https://replikamasterworks.com" target="_blank">replika [wip] • web • 2022 </a>
 				<a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a>
 				<!--a href="https://iota.health" target="_blank">iota • research app • 2022</a-->
 			</div>
