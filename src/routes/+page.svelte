@@ -12,7 +12,9 @@
 
 <section>
 	{#if !$active}
-		<a href="/" class="centreButton alt" on:click={() => toggle()}>make web fun again</a>
+		<a href="/" class="centreButton alt" on:click={() => toggle()}
+			>make&nbsp;web&nbsp;fun&nbsp;again</a
+		>
 	{:else}
 		<div class="body">
 			<!--img class="niels" alt="niels" src="/niels_bw.jpg" /-->

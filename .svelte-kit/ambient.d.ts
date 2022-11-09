@@ -38,6 +38,8 @@ declare module '$env/static/private' {
 	export const CUDA_PATH_V10_0: string;
 	export const CUDA_PATH_V10_1: string;
 	export const DriverData: string;
+	export const FPS_BROWSER_APP_PROFILE_STRING: string;
+	export const FPS_BROWSER_USER_PROFILE_STRING: string;
 	export const HOMEDRIVE: string;
 	export const HOMEPATH: string;
 	export const INIT_CWD: string;
@@ -170,6 +172,8 @@ declare module '$env/dynamic/private' {
 		CUDA_PATH_V10_0: string;
 		CUDA_PATH_V10_1: string;
 		DriverData: string;
+		FPS_BROWSER_APP_PROFILE_STRING: string;
+		FPS_BROWSER_USER_PROFILE_STRING: string;
 		HOMEDRIVE: string;
 		HOMEPATH: string;
 		INIT_CWD: string;
