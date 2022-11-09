@@ -20,7 +20,12 @@
 	let width = screen.width;
 	let height = screen.height;
 
-	let d = 4;
+	let d;
+	if ($screenType == 1) {
+		d = 3;
+	} else {
+		d = 4;
+	}
 
 	const objects = [];
 
