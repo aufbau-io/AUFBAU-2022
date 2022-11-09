@@ -18,7 +18,7 @@
 			<!--img class="niels" alt="niels" src="/niels_bw.jpg" /-->
 
 			<div class="grey top">
-				<h1 on:click={() => toggle()}>: aufbau :</h1>
+				<h1 on:click={() => toggle()}>aufbau.</h1>
 
 				<p>CREATIVE WEB STUDIO</p>
 				<a href="/playground">make web fun again</a>
