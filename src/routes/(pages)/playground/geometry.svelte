@@ -2,6 +2,8 @@
 	import { onMount, onDestroy } from 'svelte';
 	import * as THREE from 'three';
 
+	import { screenType } from '$lib/store/store';
+
 	let container;
 	let id;
 	onDestroy(() => cancelAnimationFrame(id));
