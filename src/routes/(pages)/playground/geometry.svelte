@@ -97,19 +97,6 @@
 		//
 	}
 
-	window.addEventListener('resize', function () {
-		// let height = window.innerHeight;
-		// let width = window.innerWidth;
-		// renderer.setSize(width, height);
-		// window.location.reload();
-		// camera.left = width / -3;
-		// camera.right = width / 3;
-		// camera.top = height / 3;
-		// camera.bottom = height / -3;
-		// camera.updateProjectionMatrix();
-		// renderer.setSize(width, height);
-	});
-
 	function onPointerMove(event) {
 		pointer.set(((event.clientX - 0) / width) * 2 - 1, -(event.clientY / height) * 2 + 1);
 
