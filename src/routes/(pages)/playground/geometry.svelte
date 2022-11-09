@@ -21,7 +21,7 @@
 	let height = screen.height;
 
 	let d;
-	if ($screenType == 1) {
+	if ($screenType == 2) {
 		d = 3;
 	} else {
 		d = 4;
