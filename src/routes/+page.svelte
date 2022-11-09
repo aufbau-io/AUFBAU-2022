@@ -18,7 +18,7 @@
 			<!--img class="niels" alt="niels" src="/niels_bw.jpg" /-->
 
 			<div class="grey top">
-				<h1 on:click={() => toggle()}>aufbau.</h1>
+				<h1 on:click={() => toggle()}>: aufbau :</h1>
 
 				<p>CREATIVE WEB STUDIO</p>
 				<a href="/playground">make web fun again</a>
@@ -61,11 +61,12 @@
 	h1 {
 		font-family: 'dahlia', sans-serif;
 		color: var(--black);
-		font-size: 48px;
-		line-height: 62px;
+		font-size: 44px;
+		line-height: 44px;
 		font-weight: 700;
 		text-transform: lowercase;
 		cursor: pointer;
+		letter-spacing: 1.2px;
 	}
 
 	h3 {
