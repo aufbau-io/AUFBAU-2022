@@ -133,9 +133,7 @@
 
 <style>
 	.geometry {
-		position: fixed;
-		height: 100vh;
-		height: calc(var(--vh, 1vh) * 100);
+		position: absolute;
 		top: 0;
 		left: 0;
 		z-index: -10;
