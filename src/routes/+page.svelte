@@ -19,6 +19,7 @@
 
 			<div class="grey top">
 				<h1 on:click={() => toggle()}>aufbau.</h1>
+
 				<p>CREATIVE WEB STUDIO</p>
 				<a href="/playground">make web fun again</a>
 				<p>ldn • ykt • nyc</p>
@@ -40,6 +41,7 @@
 			</div>
 			<div class="body__right">
 				<h3>say hi</h3>
+
 				<a target="_blank" href="/dan_humphries_cv.pdf">cv</a>
 				<a href="mailto: dan@aufbau.io">email</a>
 			</div>
@@ -73,6 +75,20 @@
 
 	p {
 		letter-spacing: 0.028em;
+	}
+
+	p.toggle {
+		color: var(--white);
+		background: var(--white);
+		border: solid 1px var(--black);
+		padding: 2px 6px;
+		cursor: pointer;
+
+		text-decoration: none;
+	}
+
+	p.toggle:hover {
+		color: var(--black);
 	}
 
 	h3.hidden {
@@ -112,7 +128,10 @@
 
 	@media (max-width: 800px) {
 		.grey {
-			margin: 8px 0 8px 0;
+			margin: 12px 0 12px 0;
+		}
+
+		p.toggle {
 			color: var(--black);
 		}
 	}
