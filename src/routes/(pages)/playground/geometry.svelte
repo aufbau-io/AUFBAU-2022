@@ -88,7 +88,7 @@
 
 		onMount(() => {
 			container.appendChild(renderer.domElement);
-			document.addEventListener('resize', onWindowResize);
+
 			document.addEventListener('pointermove', onPointerMove);
 			document.addEventListener('pointerdown', onPointerDown);
 			document.addEventListener('keydown', onDocumentKeyDown);
@@ -98,75 +98,21 @@
 		//
 	}
 
-	window.addEventListener(
-		'resize',
-		function () {
-			renderer.setSize(width, height);
-
-			let height = window.innerHeight;
-			let width = window.innerWidth;
-
-			aspect = width / height;
-
-			// camera.lookAt(0, 0, 0);
-
-			camera.left = width / -3;
-			camera.right = width / 3;
-			camera.top = height / 3;
-			camera.bottom = height / -3;
-
-			camera.updateProjectionMatrix();
-		},
-		false
-	);
-
-	function onWindowResize() {
-		// const ua = navigator.userAgent;
-		// if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
-		// 	// tablet
-		// 	console.log(1);
-		// 	return;
-		// } else if (
-		// 	/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
-		// 		ua
-		// 	)
-		// ) {
-		// 	// phone
-		// 	console.log(2);
-		// 	return;
-		// } else {
-
-		// renderer.setSize( 0,0 ); // make screen blank before reload
-		//   // camera.aspect = window.innerWidth / window.innerHeight;
-		//   // camera.updateProjectionMatrix();
-
-		//   location.reload();
-
-		//   render();
-
-		// 	render();
-		// }
-
-		console.log('resize');
-
-		let width = window.innerWidth;
-		let height = window.innerHeight;
-
-		// camera.aspect = width / height;
-		camera.aspect = width / height;
-
-		camera.lookAt(0, 0, 0);
-
-		// renderer.setPixelRatio(window.devicePixelRatio);
+	window.addEventListener('resize', function () {
+		// let height = window.innerHeight;
+		// let width = window.innerWidth;
 		// renderer.setSize(width, height);
 
-		camera.updateProjectionMatrix();
+		window.location.reload();
 
-		renderer.setPixelRatio(window.devicePixelRatio);
-		renderer.setSize(width, height);
+		// camera.left = width / -3;
+		// camera.right = width / 3;
+		// camera.top = height / 3;
+		// camera.bottom = height / -3;
 
-		render();
-	}
+		// camera.updateProjectionMatrix();
+		// renderer.setSize(width, height);
+	});
 
 	function onPointerMove(event) {
 		pointer.set(((event.clientX - 0) / width) * 2 - 1, -(event.clientY / height) * 2 + 1);
