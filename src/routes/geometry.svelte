@@ -138,5 +138,9 @@
 		left: 0;
 		z-index: -10;
 		overflow: hidden;
+
+		width: 100vw;
+		height: 100vh;
+		height: calc(var(--vh, 1vh) * 100);
 	}
 </style>

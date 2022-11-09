@@ -27,7 +27,7 @@
 	render();
 
 	function init() {
-		camera = new THREE.OrthographicCamera(-d * aspect, d * aspect, d, -d, 10, 2200);
+		camera = new THREE.OrthographicCamera(width / -3, width / 3, height / 3, height / -3, 10, 2200);
 		camera.position.set(1000, 1000, 1000);
 		camera.lookAt(0, 0, 0);
 		camera.zoom = 5;
@@ -88,16 +88,37 @@
 
 		onMount(() => {
 			container.appendChild(renderer.domElement);
+			document.addEventListener('resize', onWindowResize);
+			document.addEventListener('pointermove', onPointerMove);
+			document.addEventListener('pointerdown', onPointerDown);
+			document.addEventListener('keydown', onDocumentKeyDown);
+			document.addEventListener('keyup', onDocumentKeyUp);
 		});
 
 		//
-
-		document.addEventListener('resize', onWindowResize);
-		document.addEventListener('pointermove', onPointerMove);
-		document.addEventListener('pointerdown', onPointerDown);
-		document.addEventListener('keydown', onDocumentKeyDown);
-		document.addEventListener('keyup', onDocumentKeyUp);
 	}
+
+	window.addEventListener(
+		'resize',
+		function () {
+			renderer.setSize(width, height);
+
+			let height = window.innerHeight;
+			let width = window.innerWidth;
+
+			aspect = width / height;
+
+			// camera.lookAt(0, 0, 0);
+
+			camera.left = width / -3;
+			camera.right = width / 3;
+			camera.top = height / 3;
+			camera.bottom = height / -3;
+
+			camera.updateProjectionMatrix();
+		},
+		false
+	);
 
 	function onWindowResize() {
 		// const ua = navigator.userAgent;
@@ -126,18 +147,23 @@
 		// 	render();
 		// }
 
+		console.log('resize');
+
 		let width = window.innerWidth;
 		let height = window.innerHeight;
-		renderer.setPixelRatio(window.devicePixelRatio);
-		renderer.setSize(width, height);
-		camera.lookAt(0, 0, 0);
 
-		aspect = width / height;
+		// camera.aspect = width / height;
+		camera.aspect = width / height;
+
+		camera.lookAt(0, 0, 0);
 
 		// renderer.setPixelRatio(window.devicePixelRatio);
 		// renderer.setSize(width, height);
 
 		camera.updateProjectionMatrix();
+
+		renderer.setPixelRatio(window.devicePixelRatio);
+		renderer.setSize(width, height);
 
 		render();
 	}
@@ -220,6 +246,5 @@
 		position: fixed;
 		left: 0;
 		top: 0;
-		height: 100%;
 	}
 </style>
