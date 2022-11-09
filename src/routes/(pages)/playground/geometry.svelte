@@ -22,7 +22,7 @@
 
 	let d;
 	if ($screenType == 2) {
-		d = 3;
+		d = 2;
 	} else {
 		d = 4;
 	}
