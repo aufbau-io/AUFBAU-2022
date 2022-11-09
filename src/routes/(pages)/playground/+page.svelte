@@ -17,6 +17,7 @@
 	main {
 		position: relative;
 		width: 100vw;
+		height: 100%;
 		background: var(--white);
 	}
 </style>
