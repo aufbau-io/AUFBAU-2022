@@ -217,7 +217,7 @@
 
 <style>
 	.geometry {
-		position: absolute;
+		position: fixed;
 		left: 0;
 		top: 0;
 		height: 100%;
