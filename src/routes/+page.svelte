@@ -66,7 +66,7 @@
 		font-weight: 700;
 		text-transform: lowercase;
 		cursor: pointer;
-		letter-spacing: 1.2px;
+		letter-spacing: 1.1px;
 	}
 
 	h3 {
