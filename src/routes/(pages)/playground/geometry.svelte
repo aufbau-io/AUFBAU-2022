@@ -18,8 +18,7 @@
 	let width = window.innerWidth;
 	let height = window.innerHeight;
 
-	let aspect = width / height;
-	let d = 300;
+	let d = 3;
 
 	const objects = [];
 
@@ -27,7 +26,7 @@
 	render();
 
 	function init() {
-		camera = new THREE.OrthographicCamera(width / -3, width / 3, height / 3, height / -3, 10, 2200);
+		camera = new THREE.OrthographicCamera(width / -d, width / d, height / d, height / -d, 10, 2200);
 		camera.position.set(1000, 1000, 1000);
 		camera.lookAt(0, 0, 0);
 		camera.zoom = 5;
