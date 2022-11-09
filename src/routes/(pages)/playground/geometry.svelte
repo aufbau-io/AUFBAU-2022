@@ -15,10 +15,10 @@
 	let rollOverMesh, rollOverMaterial;
 	let cubeGeo, cubeMaterial;
 
-	let width = window.innerWidth;
-	let height = window.innerHeight;
+	let width = screen.width;
+	let height = screen.height;
 
-	let d = 3;
+	let d = 4;
 
 	const objects = [];
 
@@ -101,14 +101,11 @@
 		// let height = window.innerHeight;
 		// let width = window.innerWidth;
 		// renderer.setSize(width, height);
-
-		window.location.reload();
-
+		// window.location.reload();
 		// camera.left = width / -3;
 		// camera.right = width / 3;
 		// camera.top = height / 3;
 		// camera.bottom = height / -3;
-
 		// camera.updateProjectionMatrix();
 		// renderer.setSize(width, height);
 	});
