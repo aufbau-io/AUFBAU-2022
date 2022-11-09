@@ -109,4 +109,11 @@
 	.body__right {
 		text-align: right;
 	}
+
+	@media (max-width: 800px) {
+		.grey {
+			margin: 8px 0 8px 0;
+			color: var(--black);
+		}
+	}
 </style>
