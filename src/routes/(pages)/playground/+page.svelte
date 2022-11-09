@@ -16,8 +16,6 @@
 <style>
 	main {
 		position: relative;
-		height: 100vh;
-		height: calc(var(--vh, 1vh) * 100);
 		width: 100vw;
 		background: var(--white);
 	}
