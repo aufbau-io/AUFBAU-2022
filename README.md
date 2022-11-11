@@ -2,9 +2,16 @@
 AUFBAU WEB \
 www.aufbau.io
 
-### Build / Serve
+### serve
 
 ```
 $ yarn
-$ yarn start
+$ yarn dev
+```
+
+### Build
+
+```
+$ yarn
+$ yarn build
 ```
