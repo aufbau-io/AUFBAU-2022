@@ -29,8 +29,11 @@
 			<div class="grey body__left">
 				<h3>work</h3>
 				<br />
-				<a href="https://replikamasterworks.com" target="_blank">replika • web • 2022 </a>
-				<a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a>
+				<a href="https://replikamasterworks.com" target="_blank">replika • web • WIP </a>
+				<a href="https://www.conceptioncalculator2000.com" target="_blank"
+					>conception calculator 2000 • web • WIP
+				</a>
+				<!-- <a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a> -->
 				<!--a href="https://iota.health" target="_blank">iota • research app • 2022</a-->
 			</div>
 			<div class="grey body__right">
