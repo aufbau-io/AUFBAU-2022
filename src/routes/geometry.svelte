@@ -2,7 +2,7 @@
 	import { onMount, onDestroy } from 'svelte';
 	import * as THREE from 'three';
 
-	import { screenType } from '$lib/store/store';
+	import { screenType, mouseOnLink } from '$lib/store/store';
 
 	let container;
 	let id;
@@ -122,35 +122,37 @@
 	}
 
 	function onPointerDown(event) {
-		pointer.set(((event.clientX - 0) / width) * 2 - 1, -(event.clientY / height) * 2 + 1);
+		if (!$mouseOnLink) {
+			pointer.set(((event.clientX - 0) / width) * 2 - 1, -(event.clientY / height) * 2 + 1);
 
-		raycaster.setFromCamera(pointer, camera);
+			raycaster.setFromCamera(pointer, camera);
 
-		const intersects = raycaster.intersectObjects(objects, false);
+			const intersects = raycaster.intersectObjects(objects, false);
 
-		if (intersects.length > 0) {
-			const intersect = intersects[0];
+			if (intersects.length > 0) {
+				const intersect = intersects[0];
 
-			// delete cube
+				// delete cube
 
-			if (isShiftDown) {
-				if (intersect.object !== plane) {
-					scene.remove(intersect.object);
+				if (isShiftDown) {
+					if (intersect.object !== plane) {
+						scene.remove(intersect.object);
 
-					objects.splice(objects.indexOf(intersect.object), 1);
+						objects.splice(objects.indexOf(intersect.object), 1);
+					}
+
+					// create cube
+				} else {
+					const voxel = new THREE.Mesh(cubeGeo, cubeMaterial);
+					voxel.position.copy(intersect.point).add(intersect.face.normal);
+					voxel.position.divideScalar(50).floor().multiplyScalar(50).addScalar(25);
+					scene.add(voxel);
+
+					objects.push(voxel);
 				}
 
-				// create cube
-			} else {
-				const voxel = new THREE.Mesh(cubeGeo, cubeMaterial);
-				voxel.position.copy(intersect.point).add(intersect.face.normal);
-				voxel.position.divideScalar(50).floor().multiplyScalar(50).addScalar(25);
-				scene.add(voxel);
-
-				objects.push(voxel);
+				render();
 			}
-
-			render();
 		}
 	}
 

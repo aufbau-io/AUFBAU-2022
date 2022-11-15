@@ -1,4 +1,6 @@
 <script>
+	import { screenType, mouseOnLink } from '$lib/store/store';
+	import { setMouseOnLink, setMouseOffLink } from '$lib/functions/mouse.js';
 </script>
 
 <svelte:head>
@@ -6,6 +8,15 @@
 </svelte:head>
 
 <section>
+	<header>
+		<p>
+			{#if $screenType == 3}
+				click to build / shift-click to demolish
+			{:else}
+				click to build
+			{/if}
+		</p>
+	</header>
 	<div class="body">
 		<!--img class="niels" alt="niels" src="/niels_bw.jpg" /-->
 
@@ -18,17 +29,41 @@
 		</div>
 		<div class="grey body__left">
 			<h3>work</h3>
-			<a class="hide" href="https://iota.health" target="_blank">iota • app • WIP </a>
+			<a
+				on:mouseenter={() => setMouseOnLink()}
+				on:mouseleave={() => setMouseOffLink()}
+				class="hide"
+				href="https://iota.health"
+				target="_blank"
+				>iota • app • WIP
+			</a>
 
-			<a class="hide" href="https://www.conceptioncalculator2000.com" target="_blank"
+			<a
+				on:mouseenter={() => setMouseOnLink()}
+				on:mouseleave={() => setMouseOffLink()}
+				class="hide"
+				href="https://www.conceptioncalculator2000.com"
+				target="_blank"
 				>conception calculator 2000 • web • WIP
 			</a>
-			<a class="hide" href="https://replikamasterworks.com" target="_blank">replika • web • WIP </a>
+			<a
+				on:mouseenter={() => setMouseOnLink()}
+				on:mouseleave={() => setMouseOffLink()}
+				class="hide"
+				href="https://replikamasterworks.com"
+				target="_blank"
+				>replika • web • WIP
+			</a>
 			<!-- <a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a> -->
 		</div>
 		<div class="grey body__right">
 			<h3>systems</h3>
-			<a class="hide" href="/systems">modular system architecture • example</a>
+			<a
+				on:mouseenter={() => setMouseOnLink()}
+				on:mouseleave={() => setMouseOffLink()}
+				class="hide"
+				href="/systems">modular system architecture • example</a
+			>
 		</div>
 		<div class="grey hidden body__left">
 			<p>bespoke websites, systems, apps</p>
@@ -37,23 +72,43 @@
 		<div class="body__right">
 			<h3>say hi</h3>
 
-			<a class="hide" target="_blank" href="https://github.com/aufbau-io">github</a>
-			<a class="hide" href="mailto: dan@aufbau.io">email</a>
-			<a class="hide" target="_blank" href="/dan_humphries_cv.pdf">cv</a>
+			<a
+				on:mouseenter={() => setMouseOnLink()}
+				on:mouseleave={() => setMouseOffLink()}
+				class="hide"
+				target="_blank"
+				href="https://github.com/aufbau-io">github</a
+			>
+			<a
+				on:mouseenter={() => setMouseOnLink()}
+				on:mouseleave={() => setMouseOffLink()}
+				class="hide"
+				href="mailto: dan@aufbau.io">email</a
+			>
+			<a
+				on:mouseenter={() => setMouseOnLink()}
+				on:mouseleave={() => setMouseOffLink()}
+				class="hide"
+				target="_blank"
+				href="/dan_humphries_cv.pdf">cv</a
+			>
 		</div>
 		<br />
 	</div>
 	<footer>
-		<a target="_blank" href="https://www.websitecarbon.com/website/aufbau-io/"
-			>0.04g of CO2 / visit</a
+		<a
+			on:mouseenter={() => setMouseOnLink()}
+			on:mouseleave={() => setMouseOffLink()}
+			target="_blank"
+			href="https://www.websitecarbon.com/website/aufbau-io/">0.04g of CO2 / visit</a
 		>
 	</footer>
 </section>
 
 <style>
 	section {
-		height: 95vh;
-		height: calc(var(--vh, 1vh) * 95);
+		height: 100vh;
+		height: calc(var(--vh, 1vh) * 100);
 		display: flex;
 		overflow: auto;
 		max-width: 640px;
@@ -88,6 +143,16 @@
 		text-align: right;
 	}
 
+	header {
+		position: absolute;
+		top: 24px;
+		left: 0;
+		width: 100vw;
+
+		display: flex;
+		justify-content: center;
+	}
+
 	footer {
 		position: absolute;
 		bottom: 24px;
@@ -98,7 +163,8 @@
 		justify-content: center;
 	}
 
-	footer a {
+	footer a,
+	header p {
 		background: var(--background);
 		color: var(--primary-50);
 		border: solid 1px var(--primary-50);
