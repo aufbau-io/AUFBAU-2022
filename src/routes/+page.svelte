@@ -90,7 +90,7 @@
 
 	footer {
 		position: absolute;
-		bottom: 16px;
+		bottom: 24px;
 		left: 0;
 		width: 100vw;
 
