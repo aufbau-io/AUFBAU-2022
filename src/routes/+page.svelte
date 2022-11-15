@@ -110,9 +110,6 @@
 	}
 
 	@media (max-width: 800px) {
-		footer {
-			bottom: 32px;
-		}
 		.grey {
 			margin: 8px;
 		}
