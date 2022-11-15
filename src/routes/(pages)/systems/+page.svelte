@@ -1,8 +1,15 @@
 <script>
+	import { setMouseOnLink, setMouseOffLink } from '$lib/functions/mouse.js';
 </script>
 
 <main>
-	<img src={'/system_diagram.png'} class="img" alt="modular system diagram" />
+	<img
+		on:mouseenter={() => setMouseOnLink()}
+		on:mouseleave={() => setMouseOffLink()}
+		src={'/system_diagram.png'}
+		class="img"
+		alt="modular system diagram"
+	/>
 </main>
 
 <style>
