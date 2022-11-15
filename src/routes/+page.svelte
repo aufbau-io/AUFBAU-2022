@@ -44,7 +44,7 @@
 	</div>
 	<footer>
 		<a target="_blank" href="https://www.websitecarbon.com/website/aufbau-io/"
-			>0.04 g of CO2 / visit</a
+			>0.04g of CO2 / visit</a
 		>
 	</footer>
 </section>
