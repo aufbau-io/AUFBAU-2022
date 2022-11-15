@@ -9,11 +9,9 @@
 
 <section>
 	<header>
-		<p>
-			{#if $screenType == 3}
-				click to build / shift-click to demolish
-			{/if}
-		</p>
+		{#if $screenType == 3}
+			<p>click to build / shift-click to demolish</p>
+		{/if}
 	</header>
 	<div class="body">
 		<!--img class="niels" alt="niels" src="/niels_bw.jpg" /-->
