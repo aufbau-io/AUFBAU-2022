@@ -37,7 +37,7 @@
 		<div class="body__right">
 			<h3>say hi</h3>
 
-			<a class="hide" href="https://github.com/aufbau-io">github</a>
+			<a class="hide" target="_blank" href="https://github.com/aufbau-io">github</a>
 			<a class="hide" href="mailto: dan@aufbau.io">email</a>
 			<a class="hide" target="_blank" href="/dan_humphries_cv.pdf">cv</a>
 		</div>
