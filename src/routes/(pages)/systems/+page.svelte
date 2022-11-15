@@ -2,7 +2,7 @@
 </script>
 
 <main>
-	<img src={'/system_diagram.svg'} class="img" alt="modular system diagram" />
+	<img src={'/system_diagram.png'} class="img" alt="modular system diagram" />
 </main>
 
 <style>
@@ -18,5 +18,6 @@
 	.img {
 		max-height: 100vh;
 		max-width: 100vw;
+		border: solid 1px var(--primary-50);
 	}
 </style>

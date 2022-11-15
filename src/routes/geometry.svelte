@@ -1,131 +1,177 @@
 <script>
 	import { onMount, onDestroy } from 'svelte';
-	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 	import * as THREE from 'three';
 
-	let container, pc, id;
+	import { screenType } from '$lib/store/store';
+
+	let container;
+	let id;
 	onDestroy(() => cancelAnimationFrame(id));
 
-	// Setting up the scene
-	let scene = new THREE.Scene();
+	let camera, scene, renderer;
+	let plane;
+	let pointer,
+		raycaster,
+		isShiftDown = false;
 
-	let height = window.innerHeight;
-	let width = window.innerWidth;
+	let rollOverMesh, rollOverMaterial;
+	let cubeGeo, cubeMaterial;
 
-	// Setting up a camera
-	let camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 400);
-	camera.position.z = 100;
+	let width = screen.width;
+	let height = screen.height;
 
-	// Setting up the renderer. This will be called later to render scene with the camera setup above
-	let renderer = new THREE.WebGLRenderer({ antialias: true });
-	renderer.setPixelRatio(window.devicePixelRatio);
-	renderer.setSize(width, height);
-	renderer.setClearColor(0xd0d0d0, 1);
-	onMount(() => {
-		container.appendChild(renderer.domElement);
-	});
+	let d;
+	if ($screenType == 2) {
+		d = 2;
+	} else {
+		d = 4;
+	}
 
-	let controls = new OrbitControls(camera, renderer.domElement);
-	controls.maxDistance = 100;
-	controls.minDistance = 25;
-	controls.enablePan = false;
+	const objects = [];
 
-	// Setting up a group to hold the items we will be creating together
-	let group = new THREE.Group();
-
-	// Array curve holds the positions of points generated from a lorenz equation; lorenz function below generates the points and returns an array of points
-	let arrayCurve = lorenz();
-
-	// Generating the geometry
-	let curve = new THREE.CatmullRomCurve3(arrayCurve);
-	let vertices = curve.getPoints(100000);
-	let geometry = new THREE.BufferGeometry().setFromPoints(vertices);
-
-	// Generating a cloud of point
-	let pcMat = new THREE.PointsMaterial();
-	pcMat.color = new THREE.Color(0x232323);
-	pcMat.transparent = true;
-	pcMat.size = 0.1;
-	// pcMat.blending = THREE.AdditiveBlending;
-	pc = new THREE.Points(geometry, pcMat);
-	pc.sizeAttenuation = true;
-	pc.sortPoints = true;
-
-	group.add(pc);
-
-	scene.add(group);
-
-	group.rotation.y += Math.PI / 2;
-
-	let step = 0;
-
-	let render = function () {
-		renderer.render(scene, camera);
-		id = requestAnimationFrame(render);
-
-		//Varying the points on each frame
-		step += 0.00001;
-		let geometry = pc.geometry;
-		let a = 0.9 + Math.random() * 7;
-		let b = 3.4 + Math.random() * 8;
-		let f = 9.9 + Math.random() * 9;
-		let g = 1 + Math.random();
-		let t = 0.0001;
-
-		// geometry.vertices.forEach(function (v) {
-		// 	v.x = v.x - t * a * v.x + t * v.y * v.y - t * v.z * v.z + t * a * f;
-		// 	v.y = v.y - t * v.y + t * v.x * v.y - t * b * v.x * v.z + t * g;
-		// 	v.z = v.z - t * v.z + t * b * v.x * v.y + t * v.x * v.z;
-		// });
-		// geometry.verticesNeedUpdate = true;
-
-		const positions = geometry.attributes.position.array;
-		for (let i = 0; i < positions.length; i += 3) {
-			let v = new THREE.Vector3(positions[i], positions[i + 1], positions[i + 2]);
-			positions[i] = v.x - t * a * v.x + t * v.y * v.y - t * v.z * v.z + t * a * f;
-			positions[i + 1] = v.y - t * v.y + t * v.x * v.y - t * b * v.x * v.z + t * g;
-			positions[i + 2] = v.z - t * v.z + t * b * v.x * v.y + t * v.x * v.z;
-		}
-
-		geometry.attributes.position.needsUpdate = true;
-
-		group.rotation.x += 0.002;
-		group.rotation.y += 0.002;
-		group.rotation.z += 0.002;
-	};
-
-	window.addEventListener(
-		'resize',
-		function () {
-			let height = window.innerHeight;
-			let width = window.innerWidth;
-			camera.aspect = width / height;
-			camera.updateProjectionMatrix();
-			renderer.setSize(width, height);
-		},
-		false
-	);
-
+	init();
 	render();
 
-	function lorenz() {
-		let arrayCurve = [];
+	function init() {
+		camera = new THREE.OrthographicCamera(width / -d, width / d, height / d, height / -d, 10, 3200);
+		camera.position.set(1000, 1000, 1000);
+		camera.lookAt(0, 0, 0);
+		camera.zoom = 5;
 
-		let x = 0.01,
-			y = 0.01,
-			z = 0.01;
-		let a = 4.9;
-		let b = 5.4;
-		let f = 7.9;
-		let g = 1;
-		let t = 0.0006;
-		for (let i = 0; i < 100000; i++) {
-			x = x - t * a * x + t * y * y - t * z * z + t * a * f;
-			y = y - t * y + t * x * y - t * b * x * z + t * g;
-			z = z - t * z + t * b * x * y + t * x * z;
-			arrayCurve.push(new THREE.Vector3(x, y, z).multiplyScalar(2));
+		scene = new THREE.Scene();
+		scene.background = new THREE.Color(0x232323);
+
+		// roll-over helpers
+
+		const rollOverGeo = new THREE.BoxGeometry(50, 50, 50);
+		rollOverMaterial = new THREE.MeshBasicMaterial({
+			color: 0xf2cd5e,
+			opacity: 0.4,
+			transparent: true
+		});
+		rollOverMesh = new THREE.Mesh(rollOverGeo, rollOverMaterial);
+		rollOverMesh.position.y = 1000; // really high to hide it initally and on mobile
+		scene.add(rollOverMesh);
+
+		// cubes
+
+		cubeGeo = new THREE.BoxGeometry(50, 50, 50);
+		cubeMaterial = new THREE.MeshLambertMaterial({ color: 0xf2cd5e });
+
+		// grid
+
+		const gridHelper = new THREE.GridHelper(2000, 40, 0x4b4b4b, 0x4b4b4b);
+		scene.add(gridHelper);
+
+		//
+
+		raycaster = new THREE.Raycaster();
+		pointer = new THREE.Vector2();
+
+		const geometry = new THREE.PlaneGeometry(1000, 1000);
+		geometry.rotateX(-Math.PI / 2);
+
+		plane = new THREE.Mesh(
+			geometry,
+			new THREE.MeshBasicMaterial({ color: 0xe0e0e0, visible: false })
+		);
+		scene.add(plane);
+
+		objects.push(plane);
+
+		// lights
+
+		const ambientLight = new THREE.AmbientLight(0x606060);
+		scene.add(ambientLight);
+
+		const directionalLight = new THREE.DirectionalLight(0xffffff);
+		directionalLight.position.set(1, 0.75, 0.5).normalize();
+		scene.add(directionalLight);
+
+		renderer = new THREE.WebGLRenderer({ antialias: true });
+		renderer.setPixelRatio(window.devicePixelRatio);
+		renderer.setSize(width, height);
+
+		onMount(() => {
+			container.appendChild(renderer.domElement);
+
+			document.addEventListener('pointermove', onPointerMove);
+			document.addEventListener('pointerdown', onPointerDown);
+			document.addEventListener('keydown', onDocumentKeyDown);
+			document.addEventListener('keyup', onDocumentKeyUp);
+		});
+
+		//
+	}
+
+	function onPointerMove(event) {
+		pointer.set(((event.clientX - 0) / width) * 2 - 1, -(event.clientY / height) * 2 + 1);
+
+		raycaster.setFromCamera(pointer, camera);
+
+		const intersects = raycaster.intersectObjects(objects, false);
+
+		if (intersects.length > 0) {
+			const intersect = intersects[0];
+
+			rollOverMesh.position.copy(intersect.point).add(intersect.face.normal);
+			rollOverMesh.position.divideScalar(50).floor().multiplyScalar(50).addScalar(25);
+
+			render();
 		}
-		return arrayCurve;
+	}
+
+	function onPointerDown(event) {
+		pointer.set(((event.clientX - 0) / width) * 2 - 1, -(event.clientY / height) * 2 + 1);
+
+		raycaster.setFromCamera(pointer, camera);
+
+		const intersects = raycaster.intersectObjects(objects, false);
+
+		if (intersects.length > 0) {
+			const intersect = intersects[0];
+
+			// delete cube
+
+			if (isShiftDown) {
+				if (intersect.object !== plane) {
+					scene.remove(intersect.object);
+
+					objects.splice(objects.indexOf(intersect.object), 1);
+				}
+
+				// create cube
+			} else {
+				const voxel = new THREE.Mesh(cubeGeo, cubeMaterial);
+				voxel.position.copy(intersect.point).add(intersect.face.normal);
+				voxel.position.divideScalar(50).floor().multiplyScalar(50).addScalar(25);
+				scene.add(voxel);
+
+				objects.push(voxel);
+			}
+
+			render();
+		}
+	}
+
+	function onDocumentKeyDown(event) {
+		switch (event.keyCode) {
+			case 16:
+				isShiftDown = true;
+				break;
+		}
+	}
+
+	function onDocumentKeyUp(event) {
+		switch (event.keyCode) {
+			case 16:
+				isShiftDown = false;
+				break;
+		}
+	}
+
+	function render() {
+		renderer.render(scene, camera);
 	}
 </script>
 
@@ -134,13 +180,7 @@
 <style>
 	.geometry {
 		position: fixed;
-		top: 0;
 		left: 0;
-		z-index: -10;
-		overflow: hidden;
-
-		width: 100vw;
-		height: 100vh;
-		height: calc(var(--vh, 1vh) * 100);
+		top: 0;
 	}
 </style>
