@@ -133,31 +133,18 @@ a.centreButton.prevent:hover {
 	transform: translate(-50%, 0);
 	z-index: 20;
 	opacity: 1;
-	background: var(--accent);
-	border: solid 1px var(--background);
-	color: var(--background);
+	background: var(--background);
+	color: var(--primary-50);
+	border: solid 1px var(--primary-50);
 	max-width: 100%;
 	cursor: pointer;
 	user-select: none;
 }
 
 a.centreButton:hover {
-	background: var(--white);
-	color: var(--black);
-	border-color: var(--black);
+	color: var(--accent);
+	border: solid 1px var(--primary-50);
 	opacity: 1;
-}
-
-a.centreButton.alt {
-	background: var(--white);
-	border: solid 1px var(--black);
-	color: var(--black);
-}
-
-a.centreButton.alt:hover {
-	background: var(--black);
-	border: solid 1px var(--white);
-	color: var(--white);
 }
 
 @media (max-width: 800px) {
