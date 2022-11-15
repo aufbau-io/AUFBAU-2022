@@ -24,8 +24,10 @@
 		border-right: solid 1px var(--primary-50);
 	}
 
-	@media (max-width: 800px) {
+	@media (max-width: 760px) {
 		.img {
+			border-left: none;
+			border-right: none;
 			border-top: solid 1px var(--primary-50);
 			border-bottom: solid 1px var(--primary-50);
 		}
