@@ -19,14 +19,15 @@
 	.img {
 		max-height: 100vh;
 		max-width: 100vw;
-		border: solid 1px var(--primary-50);
+		background: var(--background);
+		border-left: solid 1px var(--primary-50);
+		border-right: solid 1px var(--primary-50);
 	}
 
 	@media (max-width: 800px) {
 		.img {
-			background: var(--background);
-			border-left: none;
-			border-right: none;
+			border-top: solid 1px var(--primary-50);
+			border-bottom: solid 1px var(--primary-50);
 		}
 	}
 </style>
