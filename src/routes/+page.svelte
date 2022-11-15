@@ -18,17 +18,17 @@
 		</div>
 		<div class="grey body__left">
 			<h3>work</h3>
-			<a href="https://iota.health" target="_blank">iota • app • WIP </a>
+			<a class="hide" href="https://iota.health" target="_blank">iota • app • WIP </a>
 
-			<a href="https://www.conceptioncalculator2000.com" target="_blank"
+			<a class="hide" href="https://www.conceptioncalculator2000.com" target="_blank"
 				>conception calculator 2000 • web • WIP
 			</a>
-			<a href="https://replikamasterworks.com" target="_blank">replika • web • WIP </a>
+			<a class="hide" href="https://replikamasterworks.com" target="_blank">replika • web • WIP </a>
 			<!-- <a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a> -->
 		</div>
 		<div class="grey body__right">
 			<h3>systems</h3>
-			<a href="/systems">modular system architecture • example</a>
+			<a class="hide" href="/systems">modular system architecture • example</a>
 		</div>
 		<div class="grey hidden body__left">
 			<p>bespoke websites, systems, apps</p>
@@ -37,11 +37,16 @@
 		<div class="body__right">
 			<h3>say hi</h3>
 
-			<a target="_blank" href="/dan_humphries_cv.pdf">cv</a>
-			<a href="mailto: dan@aufbau.io">email</a>
+			<a class="hide" target="_blank" href="/dan_humphries_cv.pdf">cv</a>
+			<a class="hide" href="mailto: dan@aufbau.io">email</a>
 		</div>
 		<br />
 	</div>
+	<footer>
+		<a target="_blank" href="https://www.websitecarbon.com/website/aufbau-io/"
+			>0.04 g of CO2 / visit</a
+		>
+	</footer>
 </section>
 
 <style>
@@ -61,7 +66,7 @@
 		justify-content: center;
 		background: var(--background-50);
 		border: solid 1px var(--primary-50);
-		border-radius: 20px;
+		border-radius: 16px;
 		padding: 40px;
 	}
 
@@ -80,6 +85,27 @@
 
 	.body__right {
 		text-align: right;
+	}
+
+	footer {
+		position: absolute;
+		bottom: 16px;
+		left: 0;
+		width: 100vw;
+
+		display: flex;
+		justify-content: center;
+	}
+
+	footer a {
+		background: var(--background);
+		color: var(--primary-50);
+		border: solid 1px var(--primary-50);
+	}
+
+	footer a:hover {
+		color: var(--accent);
+		border: solid 1px var(--primary-50);
 	}
 
 	@media (max-width: 800px) {
