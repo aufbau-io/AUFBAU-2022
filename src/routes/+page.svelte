@@ -173,8 +173,8 @@
 
 	@media (max-width: 800px) {
 		section {
-			height: 96vh;
-			height: calc(var(--vh, 1vh) * 96);
+			height: 95vh;
+			height: calc(var(--vh, 1vh) * 95);
 		}
 
 		.grey {
