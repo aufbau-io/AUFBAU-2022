@@ -4,6 +4,7 @@
 /* APP */
 :root {
 	--primary: #f0f0f0;
+	--primary-90: #f0f0f0e6;
 	--primary-50: #f0f0f080;
 	--background: #232323;
 	--background-50: #23232380;
@@ -36,6 +37,7 @@ h1 {
 	font-weight: 700;
 	text-transform: lowercase;
 	letter-spacing: 1.1px;
+	margin-bottom: 8px;
 }
 
 h3 {
@@ -50,7 +52,7 @@ a {
 	font-size: 15px;
 	font-weight: 300;
 	letter-spacing: 0.028em;
-	margin: 4px 0;
+	margin: 8px 0;
 }
 
 a {
@@ -63,7 +65,7 @@ a {
 }
 
 a:hover {
-	color: var(--primary);
+	color: var(--primary-90);
 }
 
 ::-moz-selection {
