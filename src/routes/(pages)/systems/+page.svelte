@@ -25,6 +25,8 @@
 	@media (max-width: 800px) {
 		.img {
 			background: var(--background);
+			border-left: none;
+			border-right: none;
 		}
 	}
 </style>

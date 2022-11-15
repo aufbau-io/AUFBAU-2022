@@ -163,10 +163,12 @@ a.centreButton.alt:hover {
 	p,
 	a {
 		font-size: 12px;
+		margin: 0px 0;
 	}
 
 	h1 {
 		font-size: 32px;
+		margin: 0px 0;
 	}
 
 	h3 {
