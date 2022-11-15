@@ -95,7 +95,6 @@
 		<a
 			on:mouseenter={() => setMouseOnLink()}
 			on:mouseleave={() => setMouseOffLink()}
-			target="_blank"
 			href="https://www.websitecarbon.com/website/aufbau-io/">0.04g of CO2 / visit</a
 		>
 	</footer>
