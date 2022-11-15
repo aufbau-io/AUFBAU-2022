@@ -171,7 +171,7 @@
 		border: solid 1px var(--primary-50);
 	}
 
-	@media (max-width: 800px) {
+	@media (max-width: 760px) {
 		section {
 			height: 95vh;
 			height: calc(var(--vh, 1vh) * 95);

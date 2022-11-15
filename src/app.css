@@ -148,7 +148,7 @@ a.centreButton:hover {
 	opacity: 1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
 	body {
 		margin: 0;
 	}
