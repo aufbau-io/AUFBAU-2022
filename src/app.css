@@ -181,6 +181,6 @@ a.centreButton.alt:hover {
 	}
 
 	a.hide {
-		color: var(--accent);
+		color: var(--primary-50);
 	}
 }
