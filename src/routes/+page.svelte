@@ -12,8 +12,6 @@
 		<p>
 			{#if $screenType == 3}
 				click to build / shift-click to demolish
-			{:else}
-				click to build
 			{/if}
 		</p>
 	</header>
@@ -176,6 +174,11 @@
 	}
 
 	@media (max-width: 800px) {
+		section {
+			height: 96vh;
+			height: calc(var(--vh, 1vh) * 96);
+		}
+
 		.grey {
 			margin: 8px;
 		}
