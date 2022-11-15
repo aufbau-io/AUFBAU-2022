@@ -69,6 +69,11 @@
 		margin: 16px 0;
 	}
 
+	.grey.top {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
 	.body__left {
 		text-align: left;
 	}
