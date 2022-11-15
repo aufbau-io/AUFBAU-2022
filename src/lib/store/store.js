@@ -2,4 +2,4 @@ import { writable } from 'svelte/store';
 
 export const active = writable(true);
 export const screenType = writable(null);
-export const mouseOnLink = writable(true);
+export const mouseOnLink = writable(false);
