@@ -21,4 +21,10 @@
 		max-width: 100vw;
 		border: solid 1px var(--primary-50);
 	}
+
+	@media (max-width: 800px) {
+		.img {
+			background: var(--background);
+		}
+	}
 </style>
