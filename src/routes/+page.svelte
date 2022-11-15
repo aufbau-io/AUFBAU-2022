@@ -51,8 +51,8 @@
 
 <style>
 	section {
-		height: 96vh;
-		height: calc(var(--vh, 1vh) * 96);
+		height: 95vh;
+		height: calc(var(--vh, 1vh) * 95);
 		display: flex;
 		overflow: auto;
 		max-width: 640px;
