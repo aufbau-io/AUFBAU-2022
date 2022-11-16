@@ -4,9 +4,7 @@
 </script>
 
 <main>
-	<figure>
-		<img use:lazyLoad={'/system_diagram.png'} alt={'modular system diagram'} class="img" />
-	</figure>
+	<img use:lazyLoad={'/system_diagram.png'} alt={'modular system diagram'} class="img" />
 </main>
 
 <style>
@@ -18,9 +16,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-	}
-
-	figure {
 	}
 
 	img {
