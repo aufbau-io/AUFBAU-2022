@@ -21,7 +21,6 @@
 	}
 
 	figure {
-		background: var(--background);
 	}
 
 	img {
