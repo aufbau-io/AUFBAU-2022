@@ -1,15 +1,12 @@
 <script>
 	import { setMouseOnLink, setMouseOffLink } from '$lib/functions/mouse.js';
+	import { lazyLoad } from '$lib/functions/lazyLoad.js';
 </script>
 
 <main>
-	<img
-		on:mouseenter={() => setMouseOnLink()}
-		on:mouseleave={() => setMouseOffLink()}
-		src={'/system_diagram.png'}
-		class="img"
-		alt="modular system diagram"
-	/>
+	<figure>
+		<img use:lazyLoad={'/system_diagram.png'} alt={'modular system diagram'} class="img" />
+	</figure>
 </main>
 
 <style>
@@ -23,16 +20,22 @@
 		justify-content: center;
 	}
 
-	.img {
+	figure {
+		background: var(--background);
+	}
+
+	img {
+		opacity: 0;
+		transition: opacity 1s;
 		max-height: 100vh;
 		max-width: 100vw;
-		background: var(--background);
+
 		border-left: solid 1px var(--primary-50);
 		border-right: solid 1px var(--primary-50);
 	}
 
 	@media (max-width: 760px) {
-		.img {
+		img {
 			border-left: none;
 			border-right: none;
 			border-top: solid 1px var(--primary-50);
