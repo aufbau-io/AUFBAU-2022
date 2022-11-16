@@ -44,7 +44,9 @@
 	});
 </script>
 
-<svelte:component this={Geometry} />
+{#key Geometry}
+	<svelte:component this={Geometry} />
+{/key}
 <main>
 	<slot />
 </main>
