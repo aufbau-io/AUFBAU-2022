@@ -1,6 +1,10 @@
 <script>
-	import { screenType, mouseOnLink } from '$lib/store/store';
 	import { setMouseOnLink, setMouseOffLink } from '$lib/functions/mouse.js';
+	import { onDestroy } from 'svelte';
+
+	onDestroy(async () => {
+		setMouseOffLink();
+	});
 </script>
 
 <slot />
