@@ -23,30 +23,40 @@
 
 		<div class="grey body__left">
 			<h3>work</h3>
+
 			<a
 				on:mouseenter={() => setMouseOnLink()}
 				on:mouseleave={() => setMouseOffLink()}
 				class="hide"
-				href="https://iota.health"
+				href="https://zen.aufbau.io"
 				target="_blank"
-				>iota • app • WIP
+				>zen • web art • 2021
 			</a>
 
 			<a
 				on:mouseenter={() => setMouseOnLink()}
 				on:mouseleave={() => setMouseOffLink()}
 				class="hide"
+				href="https://iota.health"
+				target="_blank"
+				>iota • research app • WIP
+			</a>
+
+			<!-- <a
+				on:mouseenter={() => setMouseOnLink()}
+				on:mouseleave={() => setMouseOffLink()}
+				class="hide"
 				href="https://www.conceptioncalculator2000.com"
 				target="_blank"
 				>conception calculator 2000 • web • WIP
-			</a>
+			</a> -->
 			<a
 				on:mouseenter={() => setMouseOnLink()}
 				on:mouseleave={() => setMouseOffLink()}
 				class="hide"
 				href="https://replikamasterworks.com"
 				target="_blank"
-				>replika • web • WIP
+				>replika masterworks • website • WIP
 			</a>
 			<!-- <a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a> -->
 		</div>
