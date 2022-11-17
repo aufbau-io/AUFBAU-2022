@@ -115,6 +115,7 @@
 		display: flex;
 		overflow: auto;
 		max-width: 640px;
+		touch-action: manipulation;
 	}
 
 	.body {

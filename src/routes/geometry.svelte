@@ -181,6 +181,7 @@
 
 <style>
 	.geometry {
+		touch-action: manipulation;
 		position: fixed;
 		left: 0;
 		top: 0;
