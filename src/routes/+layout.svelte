@@ -44,6 +44,28 @@
 	});
 </script>
 
+<svelte:head>
+	<title>AUFBAU WEB STUDIO</title>
+
+	<link rel="preload" href="system_diagram.png" as="image" />
+
+	<link
+		rel="preload"
+		as="font"
+		href="/fonts/dahlia-medium.woff"
+		type="font/woff"
+		crossorigin="anonymous"
+	/>
+
+	<link
+		rel="preload"
+		as="font"
+		href="/fonts/test-untitled-sans-light.woff2"
+		type="font/woff2"
+		crossorigin="anonymous"
+	/>
+</svelte:head>
+
 {#key Geometry}
 	<svelte:component this={Geometry} />
 {/key}

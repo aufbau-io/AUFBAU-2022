@@ -35,7 +35,7 @@ h1 {
 	font-family: 'dahlia', sans-serif;
 	font-size: 44px;
 	line-height: 44px;
-	font-weight: 700;
+	font-weight: 500;
 	text-transform: lowercase;
 	letter-spacing: 1.1px;
 	margin-bottom: 6px;
@@ -95,12 +95,6 @@ a.hide:hover {
 	font-family: dahlia;
 	src: url(/fonts/dahlia-medium.woff) format('woff');
 	font-weight: 500;
-}
-
-@font-face {
-	font-family: dahlia;
-	src: url(/fonts/dahlia-bold.woff) format('woff');
-	font-weight: 700;
 }
 
 @font-face {

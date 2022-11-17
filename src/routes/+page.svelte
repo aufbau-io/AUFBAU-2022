@@ -3,10 +3,6 @@
 	import { setMouseOnLink, setMouseOffLink } from '$lib/functions/mouse.js';
 </script>
 
-<svelte:head>
-	<title>AUFBAU WEB STUDIO</title>
-</svelte:head>
-
 <section>
 	<header>
 		{#if $screenType == 3}
