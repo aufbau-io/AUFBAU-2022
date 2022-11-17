@@ -15,10 +15,12 @@
 		<div class="grey top">
 			<h1>aufbau.</h1>
 
-			<p>CREATIVE WEB STUDIO</p>
-			<!-- <p on:click={() => toggle()}>make web fun again</p> -->
-			<p>ldn • ykt • nyc</p>
+			<div class="top__text">
+				<p>CREATIVE WEB STUDIO</p>
+				<p>ldn • ykt • nyc</p>
+			</div>
 		</div>
+
 		<div class="grey body__left">
 			<h3>work</h3>
 			<a
@@ -123,7 +125,18 @@
 
 	.grey.top {
 		margin-bottom: 0;
+		padding-bottom: 16px;
 		margin-top: 0;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: solid 1px var(--primary-50);
+	}
+
+	.top__text {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: flex-end;
+		align-items: flex-end;
 	}
 
 	.body__left {
