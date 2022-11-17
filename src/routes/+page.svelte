@@ -205,7 +205,7 @@
 		}
 		.body {
 			border-radius: 0;
-			padding: 16px 24px;
+			padding: 16px 16px;
 			border-left: none;
 			border-right: none;
 		}
