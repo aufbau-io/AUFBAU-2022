@@ -16,7 +16,7 @@
 			<h1>aufbau.</h1>
 
 			<div class="top__text">
-				<p>CREATIVE WEB STUDIO</p>
+				<p>CREATIVE / Techincal WEB STUDIO</p>
 				<p>ldn • ykt • nyc</p>
 			</div>
 		</div>
@@ -147,6 +147,10 @@
 		flex-flow: column wrap;
 		justify-content: flex-end;
 		align-items: flex-end;
+	}
+
+	.top__text p {
+		text-align: right;
 	}
 
 	.body__left {
