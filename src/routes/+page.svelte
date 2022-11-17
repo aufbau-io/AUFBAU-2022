@@ -204,10 +204,8 @@
 			margin: 8px;
 		}
 		.body {
-			border-radius: 0;
-			padding: 16px 16px;
-			border-left: none;
-			border-right: none;
+			padding: 16px 8px;
+			margin: auto 16px;
 		}
 	}
 </style>
