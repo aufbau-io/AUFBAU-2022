@@ -16,7 +16,7 @@
 			<h1>aufbau.</h1>
 
 			<div class="top__text">
-				<p>CREATIVE // TECHNICAL WEB STUDIO</p>
+				<p>CREATIVE // TECHNICAL WEB&nbsp;STUDIO</p>
 				<p>ldn • ykt • nyc</p>
 			</div>
 		</div>
