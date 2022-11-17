@@ -16,7 +16,7 @@
 			<h1>aufbau.</h1>
 
 			<div class="top__text">
-				<p>CREATIVE / Techincal WEB STUDIO</p>
+				<p>CREATIVE // TECHNICAL WEB STUDIO</p>
 				<p>ldn • ykt • nyc</p>
 			</div>
 		</div>
@@ -139,6 +139,7 @@
 		margin-top: 0;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		border-bottom: solid 1px var(--primary-50);
 	}
 
