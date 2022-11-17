@@ -4,7 +4,13 @@
 </script>
 
 <main>
-	<img use:lazyLoad={'/system_diagram.png'} alt={'modular system diagram'} class="img" />
+	<img
+		on:mouseenter={() => setMouseOnLink()}
+		on:mouseleave={() => setMouseOffLink()}
+		use:lazyLoad={'/system_diagram.png'}
+		alt={'modular system diagram'}
+		class="img"
+	/>
 </main>
 
 <style>
