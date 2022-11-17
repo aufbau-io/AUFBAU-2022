@@ -24,14 +24,14 @@
 		<div class="grey body__left">
 			<h3>work</h3>
 
-			<a
+			<!-- <a
 				on:mouseenter={() => setMouseOnLink()}
 				on:mouseleave={() => setMouseOffLink()}
 				class="hide"
 				href="https://zen.aufbau.io"
 				target="_blank"
 				>zen • web art • 2021
-			</a>
+			</a> -->
 
 			<a
 				on:mouseenter={() => setMouseOnLink()}
@@ -56,7 +56,7 @@
 				class="hide"
 				href="https://replikamasterworks.com"
 				target="_blank"
-				>replika masterworks • website • WIP
+				>replika • website • WIP
 			</a>
 			<!-- <a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a> -->
 		</div>
