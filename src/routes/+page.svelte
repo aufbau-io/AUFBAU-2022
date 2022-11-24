@@ -37,7 +37,7 @@
 				on:mouseenter={() => setMouseOnLink()}
 				on:mouseleave={() => setMouseOffLink()}
 				class="hide"
-				href="https://iota.health"
+				href="https://app.iota.health"
 				target="_blank"
 				>iota • research app • WIP
 			</a>
