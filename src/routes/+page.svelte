@@ -6,6 +6,7 @@
 <main>
 	<section>
 		<h4>aufbau web studio</h4>
+		<a href="mailto: dan@aufbau.io">contact</a>
 	</section>
 
 	<body>
@@ -56,9 +57,10 @@
 		padding: 0px 16px;
 		padding-top: 4px;
 		overflow: auto;
+		width: 100%;
 
 		display: flex;
-		align-items: center;
+		justify-content: space-between;
 
 		touch-action: manipulation;
 	}
