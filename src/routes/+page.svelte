@@ -108,6 +108,9 @@
 	}
 
 	@media (max-width: 760px) {
+		section {
+			padding: 0 8px;
+		}
 		body {
 			flex-flow: row wrap;
 			overflow: hidden;
