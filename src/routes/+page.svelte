@@ -101,7 +101,7 @@
 		}
 		iframe,
 		img {
-			width: calc(100% - 40px);
+			width: 100%;
 			height: 25%;
 		}
 
