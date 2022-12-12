@@ -5,7 +5,7 @@
 
 <main>
 	<section>
-		<h4>aufbau studio</h4>
+		<p>aufbau web studio</p>
 		<p>anti-pattern</p>
 		<a href="mailto: dan@aufbau.io">contact</a>
 	</section>
