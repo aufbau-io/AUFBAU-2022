@@ -11,15 +11,16 @@
 	<body>
 		<a href="https://dan.aufbau.io" class="title">VISIT // PERSONAL WEBSITE</a>
 		<iframe src="https://dan.aufbau.io" title="IOTA" />
-		<a href="https://dan.aufbau.io" class="title">VISIT // SILICON FM</a>
+		<a href="https://silicon.fm" class="title">VISIT // SILICON FM</a>
 		<iframe src="https://silicon.fm" title="IOTA" />
-		<a href="https://dan.aufbau.io" class="title">VISIT // IOTA</a>
+		<a href="https://iota.health" class="title">VISIT // IOTA</a>
 		<iframe src="https://iota.health" title="IOTA" />
 		<!-- <iframe src="https://replikamasterworks.com" title="IOTA" /> -->
 		<!-- <img src="system_diagram.png" alt="img" /> -->
 		<!-- <iframe src="https://siiignal.netlify.app" title="IOTA" /> -->
 		<!-- <iframe src="https://site.hhacker.space" title="IOTA" /> -->
-		<a href="https://dan.aufbau.io" class="title">VISIT CONCEPTION CALCULATOR 2000</a>
+		<a href="https://conceptioncalculator2000.com" class="title">VISIT CONCEPTION CALCULATOR 2000</a
+		>
 		<iframe src="https://conceptioncalculator2000.com" title="IOTA" />
 		<!-- <iframe src="https://zen.aufbau.io" title="IOTA" /> -->
 		<!-- <iframe src="https://orange.aufbau.io" title="IOTA" /> -->
