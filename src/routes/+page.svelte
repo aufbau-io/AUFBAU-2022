@@ -110,11 +110,9 @@
 	@media (max-width: 760px) {
 		body {
 			flex-flow: row wrap;
-			overflow: auto;
+			overflow: hidden;
 		}
 		.card {
-			width: 100%;
-			height: 25%;
 		}
 
 		.title {
