@@ -28,7 +28,7 @@
 			>
 			<iframe src="https://conceptioncalculator2000.com" title="CC2000" />
 		</div>
-		<!-- <iframe src="https://replikamasterworks.com" title="IOTA" /> -->
+
 		<!-- <img src="system_diagram.png" alt="img" /> -->
 		<!-- <iframe src="https://siiignal.netlify.app" title="IOTA" /> -->
 		<!-- <iframe src="https://site.hhacker.space" title="IOTA" /> -->
@@ -53,6 +53,8 @@
 	section {
 		background: var(--background);
 		z-index: 10;
+		position: sticky;
+		top: 0;
 
 		padding: 0px 16px;
 		padding-top: 4px;
