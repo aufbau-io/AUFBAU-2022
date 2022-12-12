@@ -5,10 +5,7 @@
 
 <main>
 	<section>
-		<p>aufbau web</p>
-		<p>//</p>
-		<p>anti-pattern</p>
-		<p>//</p>
+		<p>aufbau web studio</p>
 		<a href="mailto: dan@aufbau.io">contact</a>
 	</section>
 
