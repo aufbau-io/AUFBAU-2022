@@ -4,13 +4,15 @@ export { matchers } from './client-matchers.js';
 	() => import('./nodes/1'),
 	() => import('./nodes/2'),
 	() => import('./nodes/3'),
-	() => import('./nodes/4')];
+	() => import('./nodes/4'),
+	() => import('./nodes/5')];
 
 			export const server_loads = [];
 
 			export const dictionary = {
 	"": [3],
-	"(pages)/systems": [4,[2]]
+	"(pages)/systems": [4,[2]],
+	"(pages)/tmp": [5,[2]]
 };
 
 			export const hooks = {

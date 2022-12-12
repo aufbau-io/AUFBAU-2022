@@ -66,9 +66,9 @@
 	/>
 </svelte:head>
 
-{#key Geometry}
+<!-- {#key Geometry}
 	<svelte:component this={Geometry} />
-{/key}
+{/key} -->
 <main>
 	<slot />
 </main>
