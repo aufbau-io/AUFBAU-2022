@@ -53,15 +53,19 @@
 		background: var(--background);
 		z-index: 10;
 
-		padding: 0 16px;
+		padding: 0px 16px;
+		padding-top: 4px;
 		overflow: auto;
+
+		display: flex;
+		align-items: center;
 
 		touch-action: manipulation;
 	}
 
 	.card {
 		width: 25%;
-		height: calc(100% - 20px);
+		height: calc(100% - 8px);
 	}
 
 	.title {
