@@ -10,9 +10,9 @@
 
 	<body>
 		<a href="https://dan.aufbau.io" class="title">VISIT // PERSONAL WEBSITE</a>
-		<iframe src="https://dan.aufbau.io" title="IOTA" />
+		<iframe src="https://dan.aufbau.io" title="PERSONAL" />
 		<a href="https://silicon.fm" class="title">VISIT // SILICON FM</a>
-		<iframe src="https://silicon.fm" title="IOTA" />
+		<iframe src="https://silicon.fm" title="SILICON" />
 		<a href="https://iota.health" class="title">VISIT // IOTA</a>
 		<iframe src="https://iota.health" title="IOTA" />
 		<!-- <iframe src="https://replikamasterworks.com" title="IOTA" /> -->
@@ -21,7 +21,7 @@
 		<!-- <iframe src="https://site.hhacker.space" title="IOTA" /> -->
 		<a href="https://conceptioncalculator2000.com" class="title">VISIT CONCEPTION CALCULATOR 2000</a
 		>
-		<iframe src="https://conceptioncalculator2000.com" title="IOTA" />
+		<iframe src="https://conceptioncalculator2000.com" title="CC2000" />
 		<!-- <iframe src="https://zen.aufbau.io" title="IOTA" /> -->
 		<!-- <iframe src="https://orange.aufbau.io" title="IOTA" /> -->
 	</body>
@@ -32,9 +32,6 @@
 	img {
 		width: 25%;
 		height: calc(100% - 40px);
-
-		min-width: 25%;
-		min-height: calc(100% - 40px);
 	}
 
 	main {
@@ -107,9 +104,6 @@
 		img {
 			width: 100%;
 			height: 25%;
-
-			min-width: none;
-			min-height: none;
 		}
 
 		.title {
