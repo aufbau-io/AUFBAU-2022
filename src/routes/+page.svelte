@@ -5,7 +5,7 @@
 
 <main>
 	<section>
-		<p>aufbau web studio</p>
+		<p>aufbau web</p>
 		<p>//</p>
 		<p>anti-pattern</p>
 		<p>//</p>
