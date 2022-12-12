@@ -113,7 +113,9 @@
 			flex-flow: row wrap;
 			overflow: hidden;
 		}
-		.card {
+		.title:hover,
+		.title:active {
+			border: none;
 		}
 
 		.title {
