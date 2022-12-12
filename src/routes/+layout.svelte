@@ -29,14 +29,14 @@
 		const ua = navigator.userAgent;
 		if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
 			// tablet
-			screenType.set(1);
+			screenType.set(2);
 		} else if (
 			/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
 				ua
 			)
 		) {
 			// phone
-			screenType.set(2);
+			screenType.set(1);
 		} else {
 			//laptop
 			screenType.set(3);
