@@ -31,6 +31,9 @@
 	img {
 		width: 25%;
 		height: calc(100% - 40px);
+
+		min-width: 25%;
+		min-height: calc(100% - 40px);
 	}
 
 	main {
@@ -103,6 +106,9 @@
 		img {
 			width: 100%;
 			height: 25%;
+
+			min-width: none;
+			min-height: none;
 		}
 
 		.title {
