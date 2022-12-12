@@ -5,7 +5,8 @@
 
 <main>
 	<section>
-		<h4>aufbau web studio</h4>
+		<h4>aufbau studio</h4>
+		<p>anti-pattern</p>
 		<a href="mailto: dan@aufbau.io">contact</a>
 	</section>
 
@@ -56,8 +57,8 @@
 		position: sticky;
 		top: 0;
 
-		padding: 0px 16px;
-		padding-top: 4px;
+		padding: 4px 8px 0px 8px;
+
 		overflow: auto;
 		width: 100%;
 
@@ -108,9 +109,6 @@
 	}
 
 	@media (max-width: 760px) {
-		section {
-			padding: 0 8px;
-		}
 		body {
 			flex-flow: row wrap;
 			overflow: hidden;
