@@ -8,7 +8,7 @@
 
 <main>
 	<section>
-		<p on:click={() => setUserType(null)}>aufbau web studio</p>
+		<p class="no-click">aufbau web studio</p>
 		<a href="mailto: dan@aufbau.io">contact</a>
 	</section>
 
@@ -181,6 +181,10 @@
 
 	section p {
 		cursor: pointer;
+	}
+
+	section p.no-click {
+		cursor: default;
 	}
 
 	.card {
