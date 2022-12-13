@@ -221,6 +221,9 @@
 		body {
 			flex-flow: row wrap;
 		}
+		iframe {
+			height: calc(100% - 130px);
+		}
 		.title:hover,
 		.title:active {
 			border: none;
