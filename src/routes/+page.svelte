@@ -32,7 +32,7 @@
 			{#if $userType == 3}
 				x
 			{/if}
-			] - i am an edgy artist type
+			] - i'm just here for fun
 		</p>
 	</section>
 
