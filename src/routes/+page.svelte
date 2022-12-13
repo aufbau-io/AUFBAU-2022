@@ -125,7 +125,7 @@
 				<br /> -->
 
 					<p>you can learn more about me here:</p>
-					<a href="https://aufbai.io/dan_humphries_cv.pdf"><p>- cv</p></a>
+					<a href="https://aufbau.io/dan_humphries_cv.pdf"><p>- cv</p></a>
 					<a href="https://github.com/dnhmphrs"><p>- github</p></a>
 					<a href="https://www.linkedin.com/in/dan-humphries/"><p>- linkedin</p></a>
 					<a href="mailto: dan@aufbau.io"><p>- email</p></a>
