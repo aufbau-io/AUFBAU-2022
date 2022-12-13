@@ -68,7 +68,7 @@
 			<div class="card s100">
 				<br />
 				<p>aufbau is a web studio</p>
-				<p>it is run by dan humphries</p>
+				<p>run by dan humphries</p>
 				<br />
 
 				<p>i like:</p>
