@@ -12,7 +12,7 @@
 		<a href="mailto: dan@aufbau.io">contact</a>
 	</section>
 
-	<section>
+	<section class="userType">
 		<p on:click={() => setUserType(1)}>
 			[
 			{#if $userType == 1}
@@ -215,9 +215,11 @@
 	}
 
 	@media (max-width: 760px) {
+		section.userType {
+			flex-flow: column nowrap;
+		}
 		body {
 			flex-flow: row wrap;
-			overflow: hidden;
 		}
 		.title:hover,
 		.title:active {
@@ -229,6 +231,8 @@
 		}
 		.card.s100 {
 			width: 100%;
+			height: calc(100% - 120px);
+			padding-bottom: 20px;
 			overflow-y: auto;
 		}
 	}
