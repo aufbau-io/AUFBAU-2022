@@ -258,7 +258,7 @@
 			height: 100%;
 		}
 		.card.s100 {
-			height: calc(100% - 80px);
+			height: 100%;
 			padding-bottom: 20px;
 			overflow-y: auto;
 		}
