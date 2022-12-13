@@ -70,10 +70,10 @@
 				<p>aufbau is a web studio</p>
 				<p>run by dan humphries</p>
 				<br />
-				<p>i am a creative web engineer</p>
+				<p>a creative web engineer</p>
 				<p>who moonlights as a neuroscientist</p>
 				<br />
-				<p>specialisms:</p>
+				<p>my specialisms are:</p>
 				<p>- lightweight code</p>
 				<p>- microservice systems</p>
 				<p>- webgl // 3d</p>
