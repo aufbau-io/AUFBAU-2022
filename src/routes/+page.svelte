@@ -20,19 +20,20 @@
 			{/if}
 			] - work
 		</p>
+
 		<p on:click={() => setUserType(2)}>
-			[
-			{#if $userType == 2}
-				x
-			{/if}
-			] - about
-		</p>
-		<p on:click={() => setUserType(3)}>
 			[
 			{#if $userType == 3}
 				x
 			{/if}
 			] - fun
+		</p>
+		<p on:click={() => setUserType(3)}>
+			[
+			{#if $userType == 2}
+				x
+			{/if}
+			] - about
 		</p>
 	</section>
 
@@ -66,6 +67,26 @@
 				</div>
 			{/if}
 			{#if $userType == 2}
+				<div class="card">
+					<a href="https://zen.aufbau.io" class="title">VISIT // ZEN DEMO</a>
+					<iframe src="https://zen.aufbau.io" title="SILICON" />
+				</div>
+				<div class="card">
+					<a href="https://silicon.fm" class="title">VISIT // SILICON FM</a>
+					<iframe src="https://silicon.fm" title="SILICON" />
+				</div>
+				<div class="card">
+					<a href="https://site.hhacker.space" class="title">VISIT // HEDRON HACKERSPACE</a>
+					<iframe src="https://site.hhacker.space" title="IOTA" />
+				</div>
+				<div class="card">
+					<a href="https://conceptioncalculator2000.com" class="title"
+						>VISIT // CONCEPTION CALCULATOR 2000</a
+					>
+					<iframe src="https://conceptioncalculator2000.com" title="CC2000" />
+				</div>
+			{/if}
+			{#if $userType == 3}
 				<div class="card s100">
 					<br />
 					<p>aufbau is a web studio</p>
@@ -100,27 +121,6 @@
 					<a href="mailto: dan@aufbau.io"><p>- email</p></a>
 				</div>
 			{/if}
-			{#if $userType == 3}
-				<div class="card">
-					<a href="https://zen.aufbau.io" class="title">VISIT // ZEN DEMO</a>
-					<iframe src="https://zen.aufbau.io" title="SILICON" />
-				</div>
-				<div class="card">
-					<a href="https://silicon.fm" class="title">VISIT // SILICON FM</a>
-					<iframe src="https://silicon.fm" title="SILICON" />
-				</div>
-				<div class="card">
-					<a href="https://site.hhacker.space" class="title">VISIT // HEDRON HACKERSPACE</a>
-					<iframe src="https://site.hhacker.space" title="IOTA" />
-				</div>
-				<div class="card">
-					<a href="https://conceptioncalculator2000.com" class="title"
-						>VISIT // CONCEPTION CALCULATOR 2000</a
-					>
-					<iframe src="https://conceptioncalculator2000.com" title="CC2000" />
-				</div>
-			{/if}
-
 			<!-- <div class="card">
 				<img src="system_diagram.png" alt="img" />
 			</div> -->
