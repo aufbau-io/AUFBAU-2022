@@ -70,16 +70,14 @@
 				<p>aufbau is a web studio</p>
 				<p>it is run by dan humphries</p>
 				<br />
-				<p>a creative web engineer</p>
-				<p>who moonlights as a neuroscientist</p>
-				<br />
+
 				<p>i like:</p>
 				<p>- lightweight code</p>
 				<p>- microservice systems</p>
 				<p>- webgl // 3d</p>
 				<p>- solving bespoke problems</p>
 				<br />
-				<p>I've built these:</p>
+				<!-- <p>I've built these:</p>
 				<a href="https://dan.aufbau.io"><p>- dan.aufbau.io</p></a>
 				<a href="https://165182-sustainable-digital-design-wonderland.vercel.app/"
 					><p>- 165182-sustainable-digital-design-wonderland.vercel.app</p></a
@@ -90,6 +88,9 @@
 				<a href="https://silicon.fm"><p>- silicon.fm</p></a>
 				<a href="https://site.hhacker.space"><p>- site.hhacker.space</p></a>
 				<a href="https://conceptioncalculator2000.com"><p>- conceptioncalculator2000.com</p></a>
+				<br /> -->
+				<p>i am a creative web engineer</p>
+				<p>who moonlights as a neuroscientist</p>
 				<br />
 				<p>you can learn more about me here:</p>
 				<a href="https://aufbai.io/dan_humphries_cv.pdf"><p>- cv</p></a>
