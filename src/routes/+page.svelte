@@ -108,7 +108,7 @@
 					<br />
 					<p>my sites are fast, lightweight, and eco-friendly</p>
 					<br />
-					<p>they're so fast you can run multiple in the same browser</p>
+					<p>they're so fast you can run multiple in the same browser at once</p>
 					<p>( in case you were wondering about this site design )</p>
 
 					<br />
