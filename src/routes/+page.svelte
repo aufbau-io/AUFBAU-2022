@@ -18,21 +18,21 @@
 			{#if $userType == 1}
 				x
 			{/if}
-			] - serious business person
+			] - i am a serious business person
 		</p>
 		<p on:click={() => setUserType(2)}>
 			[
 			{#if $userType == 2}
 				x
 			{/if}
-			] - grumpy mathematics professor
+			] - i am a grumpy mathematics professor
 		</p>
 		<p on:click={() => setUserType(3)}>
 			[
 			{#if $userType == 3}
 				x
 			{/if}
-			] - edgy artist type
+			] - i am an edgy artist type
 		</p>
 	</section>
 
