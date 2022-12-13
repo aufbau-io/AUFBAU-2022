@@ -254,8 +254,8 @@
 			padding: 0;
 		}
 		.card {
-			width: 100%;
-			height: 25%;
+			width: 25%;
+			height: 100%;
 		}
 		.card.s100 {
 			height: calc(100% - 80px);
