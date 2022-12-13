@@ -146,6 +146,7 @@
 		z-index: 10;
 		position: sticky;
 		top: 0;
+		gap: 4px;
 
 		padding: 4px 8px 0px 8px;
 
