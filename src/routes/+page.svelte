@@ -226,5 +226,8 @@
 		.title {
 			padding: 0;
 		}
+		.card.s100 {
+			width: 100%;
+		}
 	}
 </style>
