@@ -108,7 +108,7 @@
 					<br />
 					<p>my sites are fast, lightweight, and eco-friendly</p>
 					<br />
-					<p>you can run multiple in the same browser at once</p>
+					<p>they're so fast you can run multiple in the same browser</p>
 					<p>( in case you were wondering about this site design )</p>
 
 					<br />
@@ -191,7 +191,7 @@
 
 	.card.s100 {
 		margin: 0 8px;
-		max-width: 100%;
+		width: 100%;
 		line-height: 20px;
 	}
 
@@ -250,7 +250,6 @@
 			padding: 0;
 		}
 		.card.s100 {
-			width: 100%;
 			height: calc(100% - 80px);
 			padding-bottom: 20px;
 			overflow-y: auto;
