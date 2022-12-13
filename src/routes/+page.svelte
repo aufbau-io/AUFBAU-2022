@@ -92,8 +92,9 @@
 					<p>aufbau is a web studio</p>
 					<p>run by dan humphries</p>
 					<br />
-					<p>a creative web engineer</p>
-					<p>who moonlights as a neuroscientist</p>
+					<p>i am a creative web engineer</p>
+					<p>a neuroscientist</p>
+					<p>and an book nerd</p>
 					<br />
 					<p>my specialisms are:</p>
 					<p>- lightweight code</p>
