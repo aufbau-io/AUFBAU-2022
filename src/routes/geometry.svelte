@@ -177,7 +177,7 @@
 	}
 </script>
 
-<div bind:this={container} class:geometry={true} class:hidden={$userType != 3} />
+<div bind:this={container} class:geometry={true} class:hidden={$userType != 3 || !$userType} />
 
 <style>
 	.geometry {
