@@ -1,5 +1,5 @@
 <script>
-	import { userType } from '$lib/store/store';
+	import { userType, screenType } from '$lib/store/store';
 
 	let setUserType = (type) => {
 		userType.set(type);
@@ -36,50 +36,51 @@
 		</p>
 	</section>
 
-	<body>
-		{#if !$userType}
-			<div class="card s100" />
-		{/if}
-		{#if $userType == 1}
-			<div class="card">
-				<a href="https://165182-sustainable-digital-design-wonderland.vercel.app" class="title"
-					>VISIT // SDD DEMO</a
-				>
-				<iframe
-					src="https://165182-sustainable-digital-design-wonderland.vercel.app/"
-					title="PERSONAL"
-				/>
-			</div>
-			<div class="card">
-				<a href="https://dan.aufbau.io" class="title">VISIT // PERSONAL WEBSITE</a>
-				<iframe src="https://dan.aufbau.io" title="PERSONAL" />
-			</div>
+	{#if $screenType}
+		<body>
+			{#if !$userType}
+				<div class="card s100" />
+			{/if}
+			{#if $userType == 1}
+				<div class="card">
+					<a href="https://165182-sustainable-digital-design-wonderland.vercel.app" class="title"
+						>VISIT // SDD DEMO</a
+					>
+					<iframe
+						src="https://165182-sustainable-digital-design-wonderland.vercel.app/"
+						title="PERSONAL"
+					/>
+				</div>
+				<div class="card">
+					<a href="https://dan.aufbau.io" class="title">VISIT // PERSONAL WEBSITE</a>
+					<iframe src="https://dan.aufbau.io" title="PERSONAL" />
+				</div>
 
-			<div class="card">
-				<a href="https://iota.health" class="title">VISIT // IOTA</a>
-				<iframe src="https://iota.health" title="IOTA" />
-			</div>
-			<div class="card">
-				<a href="https://replikamasterworks.com" class="title">VISIT // REPLIKA MASTERWORKS</a>
-				<iframe src="https://replikamasterworks.com" title="REPLIKA" />
-			</div>
-		{/if}
-		{#if $userType == 2}
-			<div class="card s100">
-				<br />
-				<p>aufbau is a web studio</p>
-				<p>run by dan humphries</p>
-				<br />
-				<p>a creative web engineer</p>
-				<p>who moonlights as a neuroscientist</p>
-				<br />
-				<p>my specialisms are:</p>
-				<p>- lightweight code</p>
-				<p>- microservice systems</p>
-				<p>- webgl // 3d</p>
-				<p>- solving bespoke problems</p>
-				<br />
-				<!-- <p>I've built these:</p>
+				<div class="card">
+					<a href="https://iota.health" class="title">VISIT // IOTA</a>
+					<iframe src="https://iota.health" title="IOTA" />
+				</div>
+				<div class="card">
+					<a href="https://replikamasterworks.com" class="title">VISIT // REPLIKA MASTERWORKS</a>
+					<iframe src="https://replikamasterworks.com" title="REPLIKA" />
+				</div>
+			{/if}
+			{#if $userType == 2}
+				<div class="card s100">
+					<br />
+					<p>aufbau is a web studio</p>
+					<p>run by dan humphries</p>
+					<br />
+					<p>a creative web engineer</p>
+					<p>who moonlights as a neuroscientist</p>
+					<br />
+					<p>my specialisms are:</p>
+					<p>- lightweight code</p>
+					<p>- microservice systems</p>
+					<p>- webgl // 3d</p>
+					<p>- solving bespoke problems</p>
+					<br />
+					<!-- <p>I've built these:</p>
 				<a href="https://dan.aufbau.io"><p>- dan.aufbau.io</p></a>
 				<a href="https://165182-sustainable-digital-design-wonderland.vercel.app/"
 					><p>- 165182-sustainable-digital-design-wonderland.vercel.app</p></a
@@ -92,43 +93,44 @@
 				<a href="https://conceptioncalculator2000.com"><p>- conceptioncalculator2000.com</p></a>
 				<br /> -->
 
-				<p>you can learn more about me here:</p>
-				<a href="https://aufbai.io/dan_humphries_cv.pdf"><p>- cv</p></a>
-				<a href="https://github.com/dnhmphrs"><p>- github</p></a>
-				<a href="https://www.linkedin.com/in/dan-humphries/"><p>- linkedin</p></a>
-				<a href="mailto: dan@aufbau.io"><p>- email</p></a>
-			</div>
-		{/if}
-		{#if $userType == 3}
-			<div class="card">
-				<a href="https://zen.aufbau.io" class="title">VISIT // ZEN DEMO</a>
-				<iframe src="https://zen.aufbau.io" title="SILICON" />
-			</div>
-			<div class="card">
-				<a href="https://silicon.fm" class="title">VISIT // SILICON FM</a>
-				<iframe src="https://silicon.fm" title="SILICON" />
-			</div>
-			<div class="card">
-				<a href="https://site.hhacker.space" class="title">VISIT // HEDRON HACKERSPACE</a>
-				<iframe src="https://site.hhacker.space" title="IOTA" />
-			</div>
-			<div class="card">
-				<a href="https://conceptioncalculator2000.com" class="title"
-					>VISIT // CONCEPTION CALCULATOR 2000</a
-				>
-				<iframe src="https://conceptioncalculator2000.com" title="CC2000" />
-			</div>
-		{/if}
+					<p>you can learn more about me here:</p>
+					<a href="https://aufbai.io/dan_humphries_cv.pdf"><p>- cv</p></a>
+					<a href="https://github.com/dnhmphrs"><p>- github</p></a>
+					<a href="https://www.linkedin.com/in/dan-humphries/"><p>- linkedin</p></a>
+					<a href="mailto: dan@aufbau.io"><p>- email</p></a>
+				</div>
+			{/if}
+			{#if $userType == 3}
+				<div class="card">
+					<a href="https://zen.aufbau.io" class="title">VISIT // ZEN DEMO</a>
+					<iframe src="https://zen.aufbau.io" title="SILICON" />
+				</div>
+				<div class="card">
+					<a href="https://silicon.fm" class="title">VISIT // SILICON FM</a>
+					<iframe src="https://silicon.fm" title="SILICON" />
+				</div>
+				<div class="card">
+					<a href="https://site.hhacker.space" class="title">VISIT // HEDRON HACKERSPACE</a>
+					<iframe src="https://site.hhacker.space" title="IOTA" />
+				</div>
+				<div class="card">
+					<a href="https://conceptioncalculator2000.com" class="title"
+						>VISIT // CONCEPTION CALCULATOR 2000</a
+					>
+					<iframe src="https://conceptioncalculator2000.com" title="CC2000" />
+				</div>
+			{/if}
 
-		<!-- <div class="card">
+			<!-- <div class="card">
 				<img src="system_diagram.png" alt="img" />
 			</div> -->
-		<!-- <img src="system_diagram.png" alt="img" /> -->
-		<!-- <iframe src="https://siiignal.netlify.app" title="IOTA" /> -->
-		<!-- <iframe src="https://site.hhacker.space" title="IOTA" /> -->
-		<!-- <iframe src="https://zen.aufbau.io" title="IOTA" /> -->
-		<!-- <iframe src="https://orange.aufbau.io" title="IOTA" /> -->
-	</body>
+			<!-- <img src="system_diagram.png" alt="img" /> -->
+			<!-- <iframe src="https://siiignal.netlify.app" title="IOTA" /> -->
+			<!-- <iframe src="https://site.hhacker.space" title="IOTA" /> -->
+			<!-- <iframe src="https://zen.aufbau.io" title="IOTA" /> -->
+			<!-- <iframe src="https://orange.aufbau.io" title="IOTA" /> -->
+		</body>
+	{/if}
 </main>
 
 <style>
