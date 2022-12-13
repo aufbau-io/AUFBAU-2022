@@ -158,7 +158,7 @@
 
 	section {
 		z-index: 10;
-		position: sticky;
+		position: relative;
 		top: 0;
 		gap: 4px;
 
@@ -229,7 +229,7 @@
 	}
 
 	body {
-		height: 100%;
+		height: calc(100% - 60px);
 
 		display: flex;
 		background: none;
@@ -243,7 +243,7 @@
 			flex-flow: row wrap;
 		}
 		iframe {
-			max-height: calc(100% - 80px);
+			height: calc(100% - 20px);
 		}
 		.title:hover,
 		.title:active {
@@ -252,6 +252,10 @@
 
 		.title {
 			padding: 0;
+		}
+		.card {
+			width: 100%;
+			height: 25%;
 		}
 		.card.s100 {
 			height: calc(100% - 80px);
