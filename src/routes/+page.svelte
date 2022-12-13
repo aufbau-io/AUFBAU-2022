@@ -18,21 +18,21 @@
 			{#if $userType == 1}
 				x
 			{/if}
-			] - i am a serious business person
+			] - work
 		</p>
 		<p on:click={() => setUserType(2)}>
 			[
 			{#if $userType == 2}
 				x
 			{/if}
-			] - i am a grumpy mathematics professor
+			] - about
 		</p>
 		<p on:click={() => setUserType(3)}>
 			[
 			{#if $userType == 3}
 				x
 			{/if}
-			] - i'm just here for fun
+			] - fun
 		</p>
 	</section>
 
@@ -149,7 +149,7 @@
 		top: 0;
 		gap: 4px;
 
-		padding: 2px 8px 2px 8px;
+		padding: 4px 8px 0 8px;
 
 		overflow: auto;
 		width: 100%;
@@ -161,13 +161,18 @@
 		touch-action: manipulation;
 	}
 
+	section.userType {
+		padding-top: 0;
+		padding-bottom: 6px;
+	}
+
 	section p {
 		cursor: pointer;
 	}
 
 	.card {
 		width: 25%;
-		height: calc(100% - 8px);
+		height: 100%;
 		overflow: hidden;
 	}
 
@@ -216,14 +221,11 @@
 	}
 
 	@media (max-width: 760px) {
-		section.userType {
-			flex-flow: column nowrap;
-		}
 		body {
 			flex-flow: row wrap;
 		}
 		iframe {
-			height: calc(100% - 130px);
+			max-height: calc(100% - 80px);
 		}
 		.title:hover,
 		.title:active {
@@ -235,7 +237,7 @@
 		}
 		.card.s100 {
 			width: 100%;
-			height: calc(100% - 120px);
+			height: calc(100% - 80px);
 			padding-bottom: 20px;
 			overflow-y: auto;
 		}
