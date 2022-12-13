@@ -23,14 +23,14 @@
 
 		<p on:click={() => setUserType(2)}>
 			[
-			{#if $userType == 3}
+			{#if $userType == 2}
 				x
 			{/if}
 			] - fun
 		</p>
 		<p on:click={() => setUserType(3)}>
 			[
-			{#if $userType == 2}
+			{#if $userType == 3}
 				x
 			{/if}
 			] - about
