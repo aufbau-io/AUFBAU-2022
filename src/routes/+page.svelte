@@ -100,7 +100,7 @@
 					<p>neuroscientist</p>
 					<p>and book nerd</p>
 					<br />
-					<p>my specialisms are:</p>
+					<p>specialised in:</p>
 					<p>- lightweight code</p>
 					<p>- microservice systems</p>
 					<p>- webgl // 3d</p>
