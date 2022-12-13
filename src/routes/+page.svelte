@@ -42,7 +42,9 @@
 		{/if}
 		{#if $userType == 1}
 			<div class="card">
-				<a href="https://dan.aufbau.io" class="title">VISIT // SDD DEMO</a>
+				<a href="https://165182-sustainable-digital-design-wonderland.vercel.app" class="title"
+					>VISIT // SDD DEMO</a
+				>
 				<iframe
 					src="https://165182-sustainable-digital-design-wonderland.vercel.app/"
 					title="PERSONAL"
@@ -57,7 +59,6 @@
 				<a href="https://iota.health" class="title">VISIT // IOTA</a>
 				<iframe src="https://iota.health" title="IOTA" />
 			</div>
-
 			<div class="card">
 				<a href="https://replikamasterworks.com" class="title">VISIT // REPLIKA MASTERWORKS</a>
 				<iframe src="https://replikamasterworks.com" title="REPLIKA" />
