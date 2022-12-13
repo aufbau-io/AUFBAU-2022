@@ -229,6 +229,7 @@
 		}
 		.card.s100 {
 			width: 100%;
+			overflow-y: auto;
 		}
 	}
 </style>
