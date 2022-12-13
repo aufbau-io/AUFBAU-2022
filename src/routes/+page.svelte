@@ -88,6 +88,10 @@
 			{/if}
 			{#if $userType == 3}
 				<div class="card s100">
+					{#if $screenType == 1}
+						<br />
+						<p>this site works best on a desktop broswer</p>
+					{/if}
 					<br />
 					<p>aufbau is a web studio</p>
 					<p>run by dan humphries</p>
@@ -101,6 +105,12 @@
 					<p>- microservice systems</p>
 					<p>- webgl // 3d</p>
 					<p>- solving bespoke problems</p>
+					<br />
+					<p>my sites are fast, lightweight, and eco-friendly</p>
+					<br />
+					<p>you can run multiple in the same browser at once</p>
+					<p>( in case you were wondering about this site design )</p>
+
 					<br />
 					<!-- <p>I've built these:</p>
 				<a href="https://dan.aufbau.io"><p>- dan.aufbau.io</p></a>
