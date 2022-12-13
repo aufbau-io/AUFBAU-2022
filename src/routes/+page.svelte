@@ -104,7 +104,6 @@
 					<p>- lightweight code</p>
 					<p>- microservice systems</p>
 					<p>- webgl // 3d</p>
-					<p>- solving bespoke problems</p>
 					<br />
 					<p>my sites are fast, lightweight, and eco-friendly</p>
 					<br />
@@ -195,7 +194,8 @@
 
 	.card.s100 {
 		margin: 0 8px;
-		width: 100%;
+		width: auto;
+		margin-right: auto;
 		line-height: 20px;
 	}
 
