@@ -148,7 +148,7 @@
 		top: 0;
 		gap: 4px;
 
-		padding: 4px 8px 0px 8px;
+		padding: 2px 8px 2px 8px;
 
 		overflow: auto;
 		width: 100%;
