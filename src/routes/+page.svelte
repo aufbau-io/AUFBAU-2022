@@ -70,8 +70,6 @@
 				<p>aufbau is a web studio</p>
 				<p>run by dan humphries</p>
 				<br />
-
-				<p>i like:</p>
 				<p>- lightweight code</p>
 				<p>- microservice systems</p>
 				<p>- webgl // 3d</p>
