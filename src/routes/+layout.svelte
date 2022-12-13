@@ -67,7 +67,7 @@
 </svelte:head>
 
 {#key userType}
-	{#if $userType == 3}
+	{#if $userType == 3 && $screenType == 3}
 		<svelte:component this={Geometry} class="test" />
 	{/if}
 {/key}

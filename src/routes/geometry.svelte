@@ -177,7 +177,7 @@
 	}
 </script>
 
-<div bind:this={container} class:geometry={true} class:hidden={$userType != 3 || !$userType} />
+<div bind:this={container} class:geometry={true} />
 
 <style>
 	.geometry {
@@ -186,9 +186,5 @@
 		top: 0;
 		left: 0;
 		z-index: -10;
-	}
-
-	.geometry.hidden {
-		opacity: 0;
 	}
 </style>
