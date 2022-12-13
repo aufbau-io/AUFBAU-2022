@@ -2,7 +2,7 @@
 	import { onMount, onDestroy } from 'svelte';
 	import * as THREE from 'three';
 
-	import { screenType, mouseOnLink } from '$lib/store/store';
+	import { screenType, userType, mouseOnLink } from '$lib/store/store';
 
 	let container;
 	let id;
@@ -177,13 +177,16 @@
 	}
 </script>
 
-<div bind:this={container} class:geometry={true} />
+<div bind:this={container} class:geometry={true} class:hidden={$userType} />
 
 <style>
 	.geometry {
 		touch-action: manipulation;
-		position: fixed;
-		left: 0;
-		top: 0;
+		position: absolute;
+		z-index: -100;
+	}
+
+	.geometry.hidden {
+		opacity: 0;
 	}
 </style>
