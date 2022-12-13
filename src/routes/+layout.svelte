@@ -1,7 +1,7 @@
 <script>
 	import '../app.css';
 	import { onMount } from 'svelte';
-	import { screenType } from '$lib/store/store';
+	import { screenType, userType } from '$lib/store/store';
 
 	let Geometry;
 	onMount(async () => {
@@ -66,9 +66,11 @@
 	/>
 </svelte:head>
 
-<!-- {#key Geometry}
-	<svelte:component this={Geometry} />
-{/key} -->
+{#key userType}
+	{#if $userType == 3}
+		<svelte:component this={Geometry} class="test" />
+	{/if}
+{/key}
 <main>
 	<slot />
 </main>
@@ -77,5 +79,13 @@
 	main {
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
+	}
+
+	.test {
+		opacity: 0;
+		z-index: -100;
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 </style>

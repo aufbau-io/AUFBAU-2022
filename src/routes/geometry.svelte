@@ -177,13 +177,15 @@
 	}
 </script>
 
-<div bind:this={container} class:geometry={true} class:hidden={$userType} />
+<div bind:this={container} class:geometry={true} class:hidden={$userType != 3} />
 
 <style>
 	.geometry {
 		touch-action: manipulation;
 		position: absolute;
-		z-index: -100;
+		top: 0;
+		left: 0;
+		z-index: -10;
 	}
 
 	.geometry.hidden {

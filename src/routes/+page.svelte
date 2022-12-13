@@ -146,7 +146,6 @@
 	}
 
 	section {
-		background: var(--background);
 		z-index: 10;
 		position: sticky;
 		top: 0;
@@ -218,6 +217,7 @@
 		height: 100%;
 
 		display: flex;
+		background: none;
 		flex-flow: column wrap;
 
 		overflow: hidden;
