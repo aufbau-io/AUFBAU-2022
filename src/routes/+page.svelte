@@ -147,7 +147,7 @@
 <style>
 	iframe {
 		width: 100%;
-		height: calc(100% - 76px);
+		height: calc(100% - 20px);
 	}
 
 	main {
@@ -241,9 +241,6 @@
 	@media (max-width: 760px) {
 		body {
 			flex-flow: row wrap;
-		}
-		iframe {
-			height: calc(100% - 20px);
 		}
 		.title:hover,
 		.title:active {
