@@ -111,6 +111,7 @@
 	main {
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
+		position: relative;
 		width: 100%;
 		pointer-events: none;
 
