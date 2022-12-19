@@ -106,7 +106,7 @@
 	main {
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
-		width: 100;
+		width: 100%;
 		pointer-events: none;
 
 		display: flex;
