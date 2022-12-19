@@ -1,5 +1,6 @@
 <script>
 	import { userType, screenType } from '$lib/store/store';
+	import { lazyLoad } from '$lib/functions/lazyLoad.js';
 
 	let setUserType = (type) => {
 		userType.set(type);
@@ -7,24 +8,30 @@
 </script>
 
 <main>
-	<section>
-		<p on:click={() => setUserType(null)}>
-			[
-			{#if $userType == null}
-				x
-			{/if}
-			] aufbau web studio
-		</p>
+	<section class="top">
+		<p on:click={() => setUserType(null)}>aufbau web studio</p>
+
 		<a href="mailto: dan@aufbau.io">contact</a>
 	</section>
 
-	<section class="userType">
+	{#if $userType}
+		<p on:click={() => setUserType(null)} class="return">RETURN</p>
+	{/if}
+
+	<section>
 		<p on:click={() => setUserType(1)}>
 			[
 			{#if $userType == 1}
 				x
 			{/if}
 			] - work
+		</p>
+		<p on:click={() => setUserType(2)}>
+			[
+			{#if $userType == 2}
+				x
+			{/if}
+			] - systems
 		</p>
 		<p on:click={() => setUserType(3)}>
 			[
@@ -52,6 +59,11 @@
 				>
 			</body>
 		{/if}
+		{#if $userType == 2}
+			<body>
+				<img use:lazyLoad={'/system_diagram.png'} alt={'modular system diagram'} class="img" />
+			</body>
+		{/if}
 		{#if $userType == 3}
 			<!-- {#if $screenType} -->
 			<body>
@@ -60,8 +72,9 @@
 
 				<br />
 				<p>lightweight code</p>
+				<p>payments // web-stores</p>
 				<p>microservice systems</p>
-				<p>stripe // shopify</p>
+
 				<p>webgl // 3d</p>
 				<br />
 				<!-- <p>I've built these:</p>
@@ -96,6 +109,16 @@
 		display: flex;
 		flex-flow: column wrap;
 		justify-content: space-between;
+	}
+
+	.return {
+		position: absolute;
+		top: 50%;
+		z-index: 100;
+		left: 16px;
+		transform: translateY(-50%);
+		pointer-events: all;
+		cursor: pointer;
 	}
 
 	section {
@@ -142,6 +165,21 @@
 		overflow: hidden;
 	}
 
+	img {
+		opacity: 0;
+		max-height: 100vh;
+		max-width: 100vw;
+
+		border-left: solid 1px var(--primary-50);
+		border-right: solid 1px var(--primary-50);
+	}
+
 	@media (max-width: 760px) {
+		img {
+			border-left: none;
+			border-right: none;
+			border-top: solid 1px var(--primary-50);
+			border-bottom: solid 1px var(--primary-50);
+		}
 	}
 </style>

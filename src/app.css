@@ -138,28 +138,6 @@ a.hide:hover {
 	border-radius: 0;
 }
 
-a.centreButton,
-a.centreButton.prevent:hover {
-	position: absolute;
-	top: 16px;
-	left: 50%;
-	transform: translate(-50%, 0);
-	z-index: 20;
-	opacity: 1;
-	background: var(--background);
-	color: var(--primary-50);
-	border: solid 1px var(--primary-50);
-	max-width: 100%;
-	cursor: pointer;
-	user-select: none;
-}
-
-a.centreButton:hover {
-	color: var(--accent);
-	border: solid 1px var(--primary-50);
-	opacity: 1;
-}
-
 @media (max-width: 760px) {
 	body {
 		margin: 0;
