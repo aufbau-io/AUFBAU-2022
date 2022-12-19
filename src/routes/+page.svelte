@@ -13,10 +13,6 @@
 		<a href="mailto: dan@aufbau.io">contact</a>
 	</section>
 
-	{#if $userType}
-		<p on:click={() => setUserType(null)} class="return">RETURN</p>
-	{/if}
-
 	<section>
 		<p on:click={() => setUserType(1)}>
 			[
@@ -26,13 +22,19 @@
 			] - work
 		</p>
 
-		<p on:click={() => setUserType(2)}>
-			[
-			{#if $userType == 2}
-				x
-			{/if}
-			] - systems
-		</p>
+		{#if $userType}
+			<p on:click={() => setUserType(null)} class="return">RETURN</p>
+		{/if}
+
+		<!-- {#if $screenType != 1}
+			<p on:click={() => setUserType(2)}>
+				[
+				{#if $userType == 2}
+					x
+				{/if}
+				] - systems
+			</p>
+		{/if} -->
 
 		<p on:click={() => setUserType(3)}>
 			[
@@ -114,10 +116,10 @@
 
 	.return {
 		position: absolute;
-		top: 50%;
+		left: 50%;
 		z-index: 100;
-		left: 16px;
-		transform: translateY(-50%);
+		bottom: 16px;
+		transform: translateX(-50%);
 		pointer-events: all;
 		cursor: pointer;
 	}
@@ -139,11 +141,12 @@
 		pointer-events: all;
 	}
 
-	a {
+	a,
+	p {
 		pointer-events: all;
-	}
-	section p {
 		cursor: pointer;
+		z-index: 1000;
+		width: auto;
 	}
 
 	body {

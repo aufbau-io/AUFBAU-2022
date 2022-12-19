@@ -15,7 +15,7 @@
 	let boxSize;
 
 	if ($screenType == 1) {
-		boxSize = 600;
+		boxSize = 500;
 	} else {
 		boxSize = 800;
 	}
