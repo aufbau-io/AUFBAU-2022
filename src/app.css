@@ -7,7 +7,7 @@
 	/* --primary-90: #d0d0d0e6;
 	--primary-50: #d0d0d080; */
 	--background-fallback: #faf9f6;
-	--background: linear-gradient(115deg, #171717, #232323, #171717);
+	--background: linear-gradient(115deg, #141414, #232323, #141414);
 	--background-50: #d0d0d080;
 	--accent: #f2cd5e;
 }
