@@ -12,6 +12,14 @@
 	let scene = new THREE.Scene();
 	let scene2 = new THREE.Scene();
 
+	let boxSize;
+
+	if ($screenType == 1) {
+		boxSize = 500;
+	} else {
+		boxSize = 800;
+	}
+
 	// {
 	// 	const color = 0x232323;
 	// 	const density = 0.00015;
@@ -54,7 +62,7 @@
 
 	// helpers
 
-	const size = 1600;
+	const size = boxSize * 2;
 	const divisions = 10;
 
 	const gridHelper = new THREE.GridHelper(size, divisions, 0x6494aa, 0xe9b872);
@@ -81,51 +89,51 @@
 	// 1
 
 	var element1 = document.createElement('iframe');
-	element1.style.width = `800px`;
-	element1.style.height = `800px`;
+	element1.style.width = `${boxSize}px`;
+	element1.style.height = `${boxSize}px`;
 	element1.style.opacity = 1;
 	element1.src = 'https://165182-sustainable-digital-design-wonderland.vercel.app';
 
 	var domObject1 = new CSS3DObject(element1);
-	domObject1.position.z = 400;
+	domObject1.position.z = boxSize / 2;
 	// domObject.rotateX(Math.PI / 2);
 	scene2.add(domObject1);
 
 	// 2
 
 	var element2 = document.createElement('iframe');
-	element2.style.width = `800px`;
-	element2.style.height = `800px`;
+	element2.style.width = `${boxSize}px`;
+	element2.style.height = `${boxSize}px`;
 	element2.style.opacity = 1;
 	element2.src = 'https://silicon.fm';
 	var domObject2 = new CSS3DObject(element2);
-	domObject2.position.z = -400;
+	domObject2.position.z = -boxSize / 2;
 	domObject2.rotateY(Math.PI);
 	scene2.add(domObject2);
 
 	// 3
 
 	var element3 = document.createElement('iframe');
-	element3.style.width = `800px`;
-	element3.style.height = `800px`;
+	element3.style.width = `${boxSize}px`;
+	element3.style.height = `${boxSize}px`;
 	element3.style.opacity = 1;
 	element3.src = 'https://dan.aufbau.io';
 
 	var domObject3 = new CSS3DObject(element3);
-	domObject3.position.x = 400;
+	domObject3.position.x = boxSize / 2;
 	domObject3.rotateY(Math.PI / 2);
 	scene2.add(domObject3);
 
 	// 4
 
 	var element4 = document.createElement('iframe');
-	element4.style.width = `800px`;
-	element4.style.height = `800px`;
+	element4.style.width = `${boxSize}px`;
+	element4.style.height = `${boxSize}px`;
 	element4.style.opacity = 1;
 	element4.src = 'https://iota.health';
 
 	var domObject4 = new CSS3DObject(element4);
-	domObject4.position.x = -400;
+	domObject4.position.x = -boxSize / 2;
 	domObject4.rotateY(-Math.PI / 2);
 	scene2.add(domObject4);
 
@@ -162,7 +170,7 @@
 		color: new THREE.Color('0x232323'),
 		side: THREE.DoubleSide
 	});
-	var geometry_plane = new THREE.BoxGeometry(799, 799, 799);
+	var geometry_plane = new THREE.BoxGeometry(boxSize - 1, boxSize - 1, boxSize - 1);
 	var mesh = new THREE.Mesh(geometry_plane, material);
 
 	//mesh.scale.copy( domObject.scale );
