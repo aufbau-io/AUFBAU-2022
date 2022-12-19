@@ -3,21 +3,26 @@
 
 /* APP */
 :root {
-	--primary: #dcdcdc;
-	--primary-90: #dcdcdce6;
-	--primary-50: #dcdcdc80;
-	--background: #232323;
-	--background-50: #23232380;
+	--primary: #d0d0d0;
+	/* --primary-90: #d0d0d0e6;
+	--primary-50: #d0d0d080; */
+	--background-fallback: #faf9f6;
+	--background: linear-gradient(115deg, #171717, #232323, #171717);
+	--background-50: #d0d0d080;
 	--accent: #f2cd5e;
+}
+
+html {
+	background: var(--background-fallback);
+	background: var(--background);
 }
 
 html,
 body {
 	position: relative;
 	width: 100%;
-	background: var(--background);
+	height: 100%;
 	color: var(--primary);
-	z-index: 0;
 	overflow-x: hidden;
 	user-select: none;
 	touch-action: manipulation;
@@ -29,6 +34,7 @@ body {
 	font-family: untitled-sans, sans-serif;
 	box-sizing: border-box;
 	text-transform: uppercase;
+	font-weight: 300;
 }
 
 h1 {
@@ -41,6 +47,7 @@ h1 {
 }
 
 h3 {
+	font-family: 'dahlia', sans-serif;
 	font-size: 16px;
 	margin-top: 8px;
 	margin-bottom: 8px;
@@ -94,6 +101,18 @@ a.hide:hover {
 	font-family: dahlia;
 	src: url(/fonts/dahlia-medium.woff) format('woff');
 	font-weight: 500;
+}
+
+@font-face {
+	font-family: untitled-sans;
+	src: url(/fonts/test-untitled-sans-medium.woff2) format('woff2');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: untitled-sans;
+	src: url(/fonts/test-untitled-sans-regular.woff2) format('woff2');
+	font-weight: 400;
 }
 
 @font-face {

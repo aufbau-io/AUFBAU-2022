@@ -67,9 +67,7 @@
 </svelte:head>
 
 {#key userType}
-	{#if $userType == 3 && $screenType != 1}
-		<svelte:component this={Geometry} class="test" />
-	{/if}
+	<svelte:component this={Geometry} />
 {/key}
 <main>
 	<slot />
@@ -79,13 +77,5 @@
 	main {
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
-	}
-
-	.test {
-		opacity: 0;
-		z-index: -100;
-		position: absolute;
-		top: 0;
-		left: 0;
 	}
 </style>
