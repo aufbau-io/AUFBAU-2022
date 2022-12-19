@@ -130,7 +130,7 @@
 		top: 0;
 		gap: 4px;
 
-		padding: 12px 16px;
+		padding: 16px;
 
 		width: 100vw;
 
