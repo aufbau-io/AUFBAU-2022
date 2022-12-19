@@ -93,10 +93,15 @@
 				<a href="https://conceptioncalculator2000.com"><p>- conceptioncalculator2000.com</p></a>
 				<br /> -->
 
-				<a href="https://aufbau.io/dan_humphries_cv.pdf">cv</a>
-				<a href="https://github.com/dnhmphrs">github</a>
-				<a href="https://www.linkedin.com/in/dan-humphries/">linkedin</a>
-				<a href="mailto: dan@aufbau.io">email</a>
+				<div>
+					<a href="https://aufbau.io/dan_humphries_cv.pdf">cv</a>
+					&nbsp;//&nbsp;
+					<a href="https://github.com/dnhmphrs">github</a>
+					&nbsp;//&nbsp;
+					<a href="https://www.linkedin.com/in/dan-humphries/">linkedin</a>
+					&nbsp;//&nbsp;
+					<a href="mailto: dan@aufbau.io">email</a>
+				</div>
 			</body>
 		{/if}
 	{/key}
