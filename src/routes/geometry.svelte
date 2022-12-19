@@ -207,9 +207,7 @@
 
 	let render = function () {
 		renderer.render(scene, camera);
-		if ($screenType == 3) {
-			renderer2.render(scene2, camera);
-		}
+		renderer2.render(scene2, camera);
 
 		id = requestAnimationFrame(render);
 
