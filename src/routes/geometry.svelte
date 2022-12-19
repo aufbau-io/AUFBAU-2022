@@ -139,29 +139,29 @@
 
 	// 5
 
-	// var element5 = document.createElement('iframe');
-	// element5.style.width = `800px`;
-	// element5.style.height = `800px`;
-	// element5.style.opacity = 1;
-	// element5.src = 'https://dan.aufbau.io';
+	var element5 = document.createElement('iframe');
+	element5.style.width = `800px`;
+	element5.style.height = `800px`;
+	element5.style.opacity = 1;
+	element5.src = 'https://replikamasterworks.com';
 
-	// var domObject5 = new CSS3DObject(element5);
-	// domObject5.position.y = 400;
-	// domObject5.rotateX(-Math.PI / 2);
-	// scene2.add(domObject5);
+	var domObject5 = new CSS3DObject(element5);
+	domObject5.position.y = 400;
+	domObject5.rotateX(-Math.PI / 2);
+	scene2.add(domObject5);
 
-	// // 6
+	// 6
 
-	// var element6 = document.createElement('iframe');
-	// element6.style.width = `800px`;
-	// element6.style.height = `800px`;
-	// element6.style.opacity = 1;
-	// element6.src = 'https://site.hhacker.space';
+	var element6 = document.createElement('iframe');
+	element6.style.width = `800px`;
+	element6.style.height = `800px`;
+	element6.style.opacity = 1;
+	element6.src = 'https://site.hhacker.space';
 
-	// var domObject6 = new CSS3DObject(element6);
-	// domObject6.position.y = -400;
-	// domObject6.rotateX(Math.PI / 2);
-	// scene2.add(domObject6);
+	var domObject6 = new CSS3DObject(element6);
+	domObject6.position.y = -400;
+	domObject6.rotateX(Math.PI / 2);
+	scene2.add(domObject6);
 
 	// add box for center
 
