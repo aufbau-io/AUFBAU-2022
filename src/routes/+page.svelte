@@ -44,7 +44,7 @@
 				>
 				<a href="https://iota.health" target="_blank"><p>iota.health</p></a>
 				<a href="https://replikamasterworks.com" target="_blank"><p>replikamasterworks.com</p></a>
-				<a href="https://zen.aufbau.io" target="_blank"><p>zen.aufbau.io</p></a>
+				<!-- <a href="https://zen.aufbau.io" target="_blank"><p>zen.aufbau.io</p></a> -->
 				<a href="https://silicon.fm" target="_blank"><p>silicon.fm</p></a>
 				<a href="https://site.hhacker.space" target="_blank"><p>site.hhacker.space</p></a>
 				<a href="https://conceptioncalculator2000.com" target="_blank"
@@ -59,9 +59,9 @@
 				<p>aufbau // dan humphries</p>
 
 				<br />
-				<p>lightweight websites</p>
+				<p>lightweight code</p>
 				<p>microservice systems</p>
-				<p>payments // shopify</p>
+				<p>stripe // shopify</p>
 				<p>webgl // 3d</p>
 				<br />
 				<!-- <p>I've built these:</p>
