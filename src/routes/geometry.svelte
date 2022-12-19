@@ -206,10 +206,10 @@
 	scene2.rotation.y += Math.PI;
 
 	let render = function () {
+		renderer.render(scene, camera);
 		if ($screenType == 3) {
-			renderer.render(scene, camera);
+			renderer2.render(scene2, camera);
 		}
-		renderer2.render(scene2, camera);
 
 		id = requestAnimationFrame(render);
 
@@ -218,18 +218,18 @@
 		// group.rotation.z += 0.002;
 	};
 
-	// window.addEventListener(
-	// 	'resize',
-	// 	function () {
-	// 		let height = window.innerHeight;
-	// 		let width = window.innerWidth;
-	// 		camera.aspect = width / height;
-	// 		camera.updateProjectionMatrix();
-	// 		renderer.setSize(width, height);
-	// 		renderer2.setSize(width, height);
-	// 	},
-	// 	false
-	// );
+	window.addEventListener(
+		'resize',
+		function () {
+			let height = window.innerHeight;
+			let width = window.innerWidth;
+			camera.aspect = width / height;
+			camera.updateProjectionMatrix();
+			renderer.setSize(width, height);
+			renderer2.setSize(width, height);
+		},
+		false
+	);
 
 	render();
 </script>

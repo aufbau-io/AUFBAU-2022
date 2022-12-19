@@ -10,7 +10,6 @@
 <main>
 	<section class="top">
 		<p on:click={() => setUserType(null)}>aufbau web studio</p>
-
 		<a href="mailto: dan@aufbau.io">contact</a>
 	</section>
 
@@ -26,6 +25,7 @@
 			{/if}
 			] - work
 		</p>
+
 		<p on:click={() => setUserType(2)}>
 			[
 			{#if $userType == 2}
@@ -33,6 +33,7 @@
 			{/if}
 			] - systems
 		</p>
+
 		<p on:click={() => setUserType(3)}>
 			[
 			{#if $userType == 3}
@@ -127,7 +128,7 @@
 		top: 0;
 		gap: 4px;
 
-		padding: 8px 16px;
+		padding: 12px 16px;
 
 		width: 100vw;
 
