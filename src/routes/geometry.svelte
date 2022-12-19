@@ -1,4 +1,5 @@
 <script>
+	import { screenType } from '$lib/store/store';
 	import { onMount, onDestroy } from 'svelte';
 	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 	import * as THREE from 'three';
@@ -205,8 +206,11 @@
 	scene2.rotation.y += Math.PI;
 
 	let render = function () {
-		renderer.render(scene, camera);
+		if ($screenType == 3) {
+			renderer.render(scene, camera);
+		}
 		renderer2.render(scene2, camera);
+
 		id = requestAnimationFrame(render);
 
 		// group.rotation.x += 0.002;
