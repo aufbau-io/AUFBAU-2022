@@ -12,11 +12,11 @@
 	let scene = new THREE.Scene();
 	let scene2 = new THREE.Scene();
 
-	{
-		const color = 0x232323;
-		const density = 0.00015;
-		scene.fog = new THREE.FogExp2(color, density);
-	}
+	// {
+	// 	const color = 0x232323;
+	// 	const density = 0.00015;
+	// 	scene.fog = new THREE.FogExp2(color, density);
+	// }
 
 	// axis lines
 
