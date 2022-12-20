@@ -28,16 +28,6 @@
 					<p on:click={() => setUserType(null)} class="return">RETURN</p>
 				{/if}
 
-				<!-- {#if $screenType != 1}
-			<p on:click={() => setUserType(2)}>
-				[
-				{#if $userType == 2}
-					x
-				{/if}
-				] - systems
-			</p>
-		{/if} -->
-
 				<p on:click={() => setUserType(3)} style={'color: var(--primary);'}>
 					[
 					{#if $userType == 3}
@@ -67,11 +57,6 @@
 						>
 					</body>
 				{/if}
-				{#if $userType == 2}
-					<body>
-						<img use:lazyLoad={'/system_diagram.png'} alt={'modular system diagram'} class="img" />
-					</body>
-				{/if}
 				{#if $userType == 3}
 					<!-- {#if $screenType} -->
 					<body>
@@ -85,19 +70,6 @@
 
 						<p>webgl // 3d</p>
 						<br />
-						<!-- <p>I've built these:</p>
-				<a href="https://dan.aufbau.io"><p>- dan.aufbau.io</p></a>
-				<a href="https://165182-sustainable-digital-design-wonderland.vercel.app/"
-					><p>- 165182-sustainable-digital-design-wonderland.vercel.app</p></a
-				>
-				<a href="https://iota.health"><p>- iota.health</p></a>
-				<a href="https://replikamasterworks.com"><p>- replikamasterworks.com</p></a>
-				<a href="https://zen.aufbau.io"><p>- zen.aufbau.io</p></a>
-				<a href="https://silicon.fm"><p>- silicon.fm</p></a>
-				<a href="https://site.hhacker.space"><p>- site.hhacker.space</p></a>
-				<a href="https://conceptioncalculator2000.com"><p>- conceptioncalculator2000.com</p></a>
-				<br /> -->
-
 						<div>
 							<a href="https://aufbau.io/dan_humphries_cv.pdf">cv</a>
 							&nbsp;//&nbsp;
@@ -118,8 +90,6 @@
 	main {
 		height: calc(var(--vh, 1vh) * 100);
 		width: 100vw;
-
-		width: 100%;
 		pointer-events: none;
 
 		display: flex;
@@ -185,21 +155,6 @@
 		overflow: hidden;
 	}
 
-	img {
-		opacity: 0;
-		max-height: 100vh;
-		max-width: 100vw;
-
-		border-left: solid 1px var(--primary-50);
-		border-right: solid 1px var(--primary-50);
-	}
-
 	@media (max-width: 760px) {
-		img {
-			border-left: none;
-			border-right: none;
-			border-top: solid 1px var(--primary-50);
-			border-bottom: solid 1px var(--primary-50);
-		}
 	}
 </style>
