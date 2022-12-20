@@ -76,7 +76,7 @@
 	// gridHelper3.rotateZ(Math.PI / 2);
 	// scene.add(gridHelper3);
 
-	const sphere = new THREE.SphereGeometry(480);
+	const sphere = new THREE.SphereGeometry(boxSize * 0.6);
 	const object = new THREE.Mesh(sphere, new THREE.MeshBasicMaterial(0xff0000));
 	const box = new THREE.BoxHelper(object, 0xa63d40);
 	scene.add(box);
