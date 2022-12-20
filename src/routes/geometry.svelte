@@ -182,7 +182,7 @@
 	let width = window.innerWidth;
 
 	// Setting up a camera
-	let camera = new THREE.PerspectiveCamera(20, width / height, 0.1, 12000);
+	let camera = new THREE.PerspectiveCamera(20, width / height, 0.1, 10000);
 	camera.position.x = 2800;
 	camera.position.y = 1400;
 	camera.position.z = 2800;
