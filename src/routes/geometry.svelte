@@ -170,7 +170,7 @@
 		color: new THREE.Color('0x232323'),
 		side: THREE.DoubleSide
 	});
-	var geometry_plane = new THREE.BoxGeometry(boxSize - 1, boxSize - 1, boxSize - 1);
+	var geometry_plane = new THREE.BoxGeometry(boxSize * 0.95, boxSize * 0.95, boxSize * 0.95);
 	var mesh = new THREE.Mesh(geometry_plane, material);
 
 	//mesh.scale.copy( domObject.scale );
