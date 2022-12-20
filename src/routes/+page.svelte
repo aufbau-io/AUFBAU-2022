@@ -20,6 +20,8 @@
 					[
 					{#if $userType == 1}
 						x
+					{:else}
+						&nbsp;
 					{/if}
 					] - work
 				</p>
@@ -32,6 +34,8 @@
 					[
 					{#if $userType == 3}
 						x
+					{:else}
+						&nbsp;
 					{/if}
 					] - about
 				</p>
