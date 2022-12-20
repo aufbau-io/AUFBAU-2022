@@ -10,6 +10,11 @@
 	--background: linear-gradient(115deg, #141414, #232323, #141414);
 	--background-50: #d0d0d080;
 	--accent: #f2cd5e;
+
+	--orange: #e9b872;
+	--green: #90a959;
+	--red: #a63d40;
+	--blue: #6494aa;
 }
 
 html {

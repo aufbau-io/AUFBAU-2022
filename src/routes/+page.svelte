@@ -10,12 +10,12 @@
 {#if $screenType}
 	<main>
 		<section class="top">
-			<p on:click={() => setUserType(null)}>aufbau web studio</p>
-			<a href="mailto: dan@aufbau.io">contact</a>
+			<p on:click={() => setUserType(null)} style={'color: var(--primary);'}>aufbau web studio</p>
+			<a href="mailto: dan@aufbau.io" style={'color: var(--primary);'}>contact</a>
 		</section>
 
 		<section>
-			<p on:click={() => setUserType(1)}>
+			<p on:click={() => setUserType(1)} style={'color: var(--primary);'}>
 				[
 				{#if $userType == 1}
 					x
@@ -37,7 +37,7 @@
 			</p>
 		{/if} -->
 
-			<p on:click={() => setUserType(3)}>
+			<p on:click={() => setUserType(3)} style={'color: var(--primary);'}>
 				[
 				{#if $userType == 3}
 					x
@@ -76,7 +76,7 @@
 
 					<br />
 					<p>lightweight code</p>
-					<p>payments // web-stores</p>
+					<p>web-stores // portfolios</p>
 					<p>microservice systems</p>
 
 					<p>webgl // 3d</p>
