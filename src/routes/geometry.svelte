@@ -33,16 +33,16 @@
 	const ymaterial = new THREE.LineBasicMaterial({ color: 0x90a959 });
 
 	const xpoints = [];
-	xpoints.push(new THREE.Vector3(-10000, 0, 0));
-	xpoints.push(new THREE.Vector3(10000, 0, 0));
+	xpoints.push(new THREE.Vector3(-12000, 0, 0));
+	xpoints.push(new THREE.Vector3(12000, 0, 0));
 
 	const ypoints = [];
-	ypoints.push(new THREE.Vector3(0, -10000, 0));
-	ypoints.push(new THREE.Vector3(0, 10000, 0));
+	ypoints.push(new THREE.Vector3(0, -12000, 0));
+	ypoints.push(new THREE.Vector3(0, 12000, 0));
 
 	const zpoints = [];
-	xpoints.push(new THREE.Vector3(0, 0, -10000));
-	xpoints.push(new THREE.Vector3(0, 0, 10000));
+	xpoints.push(new THREE.Vector3(0, 0, -12000));
+	xpoints.push(new THREE.Vector3(0, 0, 12000));
 
 	const xgeometry = new THREE.BufferGeometry().setFromPoints(xpoints);
 	const xline = new THREE.Line(xgeometry, xmaterial);
@@ -182,7 +182,7 @@
 	let width = window.innerWidth;
 
 	// Setting up a camera
-	let camera = new THREE.PerspectiveCamera(20, width / height, 0.1, 10000);
+	let camera = new THREE.PerspectiveCamera(20, width / height, 0.1, 12000);
 	camera.position.x = 2800;
 	camera.position.y = 1400;
 	camera.position.z = 2800;
@@ -206,8 +206,8 @@
 
 	let controls = new OrbitControls(camera, renderer.domElement);
 	let controls2 = new OrbitControls(camera, renderer2.domElement);
-	// controls.maxDistance = 800;
-	// controls.minDistance = 50;
+	controls2.maxDistance = 7200;
+	controls2.minDistance = 3200;
 	controls.enablePan = false;
 	controls2.enablePan = false;
 
