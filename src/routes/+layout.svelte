@@ -77,7 +77,7 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -100%);
+		transform: translate(-50%, -225%);
 		font-size: 400px;
 		-webkit-text-stroke: 1px var(--primary);
 		color: transparent;
