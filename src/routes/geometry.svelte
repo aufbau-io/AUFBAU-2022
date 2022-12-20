@@ -105,6 +105,16 @@
 	// domObject.rotateX(Math.PI / 2);
 	scene2.add(domObject1);
 
+	// const div1 = window.document.createElement('div');
+	// div1.innerHTML = `visit // sustainable digital design`;
+	// div1.style.width = `${boxSize}px`;
+	// div1.style.height = '100px';
+	// // div.style.background = 'lightblue';
+	// const textObject1 = new CSS3DObject(div1);
+	// textObject1.position.z = boxSize / 2.01;
+	// textObject1.position.y = boxSize / 2 - 20;
+	// scene2.add(textObject1);
+
 	// 2
 
 	var element2 = document.createElement('iframe');
