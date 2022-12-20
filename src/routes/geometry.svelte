@@ -171,12 +171,12 @@
 		color: new THREE.Color('0x232323')
 	});
 	var geometry_plane = new THREE.BoxGeometry(boxSize * 0.95, boxSize * 0.95, boxSize * 0.95);
-	var mesh = new THREE.Mesh(geometry_plane, material);
+	var centreBox = new THREE.Mesh(geometry_plane, material);
 
 	//mesh.scale.copy( domObject.scale );
-	mesh.castShadow = false;
-	mesh.receiveShadow = true;
-	scene.add(mesh);
+	centreBox.castShadow = false;
+	centreBox.receiveShadow = true;
+	scene.add(centreBox);
 
 	let height = window.innerHeight;
 	let width = window.innerWidth;
@@ -218,6 +218,9 @@
 		renderer2.render(scene2, camera);
 
 		id = requestAnimationFrame(render);
+
+		// centreBox.rotation.y += 0.002;
+		// scene2.rotation.y += 0.002;
 
 		// group.rotation.x += 0.002;
 		// group.rotation.y += 0.002;
