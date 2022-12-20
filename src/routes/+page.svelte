@@ -15,7 +15,7 @@
 				<a href="mailto: dan@aufbau.io" style={'color: var(--primary);'}>contact</a>
 			</section>
 
-			<section>
+			<section class="bottom">
 				<p on:click={() => setUserType(1)} style={'color: var(--primary);'}>
 					[
 					{#if $userType == 1}
@@ -109,7 +109,8 @@
 
 	section {
 		z-index: 10;
-		position: relative;
+		position: absolute;
+		left: 0;
 		gap: 4px;
 
 		padding: 16px;
@@ -122,6 +123,13 @@
 		align-items: flex-start;
 
 		pointer-events: all;
+	}
+
+	section.top {
+		top: 0;
+	}
+	section.bottom {
+		bottom: 0;
 	}
 
 	a,
