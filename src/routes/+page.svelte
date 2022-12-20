@@ -7,27 +7,28 @@
 	};
 </script>
 
-{#if $screenType}
-	<main>
-		<section class="top">
-			<p on:click={() => setUserType(null)} style={'color: var(--primary);'}>aufbau web studio</p>
-			<a href="mailto: dan@aufbau.io" style={'color: var(--primary);'}>contact</a>
-		</section>
+{#key $screenType}
+	{#if $screenType}
+		<main>
+			<section class="top">
+				<p on:click={() => setUserType(null)} style={'color: var(--primary);'}>aufbau web studio</p>
+				<a href="mailto: dan@aufbau.io" style={'color: var(--primary);'}>contact</a>
+			</section>
 
-		<section>
-			<p on:click={() => setUserType(1)} style={'color: var(--primary);'}>
-				[
-				{#if $userType == 1}
-					x
+			<section>
+				<p on:click={() => setUserType(1)} style={'color: var(--primary);'}>
+					[
+					{#if $userType == 1}
+						x
+					{/if}
+					] - work
+				</p>
+
+				{#if $userType}
+					<p on:click={() => setUserType(null)} class="return">RETURN</p>
 				{/if}
-				] - work
-			</p>
 
-			{#if $userType}
-				<p on:click={() => setUserType(null)} class="return">RETURN</p>
-			{/if}
-
-			<!-- {#if $screenType != 1}
+				<!-- {#if $screenType != 1}
 			<p on:click={() => setUserType(2)}>
 				[
 				{#if $userType == 2}
@@ -37,51 +38,54 @@
 			</p>
 		{/if} -->
 
-			<p on:click={() => setUserType(3)} style={'color: var(--primary);'}>
-				[
-				{#if $userType == 3}
-					x
+				<p on:click={() => setUserType(3)} style={'color: var(--primary);'}>
+					[
+					{#if $userType == 3}
+						x
+					{/if}
+					] - about
+				</p>
+			</section>
+
+			{#key $userType}
+				{#if $userType == 1}
+					<body>
+						<a href="https://dan.aufbau.io" target="_blank"><p>dan.aufbau.io</p></a>
+						<a
+							href="https://165182-sustainable-digital-design-wonderland.vercel.app/"
+							target="_blank"><p>165182-sustainable-digital-design-wonderland.vercel.app</p></a
+						>
+						<a href="https://iota.health" target="_blank"><p>iota.health</p></a>
+						<a href="https://replikamasterworks.com" target="_blank"
+							><p>replikamasterworks.com</p></a
+						>
+						<!-- <a href="https://zen.aufbau.io" target="_blank"><p>zen.aufbau.io</p></a> -->
+						<a href="https://silicon.fm" target="_blank"><p>silicon.fm</p></a>
+						<a href="https://site.hhacker.space" target="_blank"><p>site.hhacker.space</p></a>
+						<a href="https://conceptioncalculator2000.com" target="_blank"
+							><p>conceptioncalculator2000.com</p></a
+						>
+					</body>
 				{/if}
-				] - about
-			</p>
-		</section>
+				{#if $userType == 2}
+					<body>
+						<img use:lazyLoad={'/system_diagram.png'} alt={'modular system diagram'} class="img" />
+					</body>
+				{/if}
+				{#if $userType == 3}
+					<!-- {#if $screenType} -->
+					<body>
+						<br />
+						<p>aufbau // dan humphries</p>
 
-		{#key $userType}
-			{#if $userType == 1}
-				<body>
-					<a href="https://dan.aufbau.io" target="_blank"><p>dan.aufbau.io</p></a>
-					<a href="https://165182-sustainable-digital-design-wonderland.vercel.app/" target="_blank"
-						><p>165182-sustainable-digital-design-wonderland.vercel.app</p></a
-					>
-					<a href="https://iota.health" target="_blank"><p>iota.health</p></a>
-					<a href="https://replikamasterworks.com" target="_blank"><p>replikamasterworks.com</p></a>
-					<!-- <a href="https://zen.aufbau.io" target="_blank"><p>zen.aufbau.io</p></a> -->
-					<a href="https://silicon.fm" target="_blank"><p>silicon.fm</p></a>
-					<a href="https://site.hhacker.space" target="_blank"><p>site.hhacker.space</p></a>
-					<a href="https://conceptioncalculator2000.com" target="_blank"
-						><p>conceptioncalculator2000.com</p></a
-					>
-				</body>
-			{/if}
-			{#if $userType == 2}
-				<body>
-					<img use:lazyLoad={'/system_diagram.png'} alt={'modular system diagram'} class="img" />
-				</body>
-			{/if}
-			{#if $userType == 3}
-				<!-- {#if $screenType} -->
-				<body>
-					<br />
-					<p>aufbau // dan humphries</p>
+						<br />
+						<p>lightweight code</p>
+						<p>web-stores // portfolios</p>
+						<p>microservice systems</p>
 
-					<br />
-					<p>lightweight code</p>
-					<p>web-stores // portfolios</p>
-					<p>microservice systems</p>
-
-					<p>webgl // 3d</p>
-					<br />
-					<!-- <p>I've built these:</p>
+						<p>webgl // 3d</p>
+						<br />
+						<!-- <p>I've built these:</p>
 				<a href="https://dan.aufbau.io"><p>- dan.aufbau.io</p></a>
 				<a href="https://165182-sustainable-digital-design-wonderland.vercel.app/"
 					><p>- 165182-sustainable-digital-design-wonderland.vercel.app</p></a
@@ -94,24 +98,25 @@
 				<a href="https://conceptioncalculator2000.com"><p>- conceptioncalculator2000.com</p></a>
 				<br /> -->
 
-					<div>
-						<a href="https://aufbau.io/dan_humphries_cv.pdf">cv</a>
-						&nbsp;//&nbsp;
-						<a href="https://github.com/dnhmphrs">github</a>
-						&nbsp;//&nbsp;
-						<a href="https://www.linkedin.com/in/dan-humphries/">linkedin</a>
-						&nbsp;//&nbsp;
-						<a href="mailto: dan@aufbau.io">email</a>
-					</div>
-				</body>
-			{/if}
-		{/key}
-	</main>
-{/if}
+						<div>
+							<a href="https://aufbau.io/dan_humphries_cv.pdf">cv</a>
+							&nbsp;//&nbsp;
+							<a href="https://github.com/dnhmphrs">github</a>
+							&nbsp;//&nbsp;
+							<a href="https://www.linkedin.com/in/dan-humphries/">linkedin</a>
+							&nbsp;//&nbsp;
+							<a href="mailto: dan@aufbau.io">email</a>
+						</div>
+					</body>
+				{/if}
+			{/key}
+		</main>
+	{/if}
+{/key}
 
 <style>
 	main {
-		height: calc(var(--vh, 1vh) * 100);
+		height: 100%;
 		position: relative;
 		width: 100%;
 		pointer-events: none;
