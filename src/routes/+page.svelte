@@ -111,7 +111,7 @@
 		transform: translateX(-50%);
 		pointer-events: all;
 		cursor: pointer;
-		color: var(--orange);
+		color: var(--green);
 	}
 
 	section {
@@ -143,9 +143,17 @@
 	a,
 	p {
 		pointer-events: all;
-		cursor: pointer;
 		z-index: 1000;
 		width: auto;
+	}
+
+	section p,
+	a {
+		cursor: pointer;
+	}
+
+	a:hover {
+		color: var(--red);
 	}
 
 	body {
