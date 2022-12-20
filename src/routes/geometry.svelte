@@ -29,8 +29,9 @@
 	// axis lines
 
 	//create a blue LineBasicMaterial
-	const xmaterial = new THREE.LineBasicMaterial({ color: 0x6494aa });
+	const xmaterial = new THREE.LineBasicMaterial({ color: 0xe9b872 });
 	const ymaterial = new THREE.LineBasicMaterial({ color: 0x90a959 });
+	const zmaterial = new THREE.LineBasicMaterial({ color: 0xe9b872 });
 
 	const xpoints = [];
 	xpoints.push(new THREE.Vector3(-12000, 0, 0));
@@ -41,8 +42,8 @@
 	ypoints.push(new THREE.Vector3(0, 12000, 0));
 
 	const zpoints = [];
-	xpoints.push(new THREE.Vector3(0, 0, -12000));
-	xpoints.push(new THREE.Vector3(0, 0, 12000));
+	zpoints.push(new THREE.Vector3(0, 0, -12000));
+	zpoints.push(new THREE.Vector3(0, 0, 12000));
 
 	const xgeometry = new THREE.BufferGeometry().setFromPoints(xpoints);
 	const xline = new THREE.Line(xgeometry, xmaterial);
@@ -53,7 +54,7 @@
 	scene.add(yline);
 
 	const zgeometry = new THREE.BufferGeometry().setFromPoints(zpoints);
-	const zline = new THREE.Line(zgeometry, xmaterial);
+	const zline = new THREE.Line(zgeometry, zmaterial);
 	scene.add(zline);
 
 	// const axesHelper = new THREE.AxesHelper(2000);
@@ -62,11 +63,11 @@
 
 	// helpers
 
-	const size = boxSize * 2;
-	const divisions = 10;
+	// const size = boxSize * 2;
+	// const divisions = 10;
 
-	const gridHelper = new THREE.GridHelper(size, divisions, 0x6494aa, 0xe9b872);
-	scene.add(gridHelper);
+	// const gridHelper = new THREE.GridHelper(size, divisions, 0x6494aa, 0xe9b872);
+	// scene.add(gridHelper);
 
 	// const gridHelper2 = new THREE.GridHelper(size, divisions, 0x000000, 0x000000);
 	// gridHelper2.rotateX(Math.PI / 2);

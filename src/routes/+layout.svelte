@@ -69,4 +69,24 @@
 {#key userType}
 	<svelte:component this={Geometry} />
 {/key}
+<h1>AUFBAU</h1>
 <slot />
+
+<style>
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -100%);
+		font-size: 400px;
+		-webkit-text-stroke: 1px var(--primary);
+		color: transparent;
+		z-index: -10;
+	}
+
+	@media (max-width: 760px) {
+		h1 {
+			font-size: 120px;
+		}
+	}
+</style>
