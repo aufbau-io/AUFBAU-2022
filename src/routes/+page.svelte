@@ -11,7 +11,9 @@
 	{#if $screenType}
 		<main>
 			<section class="top">
-				<p on:click={() => setUserType(null)} style={'color: var(--primary);'}>aufbau web studio</p>
+				<p on:click={() => setUserType(null)} style={'color: var(--primary);pointer-events:none;'}>
+					aufbau web studio
+				</p>
 				<a href="mailto: dan@aufbau.io" style={'color: var(--primary);'}>contact</a>
 			</section>
 
