@@ -111,6 +111,7 @@
 		transform: translateX(-50%);
 		pointer-events: all;
 		cursor: pointer;
+		color: var(--orange);
 	}
 
 	section {

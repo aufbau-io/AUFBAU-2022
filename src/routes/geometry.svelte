@@ -168,8 +168,7 @@
 
 	var material = new THREE.MeshToonMaterial({
 		opacity: 0,
-		color: new THREE.Color('0x232323'),
-		side: THREE.DoubleSide
+		color: new THREE.Color('0x232323')
 	});
 	var geometry_plane = new THREE.BoxGeometry(boxSize * 0.95, boxSize * 0.95, boxSize * 0.95);
 	var mesh = new THREE.Mesh(geometry_plane, material);
