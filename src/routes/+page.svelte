@@ -110,7 +110,8 @@
 	section {
 		z-index: 10;
 		position: absolute;
-		left: 0;
+		left: 50%;
+		transform: translateX(-50%);
 		gap: 4px;
 
 		padding: 16px;
