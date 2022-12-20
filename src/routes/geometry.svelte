@@ -199,7 +199,7 @@
 	// Setting up a camera
 	let camera = new THREE.PerspectiveCamera(20, width / height, 0.1, 10000);
 	camera.position.x = 2800;
-	camera.position.y = 1400;
+	camera.position.y = -1400;
 	camera.position.z = 2800;
 
 	// Setting up the renderer. This will be called later to render scene with the camera setup above
