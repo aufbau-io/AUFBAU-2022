@@ -89,7 +89,7 @@
 <style>
 	main {
 		height: calc(var(--vh, 1vh) * 100);
-		width: 100vw;
+		width: 100%;
 		pointer-events: none;
 
 		display: flex;
