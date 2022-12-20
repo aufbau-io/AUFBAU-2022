@@ -117,7 +117,8 @@
 <style>
 	main {
 		height: calc(var(--vh, 1vh) * 100);
-		position: relative;
+		width: 100vw;
+
 		width: 100%;
 		pointer-events: none;
 
@@ -144,6 +145,7 @@
 		padding: 16px;
 
 		width: 100vw;
+		max-width: 1200px;
 
 		display: flex;
 		justify-content: space-between;
@@ -162,8 +164,11 @@
 
 	body {
 		position: absolute;
+		top: 0;
+		left: 0;
 		height: 100%;
-		width: 100%;
+		width: 100vw;
+		max-width: 100vw;
 
 		padding-left: 16px;
 
