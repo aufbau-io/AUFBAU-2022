@@ -63,11 +63,16 @@
 
 	// helpers
 
-	// const size = boxSize * 2;
+	// const size = boxSize * 1.2;
 	// const divisions = 10;
 
-	// const gridHelper = new THREE.GridHelper(size, divisions, 0x6494aa, 0xe9b872);
+	// const gridHelper = new THREE.GridHelper(size, divisions, 0x6494aa, 0x6494aa);
+	// gridHelper.position.y = -boxSize * 0.75;
 	// scene.add(gridHelper);
+
+	// const gridHelper2 = new THREE.GridHelper(size, divisions, 0x6494aa, 0x6494aa);
+	// gridHelper2.position.y = boxSize * 0.75;
+	// scene.add(gridHelper2);
 
 	// const gridHelper2 = new THREE.GridHelper(size, divisions, 0x000000, 0x000000);
 	// gridHelper2.rotateX(Math.PI / 2);
@@ -82,7 +87,7 @@
 	const box = new THREE.BoxHelper(object, 0xa63d40);
 	scene.add(box);
 
-	const light = new THREE.AmbientLight(0x171717);
+	const light = new THREE.AmbientLight(0x202020);
 	scene.add(light);
 
 	// setting up the iframes
