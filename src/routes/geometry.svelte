@@ -221,7 +221,7 @@
 
 	let controls = new OrbitControls(camera, renderer.domElement);
 	let controls2 = new OrbitControls(camera, renderer2.domElement);
-	controls2.maxDistance = 6200;
+	controls2.maxDistance = 5200;
 	controls2.minDistance = 3200;
 	controls.enablePan = false;
 	controls2.enablePan = false;
