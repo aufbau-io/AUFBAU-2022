@@ -121,7 +121,7 @@
 	element2.style.width = `${boxSize}px`;
 	element2.style.height = `${boxSize}px`;
 	element2.style.opacity = 1;
-	element2.src = 'https://silicon.fm';
+	element2.src = 'https://aufbau.io';
 	var domObject2 = new CSS3DObject(element2);
 	domObject2.position.z = -boxSize / 2;
 	domObject2.rotateY(Math.PI);
@@ -146,7 +146,7 @@
 	element4.style.width = `${boxSize}px`;
 	element4.style.height = `${boxSize}px`;
 	element4.style.opacity = 1;
-	element4.src = 'https://iota.health';
+	element4.src = 'https://silicon.fm';
 
 	var domObject4 = new CSS3DObject(element4);
 	domObject4.position.x = -boxSize / 2;
