@@ -189,7 +189,7 @@
 	cursor.x = 0;
 	cursor.y = 0;
 
-	const particlesCount = 400;
+	const particlesCount = 300;
 	const positions = new Float32Array(particlesCount * 3);
 
 	for (let i = 0; i < particlesCount; i++) {
