@@ -121,7 +121,7 @@
 	element2.style.width = `${boxSize}px`;
 	element2.style.height = `${boxSize}px`;
 	element2.style.opacity = 1;
-	element2.src = 'https://aufbau.io';
+	element2.src = 'https://iota.health';
 	var domObject2 = new CSS3DObject(element2);
 	domObject2.position.z = -boxSize / 2;
 	domObject2.rotateY(Math.PI);
