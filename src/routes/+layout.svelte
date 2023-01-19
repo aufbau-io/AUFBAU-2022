@@ -45,7 +45,7 @@
 </script>
 
 <svelte:head>
-	<title>AUFBAU WEB STUDIO</title>
+	<title>AUFBAU DIGITAL</title>
 
 	<link rel="preload" href="/system_diagram.png" as="image" />
 

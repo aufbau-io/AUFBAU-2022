@@ -12,7 +12,7 @@
 		<main>
 			<section class="top">
 				<p on:click={() => setUserType(null)} style={'color: var(--primary);pointer-events:none;'}>
-					aufbau web studio
+					aufbau digital
 				</p>
 				<a href="mailto: dan@aufbau.io" style={'color: var(--primary);'}>contact</a>
 			</section>
@@ -47,9 +47,8 @@
 				{#if $userType == 1}
 					<body>
 						<a href="https://dan.aufbau.io" target="_blank"><p>dan.aufbau.io</p></a>
-						<a
-							href="https://165182-sustainable-digital-design-wonderland.vercel.app/"
-							target="_blank"><p>165182-sustainable-digital-design-wonderland.vercel.app</p></a
+						<a href="https://scrt-throw-demo.netlify.app" target="_blank"
+							><p>scrt-throw-demo.netlify.app</p></a
 						>
 						<a href="https://iota.health" target="_blank"><p>iota.health</p></a>
 						<a href="https://replikamasterworks.com" target="_blank"
@@ -71,9 +70,7 @@
 
 						<br />
 						<p>lightweight code</p>
-						<p>web-stores // portfolios</p>
-						<p>microservice systems</p>
-
+						<p>websites // portfolios</p>
 						<p>webgl // 3d</p>
 						<br />
 						<div>

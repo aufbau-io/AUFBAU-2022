@@ -17,14 +17,14 @@
 	if ($screenType == 1) {
 		boxSize = 540;
 	} else {
-		boxSize = 800;
+		boxSize = 860;
 	}
 
-	// {
-	// 	const color = 0x232323;
-	// 	const density = 0.00015;
-	// 	scene.fog = new THREE.FogExp2(color, density);
-	// }
+	{
+		const color = 0x232323;
+		const density = 0.0003;
+		scene.fog = new THREE.FogExp2(color, density);
+	}
 
 	// axis lines
 
@@ -98,7 +98,7 @@
 	element1.style.width = `${boxSize}px`;
 	element1.style.height = `${boxSize}px`;
 	element1.style.opacity = 1;
-	element1.src = 'https://165182-sustainable-digital-design-wonderland.vercel.app';
+	element1.src = 'https://dan.aufbau.io';
 
 	var domObject1 = new CSS3DObject(element1);
 	domObject1.position.z = boxSize / 2;
@@ -133,7 +133,7 @@
 	element3.style.width = `${boxSize}px`;
 	element3.style.height = `${boxSize}px`;
 	element3.style.opacity = 1;
-	element3.src = 'https://dan.aufbau.io';
+	element3.src = 'https://scrt-throw-demo.netlify.app';
 
 	var domObject3 = new CSS3DObject(element3);
 	domObject3.position.x = boxSize / 2;
@@ -181,6 +181,38 @@
 
 	// add box for center
 
+	/**
+	 * Particles
+	 */
+	// Geometry
+	const cursor = {};
+	cursor.x = 0;
+	cursor.y = 0;
+
+	const particlesCount = 400;
+	const positions = new Float32Array(particlesCount * 3);
+
+	for (let i = 0; i < particlesCount; i++) {
+		positions[i * 3 + 0] = (Math.random() - 0.5) * 3000;
+		positions[i * 3 + 1] = (Math.random() - 0.5) * 3000;
+		positions[i * 3 + 2] = (Math.random() - 0.5) * 3000;
+	}
+
+	const particlesGeometry = new THREE.BufferGeometry();
+	particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+	// Material
+	const particlesMaterial = new THREE.PointsMaterial({
+		color: 0xd0d0d0,
+		size: 20
+	});
+
+	// $: particlesMaterial.color = $darkMode ? pink : black;
+
+	// Points
+	const stars = new THREE.Points(particlesGeometry, particlesMaterial);
+	scene.add(stars);
+
 	var material = new THREE.MeshToonMaterial({
 		opacity: 0,
 		color: new THREE.Color('0x232323')
@@ -197,10 +229,10 @@
 	let width = window.innerWidth;
 
 	// Setting up a camera
-	let camera = new THREE.PerspectiveCamera(20, width / height, 0.1, 10000);
-	camera.position.x = 2800;
-	camera.position.y = -1400;
-	camera.position.z = 2800;
+	let camera = new THREE.PerspectiveCamera(22, width / height, 0.1, 10000);
+	camera.position.x = 2600;
+	camera.position.y = -1300;
+	camera.position.z = 2600;
 
 	// Setting up the renderer. This will be called later to render scene with the camera setup above
 	let renderer = new THREE.WebGLRenderer({ antialias: false });
@@ -231,6 +263,8 @@
 	let render = function () {
 		renderer.render(scene, camera);
 		renderer2.render(scene2, camera);
+
+		stars.rotation.y += 0.001;
 
 		id = requestAnimationFrame(render);
 
