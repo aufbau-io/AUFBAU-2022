@@ -91,7 +91,7 @@
 		width: 100%;
 		height: 100%;
 
-		background: linear-gradient(115deg, #0b0b0bff, #232323aa, #0b0b0bff);
+		background: linear-gradient(115deg, #0b0b0bff, #232323bb, #0b0b0bff);
 		z-index: -2;
 	}
 	section {
@@ -105,6 +105,7 @@
 		font-family: sirap, sans-serif;
 		color: #2b2b2b;
 		font-size: 2rem;
+		line-height: 2rem;
 		line-break: anywhere;
 		text-shadow: 2px 2px 0px var(--blue), -2px -2px 0px var(--green);
 	}
