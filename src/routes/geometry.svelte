@@ -29,9 +29,9 @@
 	// axis lines
 
 	//create a blue LineBasicMaterial
-	const xmaterial = new THREE.LineBasicMaterial({ color: 0xe9b872 });
-	const ymaterial = new THREE.LineBasicMaterial({ color: 0xe9b872 });
-	const zmaterial = new THREE.LineBasicMaterial({ color: 0xe9b872 });
+	const xmaterial = new THREE.LineBasicMaterial({ color: 0xd0d0d0 });
+	const ymaterial = new THREE.LineBasicMaterial({ color: 0xd0d0d0 });
+	const zmaterial = new THREE.LineBasicMaterial({ color: 0xd0d0d0 });
 
 	const xpoints = [];
 	xpoints.push(new THREE.Vector3(-12000, 0, 0));
@@ -84,7 +84,7 @@
 
 	const sphere = new THREE.SphereGeometry(boxSize * 0.6);
 	const object = new THREE.Mesh(sphere, new THREE.MeshBasicMaterial(0xff0000));
-	const box = new THREE.BoxHelper(object, 0x90a959);
+	const box = new THREE.BoxHelper(object, 0xd0d0d0);
 	scene.add(box);
 
 	// const light = new THREE.AmbientLight(0x202020);
