@@ -3,6 +3,9 @@
 	import { onMount } from 'svelte';
 	import { screenType, userType } from '$lib/store/store';
 
+	let lorem =
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit arcu, molestie non risus eget, consectetur faucibus dui. Aliquam erat volutpat. Duis volutpat posuere libero tincidunt fringilla. Aliquam pretium diam ut elit mattis, a ullamcorper tortor congue. Donec ultrices sapien et ipsum volutpat semper. Praesent sed ipsum vestibulum, mollis turpis sit amet, molestie magna. Suspendisse pharetra nunc eu mauris sollicitudin aliquet. Sed nec lacus nec lacus porta sodales. Fusce fringilla enim vitae urna interdum, a molestie nunc cursus. Aenean pretium orci eget fringilla commodo. Ut malesuada sapien metus, in tincidunt mauris volutpat eget. Aenean at neque et magna ullamcorper viverra at in tellus. Pellentesque mattis magna sit amet dui sodales temp';
+
 	let Geometry;
 	onMount(async () => {
 		// ---------------------------------------------------------------------------
@@ -57,6 +60,8 @@
 		crossorigin="anonymous"
 	/>
 
+	<link rel="preload" as="font" href="/fonts/sirap.woff" type="font/woff" crossorigin="anonymous" />
+
 	<link
 		rel="preload"
 		as="font"
@@ -70,9 +75,39 @@
 	<svelte:component this={Geometry} />
 {/key}
 <h1>AUFBAU</h1>
+<section>
+	{#each Array(100) as _, i}
+		{lorem}
+	{/each}
+</section>
+<main />
 <slot />
 
 <style>
+	main {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		background: linear-gradient(115deg, #0b0b0bff, #232323aa, #0b0b0bff);
+		z-index: -2;
+	}
+	section {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -3;
+
+		font-family: sirap, sans-serif;
+		color: #2b2b2b;
+		font-size: 2rem;
+		line-break: anywhere;
+		text-shadow: 2px 2px 0px var(--blue), -2px -2px 0px var(--green);
+	}
 	h1 {
 		position: absolute;
 		top: 50%;
@@ -81,7 +116,7 @@
 		font-size: 400px;
 		-webkit-text-stroke: 1px var(--primary);
 		color: transparent;
-		z-index: -10;
+		z-index: -1;
 	}
 
 	@media (max-width: 760px) {
