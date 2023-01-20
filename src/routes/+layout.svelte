@@ -125,5 +125,10 @@
 		h1 {
 			font-size: 120px;
 		}
+
+		section {
+			font-size: 1rem;
+			line-height: 1rem;
+		}
 	}
 </style>
