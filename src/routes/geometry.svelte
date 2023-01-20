@@ -30,7 +30,7 @@
 
 	//create a blue LineBasicMaterial
 	const xmaterial = new THREE.LineBasicMaterial({ color: 0xe9b872 });
-	const ymaterial = new THREE.LineBasicMaterial({ color: 0x90a959 });
+	const ymaterial = new THREE.LineBasicMaterial({ color: 0xe9b872 });
 	const zmaterial = new THREE.LineBasicMaterial({ color: 0xe9b872 });
 
 	const xpoints = [];
