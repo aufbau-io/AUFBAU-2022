@@ -150,7 +150,7 @@
 	}
 
 	a:hover {
-		color: var(--red);
+		color: var(--green);
 	}
 
 	body {
