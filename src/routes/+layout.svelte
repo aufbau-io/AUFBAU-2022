@@ -92,7 +92,7 @@
 		height: 100%;
 		height: calc(var(--vh, 1vh) * 100);
 
-		background: linear-gradient(115deg, #0b0b0bff, #232323aa, #0b0b0bff);
+		background: linear-gradient(115deg, #0b0b0bff, #232323bb, #0b0b0bff);
 		z-index: -2;
 	}
 	section {
