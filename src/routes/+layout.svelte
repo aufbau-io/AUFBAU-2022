@@ -109,6 +109,7 @@
 		line-height: 2rem;
 		line-break: anywhere;
 		text-shadow: 2px 2px 0px var(--blue), -2px -2px 0px var(--green);
+		overflow: hidden;
 	}
 	h1 {
 		position: absolute;
