@@ -101,6 +101,8 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
+		height: calc(var(--vh, 1vh) * 100);
+
 		z-index: -3;
 
 		font-family: sirap, sans-serif;
