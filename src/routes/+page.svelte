@@ -46,6 +46,12 @@
 			{#key $userType}
 				{#if $userType == 1}
 					<body>
+						<a href="https://garrett-demo.netlify.app" target="_blank"
+							><p>garrett-demo.netlify.app</p></a
+						>
+						<a href="https://emmett-demo.netlify.app" target="_blank"
+							><p>emmett-demo.netlify.app</p></a
+						>
 						<a href="https://dan.aufbau.io" target="_blank"><p>dan.aufbau.io</p></a>
 						<a href="https://scrt-throw-demo.netlify.app" target="_blank"
 							><p>scrt-throw-demo.netlify.app</p></a
@@ -57,9 +63,9 @@
 						<!-- <a href="https://zen.aufbau.io" target="_blank"><p>zen.aufbau.io</p></a> -->
 						<a href="https://silicon.fm" target="_blank"><p>silicon.fm</p></a>
 						<a href="https://site.hhacker.space" target="_blank"><p>site.hhacker.space</p></a>
-						<a href="https://conceptioncalculator2000.com" target="_blank"
+						<!-- <a href="https://conceptioncalculator2000.com" target="_blank"
 							><p>conceptioncalculator2000.com</p></a
-						>
+						> -->
 					</body>
 				{/if}
 				{#if $userType == 3}
