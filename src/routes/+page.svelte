@@ -180,7 +180,7 @@
 		align-items: center;
 		text-align: center;
 		justify-content: center;
-		background: linear-gradient(115deg, #14141480, #232323fa, #141414);
+		background: linear-gradient(115deg, #14141480, #141414ee, #141414);
 
 		overflow: hidden;
 	}
