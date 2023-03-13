@@ -97,7 +97,8 @@
 
 <style>
 	main {
-		height: calc(var(--vh, 1vh) * 100);
+		height: 100%;
+		max-height: calc(var(--vh, 1vh) * 100);
 		width: 100%;
 		pointer-events: none;
 
