@@ -6,8 +6,8 @@
 	--primary: #d0d0d0;
 	/* --primary-90: #d0d0d0e6;
 	--primary-50: #d0d0d080; */
-	--background-fallback: #1b1b1b;
-	--background: linear-gradient(115deg, #0b0b0b, #232323, #0b0b0b);
+	--background-fallback: #202020;
+	--background: linear-gradient(115deg, #0b0b0b, #2b2b2b, #0b0b0b);
 	--background-50: #d0d0d080;
 	--accent: #f2cd5e;
 

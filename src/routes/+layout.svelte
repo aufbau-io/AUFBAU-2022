@@ -75,11 +75,11 @@
 	<svelte:component this={Geometry} />
 {/key}
 <h1>AUFBAU</h1>
-<section>
+<!-- <section>
 	{#each Array(100) as _, i}
 		{lorem}
 	{/each}
-</section>
+</section> -->
 <main />
 <slot />
 

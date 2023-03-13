@@ -185,33 +185,33 @@
 	 * Particles
 	 */
 	// Geometry;
-	const cursor = {};
-	cursor.x = 0;
-	cursor.y = 0;
+	// const cursor = {};
+	// cursor.x = 0;
+	// cursor.y = 0;
 
-	const particlesCount = 400;
-	const positions = new Float32Array(particlesCount * 3);
+	// const particlesCount = 400;
+	// const positions = new Float32Array(particlesCount * 3);
 
-	for (let i = 0; i < particlesCount; i++) {
-		positions[i * 3 + 0] = (Math.random() - 0.5) * 3200;
-		positions[i * 3 + 1] = (Math.random() - 0.5) * 3200;
-		positions[i * 3 + 2] = (Math.random() - 0.5) * 3200;
-	}
+	// for (let i = 0; i < particlesCount; i++) {
+	// 	positions[i * 3 + 0] = (Math.random() - 0.5) * 3200;
+	// 	positions[i * 3 + 1] = (Math.random() - 0.5) * 3200;
+	// 	positions[i * 3 + 2] = (Math.random() - 0.5) * 3200;
+	// }
 
-	const particlesGeometry = new THREE.BufferGeometry();
-	particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+	// const particlesGeometry = new THREE.BufferGeometry();
+	// particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
-	// Material
-	const particlesMaterial = new THREE.PointsMaterial({
-		color: 0x90a959,
-		size: 25
-	});
+	// // Material
+	// const particlesMaterial = new THREE.PointsMaterial({
+	// 	color: 0x90a959,
+	// 	size: 25
+	// });
 
-	// $: particlesMaterial.color = $darkMode ? pink : black;
+	// // $: particlesMaterial.color = $darkMode ? pink : black;
 
-	// Points
-	const stars = new THREE.Points(particlesGeometry, particlesMaterial);
-	scene.add(stars);
+	// // Points
+	// const stars = new THREE.Points(particlesGeometry, particlesMaterial);
+	// scene.add(stars);
 
 	var material = new THREE.MeshToonMaterial({
 		opacity: 0,
@@ -264,7 +264,7 @@
 		renderer.render(scene, camera);
 		renderer2.render(scene2, camera);
 
-		stars.rotation.y += 0.001;
+		// stars.rotation.y += 0.001;
 
 		id = requestAnimationFrame(render);
 
