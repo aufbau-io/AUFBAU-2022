@@ -12,6 +12,8 @@
 	let height = window.innerHeight;
 	let width = window.innerWidth;
 
+	const colors = [0xffe38c, 0x9add8c, 0x94c8f7, 0xffaea9];
+
 	// Setting up a camera
 	let camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 400);
 	camera.position.z = 100;
