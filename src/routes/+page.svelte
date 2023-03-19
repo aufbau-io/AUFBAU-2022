@@ -65,15 +65,13 @@
 			<div class="grey hidden body__right">
 				<p>bespoke websites, systems, apps</p>
 				<p>lightweight and 3d specialist</p>
-			</div>
-			<div class="body__right">
-				<h3>say hi</h3>
+
+				<br />
+				<a target="_blank" href="https://www.instagram.com/dn.niels/">insta</a>
+				<a target="_blank" href="https://www.linkedin.com/in/dan-humphries">linkedin</a>
 				<a href="mailto: dan@aufbau.io">email</a>
 				<a target="_blank" href="/dan_humphries_cv.pdf">cv</a>
-				<a target="_blank" href="https://www.linkedin.com/in/dan-humphries">linkedin</a>
 			</div>
-			<br />
-			<br />
 		</div>
 	{/if}
 </section>
@@ -146,6 +144,7 @@
 	}
 	.grey.top {
 		color: var(--white);
+		margin-bottom: 0;
 	}
 
 	.body__left {
