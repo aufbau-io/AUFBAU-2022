@@ -1,5 +1,5 @@
 <script>
-	import { active } from '$lib/store/store';
+	import { active, screenType } from '$lib/store/store';
 
 	let toggle = () => {
 		active.update((val) => !val);
@@ -39,10 +39,12 @@
 				<!-- <a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a> -->
 				<!--a href="https://iota.health" target="_blank">iota • research app • 2022</a-->
 			</div>
-			<div class="grey body__right">
-				<h3>systems</h3>
-				<a href="/systems">modular system architecture • example</a>
-			</div>
+			{#if $screenType != 2}
+				<div class="grey body__right">
+					<h3>systems</h3>
+					<a href="/systems">modular system architecture • example</a>
+				</div>
+			{/if}
 			<div class="grey hidden body__left">
 				<p>bespoke websites, systems, apps</p>
 				<p>lightweight and 3d specialist</p>
