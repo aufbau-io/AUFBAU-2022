@@ -1,9 +1,8 @@
 <script>
-	import { userType, screenType } from '$lib/store/store';
-	import { lazyLoad } from '$lib/functions/lazyLoad.js';
+	import { active } from '$lib/store/store';
 
-	let setUserType = (type) => {
-		userType.set(type);
+	let toggle = () => {
+		active.update((val) => !val);
 	};
 </script>
 
@@ -11,20 +10,17 @@
 	<title>AUFBAU DIGITAL</title>
 </svelte:head>
 
-			<section class="bottom">
-				<p on:click={() => setUserType(1)} style={'color: var(--primary);'}>
-					[
-					{#if $userType == 1}
-						x
-					{:else}
-						&nbsp;
-					{/if}
-					] - work
-				</p>
+<section>
+	{#if !$active}
+		<a href="/" class="centreButton alt" on:click={() => toggle()}
+			>make&nbsp;web&nbsp;fun&nbsp;again</a
+		>
+	{:else}
+		<div class="body">
+			<!--img class="niels" alt="niels" src="/niels_bw.jpg" /-->
 
-				{#if $userType}
-					<p on:click={() => setUserType(null)} class="return">RETURN</p>
-				{/if}
+			<div class="grey top">
+				<h1 on:click={() => toggle()}>aufbau.</h1>
 
 				<p>CREATIVE WEB THINGS</p>
 				<a href="/playground">make web fun again</a>
@@ -54,147 +50,100 @@
 			<div class="body__right">
 				<h3>say hi</h3>
 
-			{#key $userType}
-				{#if $userType == 1}
-					<body>
-						<a href="https://garrett-demo.netlify.app" target="_blank"
-							><p>garrett-demo.netlify.app</p></a
-						>
-						<a href="https://emmett-demo.netlify.app" target="_blank"
-							><p>emmett-demo.netlify.app</p></a
-						>
-						<a href="https://dan.aufbau.io" target="_blank"><p>dan.aufbau.io</p></a>
-						<a href="https://scrt-throw-demo.netlify.app" target="_blank"
-							><p>scrt-throw-demo.netlify.app</p></a
-						>
-						<a href="https://iota.health" target="_blank"><p>iota.health</p></a>
-						<a href="https://replikamasterworks.com" target="_blank"
-							><p>replikamasterworks.com</p></a
-						>
-						<!-- <a href="https://zen.aufbau.io" target="_blank"><p>zen.aufbau.io</p></a> -->
-						<a href="https://silicon.fm" target="_blank"><p>silicon.fm</p></a>
-						<a href="https://site.hhacker.space" target="_blank"><p>site.hhacker.space</p></a>
-						<!-- <a href="https://conceptioncalculator2000.com" target="_blank"
-							><p>conceptioncalculator2000.com</p></a
-						> -->
-					</body>
-				{/if}
-				{#if $userType == 3}
-					<!-- {#if $screenType} -->
-					<body>
-						<br />
-						<p>aufbau // dan humphries</p>
-
-						<br />
-						<p>lightweight code</p>
-						<p>websites // portfolios</p>
-						<p>webgl // 3d</p>
-						<br />
-						<div>
-							<a href="https://aufbau.io/dan_humphries_cv.pdf">cv</a>
-							&nbsp;//&nbsp;
-							<a href="https://github.com/dnhmphrs">github</a>
-							&nbsp;//&nbsp;
-							<a href="https://www.linkedin.com/in/dan-humphries/">linkedin</a>
-							&nbsp;//&nbsp;
-							<a href="mailto: dan@aufbau.io">email</a>
-						</div>
-					</body>
-				{/if}
-			{/key}
-		</main>
+				<a target="_blank" href="/dan_humphries_cv.pdf">cv</a>
+				<a href="mailto: dan@aufbau.io">email</a>
+			</div>
+			<br />
+			<br />
+		</div>
 	{/if}
-{/key}
+</section>
 
 <style>
-	main {
-		height: 100%;
-		max-height: calc(var(--vh, 1vh) * 100);
-		width: 100%;
-		pointer-events: none;
-
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: space-between;
-	}
-
-	.return {
-		position: absolute;
-		left: 50%;
-		z-index: 100;
-		bottom: 16px;
-		transform: translateX(-50%);
-		pointer-events: all;
-		cursor: pointer;
-		color: var(--blue);
-	}
-
 	section {
-		z-index: 10;
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		gap: 4px;
-
-		padding: 16px;
-
-		width: 100vw;
-		max-width: 1200px;
-
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-
-		pointer-events: all;
-	}
-
-	section.top {
-		top: 0;
-	}
-	section.bottom {
-		bottom: 0;
-	}
-
-	a,
-	p {
-		pointer-events: all;
-		z-index: 1000;
-		width: auto;
-	}
-
-	section p,
-	a {
-		cursor: pointer;
-		color: var(--blue);
-	}
-
-	a:hover {
-		color: var(--orange);
-	}
-
-	body {
-		position: absolute;
-		top: 0;
-		left: 0;
 		height: 100%;
-		max-height: calc(var(--vh, 1vh) * 100);
-		width: 100vw;
-		max-width: 100vw;
+		display: flex;
+		overflow: auto;
+		max-width: 800px;
+	}
+	h1 {
+		font-family: 'dahlia', sans-serif;
+		color: var(--black);
+		font-size: 44px;
+		line-height: 44px;
+		font-weight: 700;
+		text-transform: lowercase;
+		cursor: pointer;
+		letter-spacing: 1.1px;
+	}
 
-		padding-left: 16px;
+	h3 {
+		margin-top: 10px;
+		color: var(--black);
+	}
 
-		z-index: 1;
-		line-height: 2rem;
+	p {
+		letter-spacing: 0.028em;
+	}
 
+	p.toggle {
+		color: var(--white);
+		background: var(--white);
+		border: solid 1px var(--black);
+		padding: 2px 6px;
+		cursor: pointer;
+
+		text-decoration: none;
+	}
+
+	p.toggle:hover {
+		color: var(--black);
+	}
+
+	h3.hidden {
+		color: var(--white);
+	}
+
+	.niels {
+		z-index: -10;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.body {
+		position: relative;
+		margin: auto 0;
 		display: flex;
 		flex-flow: column nowrap;
-		align-items: center;
-		text-align: center;
 		justify-content: center;
 
 		max-width: 600px;
 	}
 
-	@media (max-width: 760px) {
+	.grey {
+		margin: 16px 0 16px 0;
+		color: var(--black);
+	}
+	.grey.top {
+		color: var(--black);
+	}
+
+	.body__left {
+		text-align: left;
+	}
+
+	.body__right {
+		text-align: right;
+	}
+
+	@media (max-width: 800px) {
+		.grey {
+			margin: 12px 0 12px 0;
+		}
+
+		p.toggle {
+			color: var(--black);
+		}
 	}
 </style>
