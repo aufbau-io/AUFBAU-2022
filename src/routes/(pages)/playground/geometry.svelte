@@ -27,6 +27,19 @@
 		d = 4;
 	}
 
+	const colors = [0xffe38c, 0x9add8c, 0x94c8f7, 0xffaea9];
+	let colorIndex = Math.floor(Math.random() * colors.length);
+	let randomiseColorIndex = () => {
+		colorIndex = Math.floor(Math.random() * colors.length);
+	};
+
+	let materials = [
+		new THREE.MeshLambertMaterial({ color: colors[0] }),
+		new THREE.MeshLambertMaterial({ color: colors[1] }),
+		new THREE.MeshLambertMaterial({ color: colors[2] }),
+		new THREE.MeshLambertMaterial({ color: colors[3] })
+	];
+
 	const objects = [];
 
 	init();
@@ -45,7 +58,7 @@
 
 		const rollOverGeo = new THREE.BoxGeometry(50, 50, 50);
 		rollOverMaterial = new THREE.MeshBasicMaterial({
-			color: 0xe0e0e0,
+			color: colors[colorIndex],
 			opacity: 0.2,
 			transparent: true
 		});
@@ -143,6 +156,8 @@
 				// create cube
 			} else {
 				const voxel = new THREE.Mesh(cubeGeo, cubeMaterial);
+				voxel.material = materials[colorIndex];
+				randomiseColorIndex();
 				voxel.position.copy(intersect.point).add(intersect.face.normal);
 				voxel.position.divideScalar(50).floor().multiplyScalar(50).addScalar(25);
 				scene.add(voxel);
