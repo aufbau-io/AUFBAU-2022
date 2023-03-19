@@ -41,7 +41,7 @@
 
 				<p>CREATIVE WEB THINGS</p>
 				<a href="/playground">make web fun again</a>
-				<p>ldn • ykt • nyc</p>
+				<p>ldn • ykt</p>
 			</div>
 			<div class="grey body__left">
 				<h3>work</h3>
