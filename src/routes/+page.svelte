@@ -8,6 +8,23 @@
 
 <svelte:head>
 	<title>AUFBAU DIGITAL</title>
+	<meta name="description" content="Dan Humphries. Creaitve Web Engineer based in London." />
+
+	<link
+		rel="preload"
+		as="font"
+		href="/fonts/dahlia-bold.woff"
+		type="font/woff"
+		crossorigin="anonymous"
+	/>
+
+	<link
+		rel="preload"
+		as="font"
+		href="/fonts/test-untitled-sans-light.woff2"
+		type="font/woff2"
+		crossorigin="anonymous"
+	/>
 </svelte:head>
 
 <section>

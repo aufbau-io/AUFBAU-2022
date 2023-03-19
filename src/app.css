@@ -56,7 +56,7 @@ a:hover {
 	background: yellow;
 }
 
-@font-face {
+/* @font-face {
 	font-family: dahlia;
 	src: url(/fonts/dahlia-regular.woff) format('woff');
 	font-weight: 400;
@@ -66,7 +66,7 @@ a:hover {
 	font-family: dahlia;
 	src: url(/fonts/dahlia-medium.woff) format('woff');
 	font-weight: 500;
-}
+} */
 
 @font-face {
 	font-family: dahlia;
