@@ -45,7 +45,7 @@
 					<a href="/systems">modular system architecture • example</a>
 				</div>
 			{/if}
-			<div class="grey hidden body__left">
+			<div class="grey hidden body__right">
 				<p>bespoke websites, systems, apps</p>
 				<p>lightweight and 3d specialist</p>
 			</div>
