@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>AUFBAU WEB STUDIO</title>
+	<title>AUFBAU DIGITAL</title>
 </svelte:head>
 
 <section>
@@ -22,17 +22,19 @@
 			<div class="grey top">
 				<h1 on:click={() => toggle()}>aufbau.</h1>
 
-				<p>CREATIVE WEB STUDIO</p>
+				<p>CREATIVE WEB THINGS</p>
 				<a href="/playground">make web fun again</a>
 				<p>ldn • ykt • nyc</p>
 			</div>
 			<div class="grey body__left">
 				<h3>work</h3>
-				<br />
+
 				<a href="https://replikamasterworks.com" target="_blank">replika • web • WIP </a>
 				<a href="https://www.conceptioncalculator2000.com" target="_blank"
 					>conception calculator 2000 • web • WIP
 				</a>
+				<a href="https://.emmett-demo.netlify.app" target="_blank">emmett • web • WIP </a>
+				<a href="https://garrett-demo.netlify.app" target="_blank">garrett • web • WIP </a>
 				<!-- <a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a> -->
 				<!--a href="https://iota.health" target="_blank">iota • research app • 2022</a-->
 			</div>
@@ -114,6 +116,8 @@
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: center;
+
+		max-width: 600px;
 	}
 
 	.grey {

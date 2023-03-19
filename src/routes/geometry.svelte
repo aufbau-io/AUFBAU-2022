@@ -20,7 +20,7 @@
 	let renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(width, height);
-	renderer.setClearColor(0xd0d0d0, 1);
+	renderer.setClearColor(0xd0d0d0, 0);
 	onMount(() => {
 		container.appendChild(renderer.domElement);
 	});
@@ -43,10 +43,10 @@
 
 	// Generating a cloud of point
 	let pcMat = new THREE.PointsMaterial();
-	pcMat.color = new THREE.Color(0x232323);
+	pcMat.color = new THREE.Color(0xd0d0d0);
 	pcMat.transparent = true;
 	pcMat.size = 0.1;
-	// pcMat.blending = THREE.AdditiveBlending;
+	pcMat.blending = THREE.AdditiveBlending;
 	pc = new THREE.Points(geometry, pcMat);
 	pc.sizeAttenuation = true;
 	pc.sortPoints = true;
@@ -137,6 +137,7 @@
 		top: 0;
 		left: 0;
 		z-index: -10;
+		opacity: 0.5;
 		overflow: hidden;
 
 		width: 100vw;

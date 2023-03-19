@@ -26,6 +26,7 @@
  * ```
  */
 declare module '$env/static/private' {
+	export const ADSK_3DSMAX_x64_2023: string;
 	export const ALLUSERSPROFILE: string;
 	export const APPDATA: string;
 	export const ChocolateyInstall: string;
@@ -160,6 +161,7 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		ADSK_3DSMAX_x64_2023: string;
 		ALLUSERSPROFILE: string;
 		APPDATA: string;
 		ChocolateyInstall: string;
