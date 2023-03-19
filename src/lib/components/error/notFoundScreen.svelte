@@ -6,7 +6,7 @@
 </svelte:head>
 <section>
 	<div class="message">
-		<a href="/"><h2>404 ERROR</h2></a>
+		<h2>404 ERROR</h2>
 	</div>
 </section>
 
