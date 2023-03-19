@@ -21,7 +21,7 @@
 
 	a {
 		cursor: pointer;
-		color: var(--black);
+		color: var(--white);
 		border: none;
 	}
 </style>

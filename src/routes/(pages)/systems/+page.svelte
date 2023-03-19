@@ -13,6 +13,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		background: var(--black-50);
 	}
 
 	.img {

@@ -22,6 +22,6 @@
 
 	h2,
 	h6 {
-		color: var(--black);
+		color: var(--white);
 	}
 </style>

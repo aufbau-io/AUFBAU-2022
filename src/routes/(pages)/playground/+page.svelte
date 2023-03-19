@@ -16,6 +16,6 @@
 <style>
 	main {
 		position: relative;
-		background: var(--black);
+		background: var(--white);
 	}
 </style>

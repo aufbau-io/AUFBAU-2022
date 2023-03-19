@@ -3,16 +3,17 @@
 
 /* APP */
 :root {
-	--black: #d0d0d0;
-	--white: #232323;
+	--white: #d0d0d0;
+	--black: #232323;
+	--black50: #23232380;
 }
 
 html,
 body {
 	position: relative;
 	width: 100%;
-	background: var(--white);
-	color: var(--white);
+	background: var(--black);
+	color: var(--black);
 	z-index: 0;
 	overflow-x: hidden;
 }
@@ -32,16 +33,16 @@ a {
 }
 
 a {
-	color: var(--white);
-	background: var(--white);
-	border: solid 1px var(--black);
+	color: var(--black);
+	background: var(--black);
+	border: solid 1px var(--white);
 	padding: 2px 6px;
 
 	text-decoration: none;
 }
 
 a:hover {
-	color: var(--black);
+	color: var(--white);
 }
 
 ::-moz-selection {
@@ -104,31 +105,31 @@ a.centreButton.prevent:hover {
 	transform: translate(-50%, -50%);
 	z-index: 20;
 	opacity: 1;
-	background: var(--black);
-	border: solid 1px var(--white);
-	color: var(--white);
+	background: var(--white);
+	border: solid 1px var(--black);
+	color: var(--black);
 	max-width: 100%;
 	cursor: pointer;
 	user-select: none;
 }
 
 a.centreButton:hover {
-	background: var(--white);
-	color: var(--black);
-	border-color: var(--black);
+	background: var(--black);
+	color: var(--white);
+	border-color: var(--white);
 	opacity: 1;
 }
 
 a.centreButton.alt {
-	background: var(--white);
-	border: solid 1px var(--black);
-	color: var(--black);
-}
-
-a.centreButton.alt:hover {
 	background: var(--black);
 	border: solid 1px var(--white);
 	color: var(--white);
+}
+
+a.centreButton.alt:hover {
+	background: var(--white);
+	border: solid 1px var(--black);
+	color: var(--black);
 }
 
 @media (max-width: 800px) {
@@ -143,6 +144,6 @@ a.centreButton.alt:hover {
 	}
 
 	a {
-		color: var(--black);
+		color: var(--white);
 	}
 }

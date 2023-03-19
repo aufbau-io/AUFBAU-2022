@@ -68,7 +68,7 @@
 	}
 	h1 {
 		font-family: 'dahlia', sans-serif;
-		color: var(--black);
+		color: var(--white);
 		font-size: 44px;
 		line-height: 44px;
 		font-weight: 700;
@@ -79,7 +79,7 @@
 
 	h3 {
 		margin-top: 10px;
-		color: var(--black);
+		color: var(--white);
 	}
 
 	p {
@@ -87,9 +87,9 @@
 	}
 
 	p.toggle {
-		color: var(--white);
-		background: var(--white);
-		border: solid 1px var(--black);
+		color: var(--black);
+		background: var(--black);
+		border: solid 1px var(--white);
 		padding: 2px 6px;
 		cursor: pointer;
 
@@ -97,11 +97,11 @@
 	}
 
 	p.toggle:hover {
-		color: var(--black);
+		color: var(--white);
 	}
 
 	h3.hidden {
-		color: var(--white);
+		color: var(--black);
 	}
 
 	.niels {
@@ -123,10 +123,10 @@
 
 	.grey {
 		margin: 16px 0 16px 0;
-		color: var(--black);
+		color: var(--white);
 	}
 	.grey.top {
-		color: var(--black);
+		color: var(--white);
 	}
 
 	.body__left {
@@ -143,7 +143,7 @@
 		}
 
 		p.toggle {
-			color: var(--black);
+			color: var(--white);
 		}
 	}
 </style>
