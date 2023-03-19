@@ -132,6 +132,11 @@ a.centreButton.alt:hover {
 }
 
 @media (max-width: 800px) {
+	p,
+	a {
+		font-size: 0.8rem;
+	}
+
 	body {
 		padding: 0 2rem;
 		margin: 0;
