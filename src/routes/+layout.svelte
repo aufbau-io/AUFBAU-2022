@@ -1,7 +1,7 @@
 <script>
 	import '../app.css';
 	import { onMount } from 'svelte';
-	import { screenType } from '$lib/store/store';
+	import { screenType, demoSrc } from '$lib/store/store';
 
 	let Geometry;
 	onMount(async () => {
@@ -49,9 +49,23 @@
 	<slot />
 </main>
 
+<!-- {#key $demoSrc}
+	{#if $demoSrc}
+		<iframe src={$demoSrc} title="demo" width="100%" height="100%" class="iframe" />
+	{/if}
+{/key} -->
 <style>
 	main {
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
+	}
+
+	.iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
 	}
 </style>

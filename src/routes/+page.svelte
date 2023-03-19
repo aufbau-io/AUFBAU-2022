@@ -1,8 +1,12 @@
 <script>
-	import { active, screenType } from '$lib/store/store';
+	import { active, screenType, demoSrc } from '$lib/store/store';
 
 	let toggle = () => {
 		active.update((val) => !val);
+	};
+
+	let setSrc = (val) => {
+		demoSrc.set(val);
 	};
 </script>
 
@@ -46,10 +50,32 @@
 			<div class="grey body__left">
 				<h3>work</h3>
 
-				<a href="https://replikamasterworks.com" target="_blank">replika • web • WIP </a>
-				<a href="https://emmett-demo.netlify.app" target="_blank">emmett • web • WIP </a>
-				<a href="https://garrett-demo.netlify.app" target="_blank">garrett • web • WIP </a>
-				<a href="https://www.conceptioncalculator2000.com" target="_blank"
+				<a
+					on:mouseenter={() => setSrc('https://replikamasterworks.com')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://replikamasterworks.com"
+					target="_blank"
+					>replika • web • WIP
+				</a>
+				<a
+					on:mouseenter={() => setSrc('https://emmett-demo.netlify.app')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://emmett-demo.netlify.app"
+					target="_blank"
+					>emmett • web • WIP
+				</a>
+				<a
+					on:mouseenter={() => setSrc('https://garrett-demo.netlify.app')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://garrett-demo.netlify.app"
+					target="_blank"
+					>garrett • web • WIP
+				</a>
+				<a
+					on:mouseenter={() => setSrc('https://www.conceptioncalculator2000.com')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://www.conceptioncalculator2000.com"
+					target="_blank"
 					>conception calculator 2000 • web • WIP
 				</a>
 
@@ -79,9 +105,10 @@
 <style>
 	section {
 		height: 100%;
+		width: 100%;
+		margin: auto;
 		display: flex;
 		overflow: auto;
-		max-width: 800px;
 	}
 	h1 {
 		font-family: 'dahlia', sans-serif;
