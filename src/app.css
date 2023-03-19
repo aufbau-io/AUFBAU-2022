@@ -9,40 +9,66 @@
 
 html,
 body {
-	position: relative;
 	width: 100%;
-	background: var(--white);
-	color: var(--white);
-	z-index: 0;
+	height: 100%;
+	position: relative;
+	color: var(--primary);
 	overflow-x: hidden;
+	user-select: none;
+	touch-action: manipulation;
 }
 
 body {
 	display: flex;
 	justify-content: center;
-	font-family: untitled-sans;
+	font-family: untitled-sans, sans-serif;
 	box-sizing: border-box;
 	text-transform: uppercase;
-}
-
-p,
-a {
 	font-weight: 300;
-	margin: 4px 0;
 }
 
+h1 {
+	font-family: 'dahlia', sans-serif;
+	font-size: 44px;
+	line-height: 44px;
+	font-weight: 500;
+	text-transform: lowercase;
+	margin-bottom: 6px;
+}
+
+h3 {
+	font-family: 'dahlia', sans-serif;
+	font-size: 16px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	color: var(--black);
+}
+
+/* p,
 a {
-	color: var(--white);
-	background: var(--white);
-	border: solid 1px var(--black);
-	padding: 2px 6px;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 0.028em;
+	margin: 2px 0;
+}
+
+a,
+header p {
+	padding: 4px 8px;
+	border-radius: 8px;
+}
+
+a.hide {
+	color: var(--background);
+	background: var(--background);
+	border: solid 1px var(--primary-50);
 
 	text-decoration: none;
 }
 
-a:hover {
-	color: var(--black);
-}
+a.hide:hover {
+	color: var(--accent);
+} */
 
 ::-moz-selection {
 	/* Code for Firefox */
@@ -53,6 +79,12 @@ a:hover {
 ::selection {
 	color: red;
 	background: yellow;
+}
+
+@font-face {
+	font-family: sirap;
+	src: url(/fonts/sirap.woff) format('woff');
+	font-weight: 400;
 }
 
 @font-face {
@@ -68,9 +100,15 @@ a:hover {
 }
 
 @font-face {
-	font-family: dahlia;
-	src: url(/fonts/dahlia-bold.woff) format('woff');
-	font-weight: 700;
+	font-family: untitled-sans;
+	src: url(/fonts/test-untitled-sans-medium.woff2) format('woff2');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: untitled-sans;
+	src: url(/fonts/test-untitled-sans-regular.woff2) format('woff2');
+	font-weight: 400;
 }
 
 @font-face {
@@ -138,11 +176,25 @@ a.centreButton.alt:hover {
 	}
 
 	body {
-		padding: 0 2rem;
 		margin: 0;
 	}
 
+	p,
 	a {
-		color: var(--black);
+		font-size: 14px;
+		margin: 2px 0;
+	}
+
+	h1 {
+		font-size: 40px;
+		margin: 2px 0;
+	}
+
+	h3 {
+		font-size: 15px;
+	}
+
+	a.hide {
+		color: var(--primary-50);
 	}
 }

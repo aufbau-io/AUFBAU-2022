@@ -11,8 +11,8 @@ export { matchers } from './client-matchers.js';
 
 			export const dictionary = {
 	"": [3],
-	"(pages)/playground": [4,[2]],
-	"(pages)/systems": [5,[2]]
+	"(pages)/systems": [4,[2]],
+	"(pages)/tmp": [5,[2]]
 };
 
 			export const hooks = {
