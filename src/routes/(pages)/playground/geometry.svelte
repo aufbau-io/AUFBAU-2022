@@ -131,8 +131,8 @@
 			rollOverMesh.position.copy(intersect.point).add(intersect.face.normal);
 			rollOverMesh.position.divideScalar(50).floor().multiplyScalar(50).addScalar(25);
 
-			id = requestAnimationFrame(render);
 			render();
+			id = requestAnimationFrame(render);
 		}
 	}
 
