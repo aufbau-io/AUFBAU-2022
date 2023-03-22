@@ -101,7 +101,7 @@
 		scene.add(directionalLight);
 
 		renderer = new THREE.WebGLRenderer({ antialias: true });
-		renderer.setClear = (new THREE.Color(0x171717), 1);
+		renderer.setClearColor(0x232323, 1);
 		renderer.setPixelRatio(window.devicePixelRatio);
 		renderer.setSize(width, height);
 
