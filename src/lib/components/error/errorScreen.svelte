@@ -18,10 +18,12 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		background: none;
 	}
 
 	h2,
 	h6 {
 		color: var(--white);
+		background: none;
 	}
 </style>
