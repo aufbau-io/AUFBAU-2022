@@ -52,6 +52,7 @@
 		camera.zoom = 5;
 
 		scene = new THREE.Scene();
+		scene.background = new THREE.Color(0x232323);
 
 		// roll-over helpers
 
@@ -130,6 +131,7 @@
 			rollOverMesh.position.copy(intersect.point).add(intersect.face.normal);
 			rollOverMesh.position.divideScalar(50).floor().multiplyScalar(50).addScalar(25);
 
+			id = requestAnimationFrame(render);
 			render();
 		}
 	}
@@ -187,7 +189,6 @@
 
 	function render() {
 		renderer.render(scene, camera);
-		id = requestAnimationFrame(render);
 	}
 </script>
 
