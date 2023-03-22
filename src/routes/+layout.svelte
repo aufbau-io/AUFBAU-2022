@@ -48,8 +48,6 @@
 	<title>AUFBAU DIGITAL</title>
 	<meta name="description" content="Dan Humphries. Creaitve Web Engineer based in London." />
 
-	<link rel="prefetch" href="/system_diagram.png" />
-
 	<link
 		rel="preload"
 		as="font"

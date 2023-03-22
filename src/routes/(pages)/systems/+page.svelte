@@ -1,6 +1,10 @@
 <script>
 </script>
 
+<svelte:head>
+	<link rel="preload" href="/system_diagram.png" />
+</svelte:head>
+
 <main>
 	<img src={'/system_diagram.png'} class="img" alt="modular system diagram" />
 </main>
