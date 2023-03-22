@@ -6,7 +6,7 @@
 </svelte:head>
 
 <main>
-	<img src={'/system_diagram.png'} class="img" alt="modular system diagram" />
+	<img src={'/system_diagram.png'} class="img" alt="modular system diagram" as="img" />
 </main>
 
 <style>

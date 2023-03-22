@@ -52,7 +52,6 @@
 		camera.zoom = 5;
 
 		scene = new THREE.Scene();
-		scene.background = new THREE.Color(0x171717);
 
 		// roll-over helpers
 
@@ -102,6 +101,7 @@
 		scene.add(directionalLight);
 
 		renderer = new THREE.WebGLRenderer({ antialias: true });
+		renderer.setClear = (new THREE.Color(0x171717), 1);
 		renderer.setPixelRatio(window.devicePixelRatio);
 		renderer.setSize(width, height);
 
