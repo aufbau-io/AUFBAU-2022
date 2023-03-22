@@ -23,5 +23,6 @@
 		cursor: pointer;
 		color: var(--white);
 		border: none;
+		background: none;
 	}
 </style>
