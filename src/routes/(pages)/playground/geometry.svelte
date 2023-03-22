@@ -187,6 +187,7 @@
 
 	function render() {
 		renderer.render(scene, camera);
+		id = requestAnimationFrame(render);
 	}
 </script>
 
