@@ -50,13 +50,13 @@
 					target="_blank"
 					>garrett • web • WIP
 				</a>
-				<a
+				<!-- <a
 					on:mouseenter={() => setSrc('https://www.conceptioncalculator2000.com')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://www.conceptioncalculator2000.com"
 					target="_blank"
 					>conception calculator 2000 • web • WIP
-				</a>
+				</a> -->
 
 				<!-- <a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a> -->
 				<!--a href="https://iota.health" target="_blank">iota • research app • 2022</a-->
