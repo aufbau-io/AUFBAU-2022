@@ -34,7 +34,14 @@
 					on:mouseleave={() => setSrc(null)}
 					href="https://replikamasterworks.com"
 					target="_blank"
-					>replika • web • WIP
+					>replika • web • 2022
+				</a>
+				<a
+					on:mouseenter={() => setSrc('https://garrett-demo.netlify.app')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://garrett-demo.netlify.app"
+					target="_blank"
+					>garrett • web • 2023
 				</a>
 				<a
 					on:mouseenter={() => setSrc('https://emmett-demo.netlify.app')}
@@ -42,13 +49,6 @@
 					href="https://emmett-demo.netlify.app"
 					target="_blank"
 					>emmett • web • WIP
-				</a>
-				<a
-					on:mouseenter={() => setSrc('https://garrett-demo.netlify.app')}
-					on:mouseleave={() => setSrc(null)}
-					href="https://garrett-demo.netlify.app"
-					target="_blank"
-					>garrett • web • WIP
 				</a>
 				<!-- <a
 					on:mouseenter={() => setSrc('https://www.conceptioncalculator2000.com')}
