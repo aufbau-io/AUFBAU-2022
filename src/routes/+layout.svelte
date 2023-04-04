@@ -46,7 +46,10 @@
 
 <svelte:head>
 	<title>AUFBAU DIGITAL</title>
-	<meta name="description" content="Dan Humphries. Creaitve Web Engineer based in London." />
+	<meta
+		name="description"
+		content="Dan Humphries. Creaitve Web Engineer based in London. Make Web Fun Again."
+	/>
 
 	<link
 		rel="preload"
