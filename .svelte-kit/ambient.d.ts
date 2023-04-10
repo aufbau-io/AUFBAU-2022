@@ -29,8 +29,10 @@ declare module '$env/static/private' {
 	export const ADSK_3DSMAX_x64_2023: string;
 	export const ALLUSERSPROFILE: string;
 	export const APPDATA: string;
+	export const CABAL_DIR: string;
 	export const ChocolateyInstall: string;
 	export const ChocolateyLastPathUpdate: string;
+	export const ChocolateyToolsLocation: string;
 	export const CommonProgramFiles: string;
 	export const CommonProgramW6432: string;
 	export const COMPUTERNAME: string;
@@ -41,6 +43,7 @@ declare module '$env/static/private' {
 	export const DriverData: string;
 	export const FPS_BROWSER_APP_PROFILE_STRING: string;
 	export const FPS_BROWSER_USER_PROFILE_STRING: string;
+	export const GHCUP_INSTALL_BASE_PREFIX: string;
 	export const HOMEDRIVE: string;
 	export const HOMEPATH: string;
 	export const INIT_CWD: string;
@@ -129,6 +132,8 @@ declare module '$env/static/private' {
 	export const USERPROFILE: string;
 	export const windir: string;
 	export const YARN_WRAP_OUTPUT: string;
+	export const _MSYS2_BASH: string;
+	export const _MSYS2_PREFIX: string;
 	export const __PSLockDownPolicy: string;
 	export const VITE_SUPABASE_URL: string;
 	export const VITE_SUPABASE_ANON_KEY: string;
@@ -164,8 +169,10 @@ declare module '$env/dynamic/private' {
 		ADSK_3DSMAX_x64_2023: string;
 		ALLUSERSPROFILE: string;
 		APPDATA: string;
+		CABAL_DIR: string;
 		ChocolateyInstall: string;
 		ChocolateyLastPathUpdate: string;
+		ChocolateyToolsLocation: string;
 		CommonProgramFiles: string;
 		CommonProgramW6432: string;
 		COMPUTERNAME: string;
@@ -176,6 +183,7 @@ declare module '$env/dynamic/private' {
 		DriverData: string;
 		FPS_BROWSER_APP_PROFILE_STRING: string;
 		FPS_BROWSER_USER_PROFILE_STRING: string;
+		GHCUP_INSTALL_BASE_PREFIX: string;
 		HOMEDRIVE: string;
 		HOMEPATH: string;
 		INIT_CWD: string;
@@ -264,6 +272,8 @@ declare module '$env/dynamic/private' {
 		USERPROFILE: string;
 		windir: string;
 		YARN_WRAP_OUTPUT: string;
+		_MSYS2_BASH: string;
+		_MSYS2_PREFIX: string;
 		__PSLockDownPolicy: string;
 		VITE_SUPABASE_URL: string;
 		VITE_SUPABASE_ANON_KEY: string;

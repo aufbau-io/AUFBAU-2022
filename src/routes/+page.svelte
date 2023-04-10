@@ -126,13 +126,6 @@
 		color: var(--black);
 	}
 
-	.niels {
-		z-index: -10;
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-	}
-
 	.body {
 		position: relative;
 		margin: auto 0;
@@ -140,7 +133,7 @@
 		flex-flow: column nowrap;
 		justify-content: center;
 
-		max-width: 600px;
+		max-width: 640px;
 	}
 
 	.grey {
