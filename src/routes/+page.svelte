@@ -28,20 +28,19 @@
 			</div>
 			<div class="grey body__left">
 				<h3>work</h3>
-
+				<a
+					on:mouseenter={() => setSrc('https://garrett-demo.netlify.app')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://garrett-demo.netlify.app"
+					target="_blank"
+					>garrett • landing page • 2023
+				</a>
 				<a
 					on:mouseenter={() => setSrc('https://replikamasterworks.com')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://replikamasterworks.com"
 					target="_blank"
 					>replika • web • 2022
-				</a>
-				<a
-					on:mouseenter={() => setSrc('https://garrett-demo.netlify.app')}
-					on:mouseleave={() => setSrc(null)}
-					href="https://garrett-demo.netlify.app"
-					target="_blank"
-					>garrett • web • 2023
 				</a>
 				<a
 					on:mouseenter={() => setSrc('https://emmett-demo.netlify.app')}
