@@ -29,9 +29,9 @@
 			<div class="grey body__left">
 				<h3>work</h3>
 				<a
-					on:mouseenter={() => setSrc('https://garrett-demo.netlify.app')}
+					on:mouseenter={() => setSrc('https://hello.garrettmusar.work/')}
 					on:mouseleave={() => setSrc(null)}
-					href="https://garrett-demo.netlify.app"
+					href="https://hello.garrettmusar.work/"
 					target="_blank"
 					>garrett • landing page • 2023
 				</a>
