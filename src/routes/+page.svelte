@@ -40,14 +40,14 @@
 					on:mouseleave={() => setSrc(null)}
 					href="https://sicovecas-demo.netlify.app/"
 					target="_blank"
-					>sicovecas • web demo • WIP
+					>sicovecas • demo • WIP
 				</a>
 				<a
 					on:mouseenter={() => setSrc('https://emmett-demo.netlify.app')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://emmett-demo.netlify.app"
 					target="_blank"
-					>emmett • web demo • WIP
+					>emmett • demo • WIP
 				</a>
 				<!-- <a
 					on:mouseenter={() => setSrc('https://www.conceptioncalculator2000.com')}
