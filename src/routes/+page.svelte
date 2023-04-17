@@ -33,12 +33,12 @@
 					on:mouseleave={() => setSrc(null)}
 					href="https://hello.garrettmusar.work/"
 					target="_blank"
-					>garrett • landing page • 2023
+					>garrett • landing • 2023
 				</a>
 				<a
-					on:mouseenter={() => setSrc('https://sicovecas-demo.netlify.app/')}
+					on:mouseenter={() => setSrc('https://sicovecas-demo-alt.netlify.app/')}
 					on:mouseleave={() => setSrc(null)}
-					href="https://sicovecas-demo.netlify.app/"
+					href="https://sicovecas-demo-alt.netlify.app/"
 					target="_blank"
 					>sicovecas • demo • WIP
 				</a>
