@@ -36,18 +36,18 @@
 					>garrett • landing page • 2023
 				</a>
 				<a
-					on:mouseenter={() => setSrc('https://replikamasterworks.com')}
+					on:mouseenter={() => setSrc('https://sicovecas-demo.netlify.app/')}
 					on:mouseleave={() => setSrc(null)}
-					href="https://replikamasterworks.com"
+					href="https://sicovecas-demo.netlify.app/"
 					target="_blank"
-					>replika • web • 2022
+					>sicovecas • web demo • WIP
 				</a>
 				<a
 					on:mouseenter={() => setSrc('https://emmett-demo.netlify.app')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://emmett-demo.netlify.app"
 					target="_blank"
-					>emmett • web • WIP
+					>emmett • web demo • WIP
 				</a>
 				<!-- <a
 					on:mouseenter={() => setSrc('https://www.conceptioncalculator2000.com')}
