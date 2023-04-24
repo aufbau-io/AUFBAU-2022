@@ -29,6 +29,13 @@
 			<div class="grey body__left">
 				<h3>work</h3>
 				<a
+					on:mouseenter={() => setSrc('https://iota.health/')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://iota.health/"
+					target="_blank"
+					>iota • app / landing • 2022
+				</a>
+				<a
 					on:mouseenter={() => setSrc('https://hello.garrettmusar.work/')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://hello.garrettmusar.work/"
@@ -40,14 +47,14 @@
 					on:mouseleave={() => setSrc(null)}
 					href="https://sicovecas-demo-alt.netlify.app/"
 					target="_blank"
-					>sicovecas • demo • WIP
+					>sicovecas • web demo • WIP
 				</a>
 				<a
 					on:mouseenter={() => setSrc('https://emmett-demo.netlify.app')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://emmett-demo.netlify.app"
 					target="_blank"
-					>emmett • demo • WIP
+					>emmett • web demo • WIP
 				</a>
 				<!-- <a
 					on:mouseenter={() => setSrc('https://www.conceptioncalculator2000.com')}
@@ -133,7 +140,7 @@
 		flex-flow: column nowrap;
 		justify-content: center;
 
-		max-width: 640px;
+		max-width: 540px;
 	}
 
 	.grey {
