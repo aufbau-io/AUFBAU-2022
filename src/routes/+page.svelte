@@ -42,13 +42,13 @@
 					target="_blank"
 					>garrett • landing • 2023
 				</a>
-				<a
+				<!-- <a
 					on:mouseenter={() => setSrc('https://sicovecas-demo-alt.netlify.app/')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://sicovecas-demo-alt.netlify.app/"
 					target="_blank"
 					>sicovecas • web demo • WIP
-				</a>
+				</a> -->
 				<a
 					on:mouseenter={() => setSrc('https://emmett-demo.netlify.app')}
 					on:mouseleave={() => setSrc(null)}
