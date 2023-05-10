@@ -11,7 +11,6 @@
 	export let form;
 	export let data_0 = null;
 	export let data_1 = null;
-	export let data_2 = null;
 
 	if (!browser) {
 		setContext('__svelte__', stores);
@@ -39,13 +38,7 @@
 
 {#if components[1]}
 	<svelte:component this={components[0]} data={data_0}>
-		{#if components[2]}
-			<svelte:component this={components[1]} data={data_1}>
-				<svelte:component this={components[2]} data={data_2} {form} />
-			</svelte:component>
-		{:else}
-			<svelte:component this={components[1]} data={data_1} {form} />
-		{/if}
+		<svelte:component this={components[1]} data={data_1} {form} />
 	</svelte:component>
 {:else}
 	<svelte:component this={components[0]} data={data_0} {form} />

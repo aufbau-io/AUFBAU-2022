@@ -1,5 +1,18 @@
 <script>
+	import { onMount } from 'svelte';
 	import { active, screenType, demoSrc } from '$lib/store/store';
+	let Geometry, CC2000, Playground;
+
+	onMount(async () => {
+		const module1 = await import('./geometry.svelte');
+		Geometry = module1.default;
+
+		const module2 = await import('./CC2000.svelte');
+		CC2000 = module2.default;
+
+		const module3 = await import('./playground.svelte');
+		Playground = module3.default;
+	});
 
 	let toggle = () => {
 		active.update((val) => !val);
@@ -10,170 +23,88 @@
 	};
 </script>
 
+<svelte:component this={Playground} />
+
 <section>
-	{#if !$active}
-		<a href="/" class="centreButton alt" on:click={() => toggle()}
-			>make&nbsp;web&nbsp;fun&nbsp;again</a
-		>
-	{:else}
-		<div class="body">
-			<!--img class="niels" alt="niels" src="/niels_bw.jpg" /-->
+	<header>
+		<!-- <img src="header.png" alt="header img" /> -->
 
-			<div class="grey top">
-				<h1 on:click={() => toggle()}>aufbau.</h1>
-
-				<p>CREATIVE WEB THINGS</p>
-				<a href="/playground">make web fun again</a>
-				<p>ldn • ykt</p>
-			</div>
-			<div class="grey body__left">
-				<h3>work</h3>
-				<a
-					on:mouseenter={() => setSrc('https://site.hhacker.space/')}
-					on:mouseleave={() => setSrc(null)}
-					href="https://site.hhacker.space/"
-					target="_blank"
-					>hhacker space • web • 2022
-				</a>
-				<a
-					on:mouseenter={() => setSrc('https://hello.garrettmusar.work/')}
-					on:mouseleave={() => setSrc(null)}
-					href="https://hello.garrettmusar.work/"
-					target="_blank"
-					>garrett • landing • 2023
-				</a>
-				<a
-					on:mouseenter={() => setSrc('https://iota.health/')}
-					on:mouseleave={() => setSrc(null)}
-					href="https://iota.health/"
-					target="_blank"
-					>iota • app / landing • 2022
-				</a>
-				<!-- <a
-					on:mouseenter={() => setSrc('https://sicovecas-demo-alt.netlify.app/')}
-					on:mouseleave={() => setSrc(null)}
-					href="https://sicovecas-demo-alt.netlify.app/"
-					target="_blank"
-					>sicovecas • web demo • WIP
-				</a> -->
-				<a
-					on:mouseenter={() => setSrc('https://emmett-demo.netlify.app')}
-					on:mouseleave={() => setSrc(null)}
-					href="https://emmett-demo.netlify.app"
-					target="_blank"
-					>emmett • web demo • WIP
-				</a>
-				<!-- <a
-					on:mouseenter={() => setSrc('https://www.conceptioncalculator2000.com')}
-					on:mouseleave={() => setSrc(null)}
-					href="https://www.conceptioncalculator2000.com"
-					target="_blank"
-					>conception calculator 2000 • web • WIP
-				</a> -->
-
-				<!-- <a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a> -->
-				<!--a href="https://iota.health" target="_blank">iota • research app • 2022</a-->
-			</div>
-			{#if $screenType != 2}
-				<div class="grey body__right">
-					<h3>systems</h3>
-					<a href="/systems">modular system architecture • example</a>
-				</div>
-			{/if}
-			<div class="grey hidden body__right">
-				<p>bespoke websites, systems, apps</p>
-				<p>lightweight and 3d specialist</p>
-
-				<br />
-				<a target="_blank" href="https://www.instagram.com/dn.niels/">insta</a>
-				<a target="_blank" href="https://www.linkedin.com/in/dan-humphries">linkedin</a>
-				<a href="mailto: dan@aufbau.io">email</a>
-				<a target="_blank" href="/dan_humphries_cv.pdf">cv</a>
-			</div>
+		<h1>aufbau // Dan H.</h1>
+		<p>freerange + technical web things.</p>
+		<p>grassfed in east london.</p>
+		<p>-</p>
+		<div>
+			<a target="_blank" href="https://www.instagram.com/dn.niels/">insta</a>
+			<a target="_blank" href="https://www.linkedin.com/in/dan-humphries">linkedin</a>
+			<a href="mailto: dan@aufbau.io">email</a>
+			<a target="_blank" href="/dan_humphries_cv.pdf">cv</a>
 		</div>
-	{/if}
+	</header>
+	<main>
+		<div><svelte:component this={CC2000} /></div>
+		<div><img src="tee.jpg" alt="header img" /></div>
+		<div><img src="garrett.png" alt="header img" /></div>
+		<div><img src="sicovecas.png" alt="header img" /></div>
+		<div><img src="system_diagram.png" alt="header img" /></div>
+		<div><svelte:component this={Geometry} /></div>
+	</main>
 </section>
 
 <style>
 	section {
-		height: 100%;
 		width: 100%;
+		height: 100%;
 		margin: auto;
 		display: flex;
 		overflow: auto;
 	}
-	h1 {
-		font-family: 'dahlia', sans-serif;
-		color: var(--white);
-		font-size: 44px;
-		line-height: 44px;
-		font-weight: 700;
-		text-transform: lowercase;
-		cursor: pointer;
-		letter-spacing: 1.1px;
-	}
 
-	h3 {
-		margin-top: 10px;
-		color: var(--white);
-	}
+	header {
+		margin: 20px;
+		width: 25%;
 
-	p {
-		letter-spacing: 0.028em;
-	}
-
-	p.toggle {
-		color: var(--black);
-		background: var(--black);
-		border: solid 1px var(--white);
-		padding: 2px 6px;
-		cursor: pointer;
-
-		text-decoration: none;
-	}
-
-	p.toggle:hover {
-		color: var(--white);
-	}
-
-	h3.hidden {
-		color: var(--black);
-	}
-
-	.body {
-		position: relative;
-		margin: auto 0;
 		display: flex;
 		flex-flow: column nowrap;
+		text-align: center;
+		user-select: none;
+	}
+
+	header h1 {
+		font-family: untitled-serif;
+		font-weight: 400;
+		font-size: 24px;
+	}
+
+	header p,
+	header a {
+		font-size: 12px;
+	}
+
+	main {
+		width: 100%;
+		padding: 20px;
+
+		display: flex;
 		justify-content: center;
-
-		max-width: 540px;
+		flex-flow: row wrap;
+		gap: 20px;
 	}
 
-	.grey {
-		margin: 16px 0 16px 0;
-		color: var(--white);
-	}
-	.grey.top {
-		color: var(--white);
-		margin-bottom: 0;
-	}
+	main div {
+		border: solid 1px var(--white);
 
-	.body__left {
-		text-align: left;
+		width: calc(50% - 10px);
+		max-width: 400px;
+		height: calc(50% - 10px);
 	}
 
-	.body__right {
-		text-align: right;
+	main div img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 
-	@media (max-width: 800px) {
-		.grey {
-			margin: 12px 0 12px 0;
-		}
-
-		p.toggle {
-			color: var(--white);
-		}
+	main div:hover {
+		border: var(--accent) solid 1px;
 	}
 </style>

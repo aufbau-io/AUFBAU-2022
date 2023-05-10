@@ -20,14 +20,17 @@
 	let width = screen.width;
 	let height = screen.height;
 
-	let d;
-	if ($screenType == 2) {
-		d = 2;
-	} else {
-		d = 4;
-	}
+	// let d;
+	// if ($screenType == 2) {
+	// 	d = 2;
+	// } else {
+	// 	d = 4;
+	// }
 
-	const colors = [0xffe38c, 0x9add8c, 0x94c8f7, 0xffaea9];
+	let d = 3.5;
+
+	// const colors = [0xffe38c, 0x9add8c, 0x94c8f7, 0xffaea9];
+	const colors = [0xffe38c];
 	let colorIndex = Math.floor(Math.random() * colors.length);
 	let randomiseColorIndex = () => {
 		colorIndex = Math.floor(Math.random() * colors.length);
@@ -199,5 +202,6 @@
 		position: fixed;
 		left: 0;
 		top: 0;
+		z-index: -1;
 	}
 </style>

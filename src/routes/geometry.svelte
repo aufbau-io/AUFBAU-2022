@@ -9,8 +9,11 @@
 	// Setting up the scene
 	let scene = new THREE.Scene();
 
-	let height = window.innerHeight;
-	let width = window.innerWidth;
+	// let height = window.innerHeight;
+	// let width = window.innerWidth;
+
+	let width = window.innerHeight / 2 - 30;
+	let height = window.innerWidth / 4 - 30;
 
 	const colors = [0xffe38c, 0x9add8c, 0x94c8f7, 0xffaea9];
 
@@ -22,7 +25,7 @@
 	let renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(width, height);
-	renderer.setClearColor(0xd0d0d0, 0);
+	renderer.setClearColor(0x232323, 1);
 	onMount(() => {
 		container.appendChild(renderer.domElement);
 	});
@@ -134,7 +137,7 @@
 <div bind:this={container} class:geometry={true} />
 
 <style>
-	.geometry {
+	/* .geometry {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -145,5 +148,12 @@
 		width: 100vw;
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
+	} */
+
+	.geometry {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
 	}
 </style>

@@ -74,8 +74,10 @@ declare module '$env/static/private' {
 	export const npm_lifecycle_event: string;
 	export const npm_lifecycle_script: string;
 	export const npm_node_execpath: string;
+	export const npm_package_dependencies_gsap: string;
 	export const npm_package_dependencies_tailwindcss: string;
 	export const npm_package_dependencies_three: string;
+	export const npm_package_dependencies__tweenjs_tween_js: string;
 	export const npm_package_description: string;
 	export const npm_package_devDependencies_autoprefixer: string;
 	export const npm_package_devDependencies_cssnano: string;
@@ -214,8 +216,10 @@ declare module '$env/dynamic/private' {
 		npm_lifecycle_event: string;
 		npm_lifecycle_script: string;
 		npm_node_execpath: string;
+		npm_package_dependencies_gsap: string;
 		npm_package_dependencies_tailwindcss: string;
 		npm_package_dependencies_three: string;
+		npm_package_dependencies__tweenjs_tween_js: string;
 		npm_package_description: string;
 		npm_package_devDependencies_autoprefixer: string;
 		npm_package_devDependencies_cssnano: string;

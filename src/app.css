@@ -6,6 +6,7 @@
 	--white: #d0d0d0;
 	--black: #232323;
 	--black50: #23232380;
+	--accent: #ffe38c;
 }
 
 html,
@@ -13,7 +14,7 @@ body {
 	position: relative;
 	width: 100%;
 	background: var(--black);
-	color: var(--black);
+	color: var(--white);
 	z-index: 0;
 	overflow-x: hidden;
 }
@@ -33,9 +34,9 @@ a {
 }
 
 a {
-	color: var(--black);
+	/* color: var(--black);
 	background: var(--black);
-	border: solid 1px var(--white);
+	border: solid 1px var(--white); */
 	padding: 2px 6px;
 
 	text-decoration: none;
@@ -78,6 +79,24 @@ a:hover {
 	font-family: untitled-sans;
 	src: url(/fonts/test-untitled-sans-light.woff2) format('woff2');
 	font-weight: 300;
+}
+
+@font-face {
+	font-family: untitled-serif;
+	src: url(/fonts/test-untitled-serif-regular.woff2) format('woff2');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: untitled-serif;
+	src: url(/fonts/test-untitled-serif-medium.woff2) format('woff2');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: untitled-serif;
+	src: url(/fonts/test-untitled-serif-bold.woff2) format('woff2');
+	font-weight: 700;
 }
 
 /* scrollbar width */

@@ -3,7 +3,6 @@
 	import { onMount } from 'svelte';
 	import { screenType, demoSrc } from '$lib/store/store';
 
-	let Geometry;
 	onMount(async () => {
 		// ---------------------------------------------------------------------------
 		// HEIGHT
@@ -45,7 +44,7 @@
 </script>
 
 <svelte:head>
-	<title>AUFBAU DIGITAL</title>
+	<title>AUFBAU // DAN H</title>
 	<meta
 		name="description"
 		content="Dan Humphries. Creaitve Web Engineer based in London. Make Web Fun Again."
@@ -68,7 +67,6 @@
 	/>
 </svelte:head>
 
-<svelte:component this={Geometry} />
 {#key $screenType}
 	{#if $screenType}
 		<main>
@@ -77,23 +75,10 @@
 	{/if}
 {/key}
 
-<!-- {#key $demoSrc}
-	{#if $demoSrc}
-		<iframe src={$demoSrc} title="demo" width="100%" height="100%" class="iframe" />
-	{/if}
-{/key} -->
 <style>
 	main {
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
-	}
-
-	.iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
+		width: 100vw;
 	}
 </style>
