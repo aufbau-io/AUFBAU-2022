@@ -40,7 +40,7 @@
 					on:mouseleave={() => setSrc(null)}
 					href="https://hello.garrettmusar.work/"
 					target="_blank"
-					>garrett • landing • 2023
+					>garrett • landing page • 2023
 				</a>
 				<!-- <a
 					on:mouseenter={() => setSrc('https://iota.health/')}
