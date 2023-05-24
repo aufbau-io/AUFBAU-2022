@@ -28,13 +28,13 @@
 			</div>
 			<div class="grey body__left">
 				<h3>work</h3>
-				<a
+				<!-- <a
 					on:mouseenter={() => setSrc('https://site.hhacker.space/')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://site.hhacker.space/"
 					target="_blank"
 					>hhacker space • web • 2022
-				</a>
+				</a> -->
 				<a
 					on:mouseenter={() => setSrc('https://hello.garrettmusar.work/')}
 					on:mouseleave={() => setSrc(null)}
@@ -42,19 +42,12 @@
 					target="_blank"
 					>garrett • landing • 2023
 				</a>
-				<a
+				<!-- <a
 					on:mouseenter={() => setSrc('https://iota.health/')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://iota.health/"
 					target="_blank"
 					>iota • app / landing • 2022
-				</a>
-				<!-- <a
-					on:mouseenter={() => setSrc('https://sicovecas-demo-alt.netlify.app/')}
-					on:mouseleave={() => setSrc(null)}
-					href="https://sicovecas-demo-alt.netlify.app/"
-					target="_blank"
-					>sicovecas • web demo • WIP
 				</a> -->
 				<a
 					on:mouseenter={() => setSrc('https://emmett-demo.netlify.app')}
@@ -63,17 +56,26 @@
 					target="_blank"
 					>emmett • web demo • WIP
 				</a>
-				<!-- <a
+				<a
+					on:mouseenter={() => setSrc('https://sicovecas-demo.netlify.app/')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://sicovecas-demo.netlify.app/"
+					target="_blank"
+					>sicovecas • web demo • WIP
+				</a>
+
+				<a
 					on:mouseenter={() => setSrc('https://www.conceptioncalculator2000.com')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://www.conceptioncalculator2000.com"
 					target="_blank"
-					>conception calculator 2000 • web • WIP
-				</a> -->
+					>conception calculator 2000 • web demo • WIP
+				</a>
 
 				<!-- <a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a> -->
 				<!--a href="https://iota.health" target="_blank">iota • research app • 2022</a-->
 			</div>
+
 			{#if $screenType != 2}
 				<div class="grey body__right">
 					<h3>systems</h3>

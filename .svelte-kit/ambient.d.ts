@@ -37,9 +37,11 @@ declare module '$env/static/private' {
 	export const CommonProgramW6432: string;
 	export const COMPUTERNAME: string;
 	export const ComSpec: string;
+	export const CUDA: string;
 	export const CUDA_PATH: string;
 	export const CUDA_PATH_V10_0: string;
 	export const CUDA_PATH_V10_1: string;
+	export const CUDA_PATH_V12_1: string;
 	export const DriverData: string;
 	export const FPS_BROWSER_APP_PROFILE_STRING: string;
 	export const FPS_BROWSER_USER_PROFILE_STRING: string;
@@ -130,6 +132,8 @@ declare module '$env/static/private' {
 	export const USERDOMAIN_ROAMINGPROFILE: string;
 	export const USERNAME: string;
 	export const USERPROFILE: string;
+	export const VK_SDK_PATH: string;
+	export const VULKAN_SDK: string;
 	export const windir: string;
 	export const YARN_WRAP_OUTPUT: string;
 	export const _MSYS2_BASH: string;
@@ -177,9 +181,11 @@ declare module '$env/dynamic/private' {
 		CommonProgramW6432: string;
 		COMPUTERNAME: string;
 		ComSpec: string;
+		CUDA: string;
 		CUDA_PATH: string;
 		CUDA_PATH_V10_0: string;
 		CUDA_PATH_V10_1: string;
+		CUDA_PATH_V12_1: string;
 		DriverData: string;
 		FPS_BROWSER_APP_PROFILE_STRING: string;
 		FPS_BROWSER_USER_PROFILE_STRING: string;
@@ -270,6 +276,8 @@ declare module '$env/dynamic/private' {
 		USERDOMAIN_ROAMINGPROFILE: string;
 		USERNAME: string;
 		USERPROFILE: string;
+		VK_SDK_PATH: string;
+		VULKAN_SDK: string;
 		windir: string;
 		YARN_WRAP_OUTPUT: string;
 		_MSYS2_BASH: string;
