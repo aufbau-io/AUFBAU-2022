@@ -11,14 +11,13 @@
 </script>
 
 <section>
+	<img class="niels" alt="niels" src="/niels_bw.jpg" />
 	{#if !$active}
 		<a href="/" class="centreButton alt" on:click={() => toggle()}
 			>make&nbsp;web&nbsp;fun&nbsp;again</a
 		>
 	{:else}
 		<div class="body">
-			<!--img class="niels" alt="niels" src="/niels_bw.jpg" /-->
-
 			<div class="grey top">
 				<h1 on:click={() => toggle()}>aufbau.</h1>
 
@@ -71,9 +70,6 @@
 					target="_blank"
 					>conception calculator 2000 • web demo • WIP
 				</a>
-
-				<!-- <a href="https://site.hhacker.space" target="_blank">hedron hackerspace • web • 2022</a> -->
-				<!--a href="https://iota.health" target="_blank">iota • research app • 2022</a-->
 			</div>
 
 			{#if $screenType != 2}
@@ -103,6 +99,16 @@
 		margin: auto;
 		display: flex;
 		overflow: auto;
+	}
+
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		width: 320px;
+		border: double var(--white) 2px;
 	}
 	h1 {
 		font-family: 'dahlia', sans-serif;
@@ -170,6 +176,10 @@
 	}
 
 	@media (max-width: 800px) {
+		img {
+			width: 80%;
+			opacity: 0.75;
+		}
 		.grey {
 			margin: 12px 0 12px 0;
 		}

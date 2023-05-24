@@ -6,6 +6,7 @@
 	--white: #d0d0d0;
 	--black: #232323;
 	--black50: #23232380;
+	--yellow: #ffe38c;
 }
 
 html,
@@ -35,7 +36,7 @@ a {
 a {
 	color: var(--black);
 	background: var(--black);
-	border: solid 1px var(--white);
+	border: double var(--white) 2px;
 	padding: 2px 6px;
 
 	text-decoration: none;
@@ -122,13 +123,13 @@ a.centreButton:hover {
 
 a.centreButton.alt {
 	background: var(--black);
-	border: solid 1px var(--white);
+	border: double var(--white) 2px;
 	color: var(--white);
 }
 
 a.centreButton.alt:hover {
 	background: var(--white);
-	border: solid 1px var(--black);
+	border: double var(--black) 2px;
 	color: var(--black);
 }
 
