@@ -68,7 +68,7 @@
 					on:mouseleave={() => setSrc(null)}
 					href="https://www.conceptioncalculator2000.com"
 					target="_blank"
-					>conception calculator 2000 • web demo • WIP
+					>cc2000 • web demo • WIP
 				</a>
 			</div>
 
