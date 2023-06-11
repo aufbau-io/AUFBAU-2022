@@ -28,23 +28,30 @@
 			<div class="grey body__left">
 				<h3>work</h3>
 				<!-- <a
-					on:mouseenter={() => setSrc('https://site.hhacker.space/')}
+					on:mouseenter={() => setSrc('https://site.hhacker.space')}
 					on:mouseleave={() => setSrc(null)}
-					href="https://site.hhacker.space/"
+					href="https://site.hhacker.space"
 					target="_blank"
 					>hhacker space • web • 2022
 				</a> -->
 				<a
-					on:mouseenter={() => setSrc('https://hello.garrettmusar.work/')}
+					on:mouseenter={() => setSrc('https://hello.garrettmusar.work')}
 					on:mouseleave={() => setSrc(null)}
-					href="https://hello.garrettmusar.work/"
+					href="https://hello.garrettmusar.work"
 					target="_blank"
 					>garrett • landing page • 2023
 				</a>
-				<!-- <a
-					on:mouseenter={() => setSrc('https://iota.health/')}
+								<a
+					on:mouseenter={() => setSrc('https://nightfund.netlify.app')}
 					on:mouseleave={() => setSrc(null)}
-					href="https://iota.health/"
+					href="https://nightfund.netlify.app"
+					target="_blank"
+					>nightfund • 3D demo site • WIP
+				</a>
+				<!-- <a
+					on:mouseenter={() => setSrc('https://iota.health')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://iota.health"
 					target="_blank"
 					>iota • app / landing • 2022
 				</a> -->
@@ -56,9 +63,9 @@
 					>emmett • web demo • WIP
 				</a>
 				<a
-					on:mouseenter={() => setSrc('https://sicovecas-demo.netlify.app/')}
+					on:mouseenter={() => setSrc('https://sicovecas-demo.netlify.app')}
 					on:mouseleave={() => setSrc(null)}
-					href="https://sicovecas-demo.netlify.app/"
+					href="https://sicovecas-demo.netlify.app"
 					target="_blank"
 					>sicovecas • web demo • WIP
 				</a>
@@ -83,7 +90,7 @@
 				<p>lightweight and 3d specialist</p>
 
 				<br />
-				<a target="_blank" href="https://www.instagram.com/dn.niels/">insta</a>
+				<a target="_blank" href="https://www.instagram.com/dn.niels">insta</a>
 				<a target="_blank" href="https://www.linkedin.com/in/dan-humphries">linkedin</a>
 				<a href="mailto: dan@aufbau.io">email</a>
 				<a target="_blank" href="/dan_humphries_cv.pdf">cv</a>
