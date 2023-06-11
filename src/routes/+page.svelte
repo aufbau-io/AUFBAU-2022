@@ -46,7 +46,7 @@
 					on:mouseleave={() => setSrc(null)}
 					href="https://nightfund.netlify.app"
 					target="_blank"
-					>nightfund • 3D demo site • WIP
+					>nightfund • 3D demo site • 2022
 				</a>
 				<!-- <a
 					on:mouseenter={() => setSrc('https://iota.health')}
