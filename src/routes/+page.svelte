@@ -41,7 +41,7 @@
 					target="_blank"
 					>garrett • landing page • 2023
 				</a>
-								<a
+				<a
 					on:mouseenter={() => setSrc('https://nightfund.netlify.app')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://nightfund.netlify.app"
@@ -69,14 +69,14 @@
 					target="_blank"
 					>sicovecas • web demo • WIP
 				</a>
-
+				<!-- 
 				<a
 					on:mouseenter={() => setSrc('https://www.conceptioncalculator2000.com')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://www.conceptioncalculator2000.com"
 					target="_blank"
 					>cc2000 • web demo • WIP
-				</a>
+				</a> -->
 			</div>
 
 			{#if $screenType != 2}
