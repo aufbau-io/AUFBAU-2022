@@ -35,18 +35,36 @@
 					>hhacker space • web • 2022
 				</a> -->
 				<a
+					on:mouseenter={() => setSrc('https://emmett-demo.netlify.app')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://niels.aufbau.io"
+					target="_blank"
+					rel="noopener noreferrer"
+					>niels • web page • 2023
+				</a>
+				<a
 					on:mouseenter={() => setSrc('https://hello.garrettmusar.work')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://hello.garrettmusar.work"
 					target="_blank"
+					rel="noopener noreferrer"
 					>garrett • landing page • 2023
 				</a>
 				<a
-					on:mouseenter={() => setSrc('https://nightfund.netlify.app')}
+					on:mouseenter={() => setSrc('https://sicovecas-demo.netlify.app')}
 					on:mouseleave={() => setSrc(null)}
-					href="https://nightfund.netlify.app"
+					href="https://sicovecas-demo.netlify.app"
 					target="_blank"
-					>nightfund • 3D demo site • 2023
+					rel="noopener noreferrer"
+					>sicovecas • web demo • WIP
+				</a>
+				<a
+					on:mouseenter={() => setSrc('https://iota.health')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://iota.health"
+					target="_blank"
+					rel="noopener noreferrer"
+					>iota • web page • 2023
 				</a>
 				<!-- <a
 					on:mouseenter={() => setSrc('https://iota.health')}
@@ -55,20 +73,7 @@
 					target="_blank"
 					>iota • app / landing • 2022
 				</a> -->
-				<a
-					on:mouseenter={() => setSrc('https://emmett-demo.netlify.app')}
-					on:mouseleave={() => setSrc(null)}
-					href="https://emmett-demo.netlify.app"
-					target="_blank"
-					>emmett • web demo • WIP
-				</a>
-				<a
-					on:mouseenter={() => setSrc('https://sicovecas-demo.netlify.app')}
-					on:mouseleave={() => setSrc(null)}
-					href="https://sicovecas-demo.netlify.app"
-					target="_blank"
-					>sicovecas • web demo • WIP
-				</a>
+
 				<!-- 
 				<a
 					on:mouseenter={() => setSrc('https://www.conceptioncalculator2000.com')}
@@ -90,10 +95,16 @@
 				<p>lightweight and 3d specialist</p>
 
 				<br />
-				<a target="_blank" href="https://www.instagram.com/dn.niels">insta</a>
-				<a target="_blank" href="https://www.linkedin.com/in/dan-humphries">linkedin</a>
-				<a href="mailto: dan@aufbau.io">email</a>
-				<a target="_blank" href="/dan_humphries_cv.pdf">cv</a>
+				<a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/dn.niels"
+					>insta</a
+				>
+				<a
+					rel="noopener noreferrer"
+					target="_blank"
+					href="https://www.linkedin.com/in/dan-humphries">linkedin</a
+				>
+				<a rel="noopener noreferrer" href="mailto: dan@aufbau.io">email</a>
+				<a rel="noopener noreferrer" target="_blank" href="/dan_humphries_cv.pdf">cv</a>
 			</div>
 		</div>
 	{/if}
@@ -115,8 +126,9 @@
 		transform: translate(-50%, -50%);
 		opacity: 1;
 		width: 320px;
-		border: double var(--white) 2px;
+		border: var(--border);
 	}
+
 	h1 {
 		font-family: 'dahlia', sans-serif;
 		color: var(--white);
@@ -126,6 +138,12 @@
 		text-transform: lowercase;
 		cursor: pointer;
 		letter-spacing: 1.1px;
+	}
+
+	h1:hover {
+		/* white outline, black fill */
+		-webkit-text-stroke: 0.5px var(--white);
+		color: var(--black);
 	}
 
 	h3 {
