@@ -58,14 +58,14 @@
 					rel="noopener noreferrer"
 					>sicovecas • web demo • WIP
 				</a>
-				<a
+				<!-- <a
 					on:mouseenter={() => setSrc('https://iota.health')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://iota.health"
 					target="_blank"
 					rel="noopener noreferrer"
 					>iota • web page • 2023
-				</a>
+				</a> -->
 				<!-- <a
 					on:mouseenter={() => setSrc('https://iota.health')}
 					on:mouseleave={() => setSrc(null)}
