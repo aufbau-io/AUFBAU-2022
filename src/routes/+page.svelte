@@ -27,21 +27,15 @@
 			</div>
 			<div class="grey body__left">
 				<h3>work</h3>
+
 				<!-- <a
-					on:mouseenter={() => setSrc('https://site.hhacker.space')}
-					on:mouseleave={() => setSrc(null)}
-					href="https://site.hhacker.space"
-					target="_blank"
-					>hhacker space • web • 2022
-				</a> -->
-				<a
 					on:mouseenter={() => setSrc('https://emmett-demo.netlify.app')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://niels.aufbau.io"
 					target="_blank"
 					rel="noopener noreferrer"
 					>niels • web page • 2023
-				</a>
+				</a> -->
 				<a
 					on:mouseenter={() => setSrc('https://hello.garrettmusar.work')}
 					on:mouseleave={() => setSrc(null)}
@@ -56,23 +50,45 @@
 					href="https://sicovecas-demo.netlify.app"
 					target="_blank"
 					rel="noopener noreferrer"
-					>sicovecas • web demo • WIP
+					>sicovecas • web demo • 2023
 				</a>
-				<!-- <a
-					on:mouseenter={() => setSrc('https://iota.health')}
+				<a
+					on:mouseenter={() => setSrc('https://nightfund-demo.netlify.app/')}
 					on:mouseleave={() => setSrc(null)}
-					href="https://iota.health"
+					href="https://nightfund-demo.netlify.app/"
+					target="_blank"
+					>nightfund • web demo • 2023
+				</a>
+				<a
+					on:mouseenter={() => setSrc('scrt-throw-demo.netlify.app')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://scrt-throw-demo.netlify.app/"
+					target="_blank"
+					>scrt • web • 2023
+				</a>
+				<a
+					on:mouseenter={() => setSrc('https://replikamasterworks.com')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://replikamasterworks.com"
 					target="_blank"
 					rel="noopener noreferrer"
-					>iota • web page • 2023
-				</a> -->
-				<!-- <a
-					on:mouseenter={() => setSrc('https://iota.health')}
+					>replika • web • 2022
+				</a>
+				<a
+					on:mouseenter={() => setSrc('https://site.hhacker.space')}
 					on:mouseleave={() => setSrc(null)}
-					href="https://iota.health"
+					href="https://site.hhacker.space"
 					target="_blank"
-					>iota • app / landing • 2022
-				</a> -->
+					>hedron hackerspace • web • 2022
+				</a>
+
+				<a
+					on:mouseenter={() => setSrc('https://zen.aufbau.io')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://zen.aufbau.io"
+					target="_blank"
+					>zen • 3d • 2022
+				</a>
 
 				<!-- 
 				<a
@@ -98,11 +114,11 @@
 				<a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/dn.niels"
 					>insta</a
 				>
-				<a
+				<!-- <a
 					rel="noopener noreferrer"
 					target="_blank"
 					href="https://www.linkedin.com/in/dan-humphries">linkedin</a
-				>
+				> -->
 				<a rel="noopener noreferrer" href="mailto: dan@aufbau.io">email</a>
 				<a rel="noopener noreferrer" target="_blank" href="/dan_humphries_cv.pdf">cv</a>
 			</div>
