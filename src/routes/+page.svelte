@@ -45,13 +45,21 @@
 					>garrett • landing page • 2023
 				</a>
 				<a
+					on:mouseenter={() => setSrc('https://replikamasterworks.com')}
+					on:mouseleave={() => setSrc(null)}
+					href="https://replikamasterworks.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					>replika • web • 2022
+				</a>
+				<!-- <a
 					on:mouseenter={() => setSrc('https://sicovecas-demo.netlify.app')}
 					on:mouseleave={() => setSrc(null)}
 					href="https://sicovecas-demo.netlify.app"
 					target="_blank"
 					rel="noopener noreferrer"
 					>sicovecas • web demo • 2023
-				</a>
+				</a> -->
 				<a
 					on:mouseenter={() => setSrc('https://nightfund-demo.netlify.app/')}
 					on:mouseleave={() => setSrc(null)}
@@ -64,16 +72,9 @@
 					on:mouseleave={() => setSrc(null)}
 					href="https://scrt-throw-demo.netlify.app/"
 					target="_blank"
-					>scrt • web • 2023
+					>scrt • web demo • 2023
 				</a>
-				<a
-					on:mouseenter={() => setSrc('https://replikamasterworks.com')}
-					on:mouseleave={() => setSrc(null)}
-					href="https://replikamasterworks.com"
-					target="_blank"
-					rel="noopener noreferrer"
-					>replika • web • 2022
-				</a>
+
 				<a
 					on:mouseenter={() => setSrc('https://site.hhacker.space')}
 					on:mouseleave={() => setSrc(null)}
