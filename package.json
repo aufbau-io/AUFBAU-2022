@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
-    "@sveltejs/adapter-netlify": "^1.0.0-next.64",
+		"@sveltejs/adapter-vercel": "^3.1.0",
     "@sveltejs/kit": "next",
     "autoprefixer": "10.4.7",
     "cssnano": "5.1.10",
