@@ -1,6 +1,6 @@
 {
   "name": "aufbau-web-studio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "license": "MIT",
   "scripts": {
@@ -10,23 +10,21 @@
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write ."
   },
-  "devDependencies": {
-    "@sveltejs/adapter-vercel": "^3.1.0",
-    "@sveltejs/kit": "^1.30.3",
+	"devDependencies": {
+		"@sveltejs/adapter-vercel": "^3.1.0",
+		"@sveltejs/kit": "^1.30.3",
 		"eslint": "^8.55.0",
 		"eslint-config-prettier": "^8.10.0",
 		"eslint-plugin-svelte": "^2.35.1",
-    "prettier": "^2.8.8",
+		"normalize.css": "^8.0.1",
+		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.1",
-    "postcss": "8.4.14",
-    "postcss-load-config": "3.1.4",
 		"svelte": "^3.59.2",
-    "svelte-preprocess": "4.10.6",
-    "vite": "^4.5.1",
-    "vitest": "^0.25.8"
-  },
-  "dependencies": {
-    "tailwindcss": "^3.1.3",
+		"vite": "^4.5.1",
+		"vitest": "^0.25.8",
+		"web-vitals": "^3.5.0"
+	},
+	"dependencies": {
     "three": "^0.141.0"
-  }
+	}
 }
