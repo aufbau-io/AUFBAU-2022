@@ -86,7 +86,7 @@
 				<a
 					on:mouseenter={() => setSrc('https://zen.aufbau.io')}
 					on:mouseleave={() => setSrc(null)}
-					href="https://zen.aufbau.io"
+					href="https://symmetry.netlify.app"
 					target="_blank"
 					>zen • 3d • 2022
 				</a>
@@ -112,16 +112,21 @@
 				<p>lightweight and 3d specialist</p>
 
 				<br />
-				<a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/dn.niels"
+				<a rel="noopener noreferrer" href="https://aufbau.io">active site</a>
+				<!-- <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/dn.niels"
 					>insta</a
-				>
+				> -->
 				<!-- <a
 					rel="noopener noreferrer"
 					target="_blank"
 					href="https://www.linkedin.com/in/dan-humphries">linkedin</a
 				> -->
 				<a rel="noopener noreferrer" href="mailto: dan@aufbau.io">email</a>
-				<a rel="noopener noreferrer" target="_blank" href="/dan_humphries_cv.pdf">cv</a>
+				<a
+					rel="noopener noreferrer"
+					target="_blank"
+					href="https://aufbau.io/daniel_humphries_cv.pdf">cv</a
+				>
 			</div>
 		</div>
 	{/if}

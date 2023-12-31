@@ -14,10 +14,10 @@
 
 	const colors = [0xffe38c, 0x9add8c, 0x94c8f7, 0xffaea9];
 
-	const sphere = new THREE.SphereGeometry(40);
-	const object = new THREE.Mesh(sphere, new THREE.MeshBasicMaterial(0xff0000));
-	const box = new THREE.BoxHelper(object, 0xfefeff);
-	scene.add(box);
+	// const sphere = new THREE.SphereGeometry(40);
+	// const object = new THREE.Mesh(sphere, new THREE.MeshBasicMaterial(0xff0000));
+	// const box = new THREE.BoxHelper(object, 0xfefeff);
+	// scene.add(box);
 
 	// Setting up a camera
 	let camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 400);
@@ -27,13 +27,13 @@
 	let renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(width, height);
-	renderer.setClearColor(0x232323, 1);
+	renderer.setClearColor(0x232323, 0);
 	onMount(() => {
 		container.appendChild(renderer.domElement);
 	});
 
 	let controls = new OrbitControls(camera, renderer.domElement);
-	controls.maxDistance = 200;
+	controls.maxDistance = 100;
 	controls.minDistance = 25;
 	controls.enablePan = false;
 
@@ -50,10 +50,10 @@
 
 	// Generating a cloud of point
 	let pcMat = new THREE.PointsMaterial();
-	pcMat.color = new THREE.Color(0xfefeff);
-	pcMat.transparent = false;
-	pcMat.size = 0.5;
-	// pcMat.blending = THREE.AdditiveBlending;
+	pcMat.color = new THREE.Color(0xd0d0d0);
+	pcMat.transparent = true;
+	pcMat.size = 0.1;
+	pcMat.blending = THREE.AdditiveBlending;
 	pc = new THREE.Points(geometry, pcMat);
 	pc.sizeAttenuation = true;
 	pc.sortPoints = true;
@@ -96,9 +96,9 @@
 
 		geometry.attributes.position.needsUpdate = true;
 
-		// group.rotation.x += 0.002;
-		// group.rotation.y += 0.002;
-		// group.rotation.z += 0.002;
+		group.rotation.x += 0.002;
+		group.rotation.y += 0.002;
+		group.rotation.z += 0.002;
 	};
 
 	window.addEventListener(
@@ -123,7 +123,7 @@
 			z = 0.01;
 		let a = 4.9;
 		let b = 5.4;
-		let f = 5.9;
+		let f = 6.9;
 		let g = 1;
 		let t = 0.0006;
 		for (let i = 0; i < 100000; i++) {
@@ -144,7 +144,7 @@
 		top: 0;
 		left: 0;
 		z-index: -10;
-		opacity: 1;
+		opacity: 0.5;
 		overflow: hidden;
 
 		width: 100vw;

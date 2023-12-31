@@ -70,13 +70,13 @@
 
 <svelte:component this={Geometry} />
 
-<!-- {#key $screenType}
+{#key $screenType}
 	{#if $screenType}
 		<main>
 			<slot />
 		</main>
 	{/if}
-{/key} -->
+{/key}
 
 <!-- {#key $demoSrc}
 	{#if $demoSrc}
