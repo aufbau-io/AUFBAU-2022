@@ -47,7 +47,7 @@
 				<a
 					on:mouseenter={() => setSrc('https://replikamasterworks.com')}
 					on:mouseleave={() => setSrc(null)}
-					href="https://replikamasterworks.com"
+					href="https://replika.netlify.app"
 					target="_blank"
 					rel="noopener noreferrer"
 					>replika • web • 2022
@@ -122,11 +122,11 @@
 					href="https://www.linkedin.com/in/dan-humphries">linkedin</a
 				> -->
 				<a rel="noopener noreferrer" href="mailto: dan@aufbau.io">email</a>
-				<a
+				<!-- <a
 					rel="noopener noreferrer"
 					target="_blank"
 					href="https://aufbau.io/daniel_humphries_cv.pdf">cv</a
-				>
+				> -->
 			</div>
 		</div>
 	{/if}
